@@ -1,4 +1,4 @@
-package com.kotak.mb2.merchant.payments.gateway.service.Event_Management_Service;
+package com.kotak.merchant.payments.gateway.service.Event_Management_Service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

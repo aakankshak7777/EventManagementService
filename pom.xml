@@ -8,7 +8,7 @@
 		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.kotak.mb2.merchant.payments.gateway.service</groupId>
+	<groupId>com.kotak.merchant.payments.gateway.service</groupId>
 	<artifactId>Event-Management-Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EventManagementService</name>
@@ -110,16 +110,16 @@
 				<artifactId>avro-maven-plugin</artifactId>
 				<version>1.11.3</version>
 				<executions>
-					<execution>
-						<goals>
-							<goal>schema</goal>
-						</goals>
-						<phase>generate-sources</phase>
-						<configuration>
-							<sourceDirectory>${project.basedir}/src/main/resources/schemas/avro/</sourceDirectory>
-							<outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
-						</configuration>
-					</execution>
+<!--					<execution>-->
+<!--						<goals>-->
+<!--							<goal>schema</goal>-->
+<!--						</goals>-->
+<!--						<phase>generate-sources</phase>-->
+<!--&lt;!&ndash;						<configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;							<sourceDirectory>${project.basedir}/src/main/resources/schemas/avro/</sourceDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;							<outputDirectory>${project.basedir}/src/main/java/</outputDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;						</configuration>&ndash;&gt;-->
+<!--					</execution>-->
 				</executions>
 			</plugin>
 		</plugins>
