@@ -7,7 +7,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSortKey;
 
 @DynamoDbBean
 @Data
@@ -22,21 +25,21 @@ public class DbCollectCallback {
     public static final String ATTR_VERSION = "version";
 
     private String transactionId;
-    private String aggregatorcode;
-    private String merchantcode;
+    private String aggregatorCode;
+    private String merchantCode;
     private String status;
     private String statusCode;
     private String description;
     private String remarks;
-    private String transactionreferencenumber;
+    private String transactionReferenceNumber;
     private String rrn;
     private String amount;
     private String type;
-    private String payervpa;
-    private String payeevpa;
-    private String refurl;
-    private String refid;
-    private String initmode;
+    private String payerVpa;
+    private String payeeVpa;
+    private String refUrl;
+    private String refId;
+    private String initMode;
     private long transactionTimestamp;
     private String checksum;
     private String accType;
@@ -76,21 +79,21 @@ public class DbCollectCallback {
     public CollectCallback to() {
         return CollectCallback.builder()
                 .transactionId(transactionId)
-                .aggregatorCode(aggregatorcode)
-                .merchantCode(merchantcode)
+                .aggregatorCode(aggregatorCode)
+                .merchantCode(merchantCode)
                 .status(status)
                 .statusCode(statusCode)
                 .description(description)
                 .remarks(remarks)
-                .transactionReferenceNumber(transactionreferencenumber)
+                .transactionReferenceNumber(transactionReferenceNumber)
                 .rrn(rrn)
                 .amount(amount)
                 .type(type)
-                .payerVpa(payervpa)
-                .payeeVpa(payeevpa)
-                .refUrl(refurl)
-                .refId(refid)
-                .initMode(initmode)
+                .payerVpa(payerVpa)
+                .payeeVpa(payeeVpa)
+                .refUrl(refUrl)
+                .refId(refId)
+                .initMode(initMode)
                 .transactionTimestamp(transactionTimestamp)
                 .checksum(checksum)
                 .accType(accType)
@@ -112,21 +115,21 @@ public class DbCollectCallback {
     public static DbCollectCallback from(CollectCallback collectCallback) {
         DbCollectCallback callback = new DbCollectCallback();
         callback.setTransactionId(collectCallback.transactionId());
-        callback.setAggregatorcode(collectCallback.aggregatorCode());
-        callback.setMerchantcode(collectCallback.merchantCode());
+        callback.setAggregatorCode(collectCallback.aggregatorCode());
+        callback.setMerchantCode(collectCallback.merchantCode());
         callback.setStatus(collectCallback.status());
         callback.setStatusCode(collectCallback.statusCode());
         callback.setDescription(collectCallback.description());
         callback.setRemarks(collectCallback.remarks());
-        callback.setTransactionreferencenumber(collectCallback.transactionReferenceNumber());
+        callback.setTransactionReferenceNumber(collectCallback.transactionReferenceNumber());
         callback.setRrn(collectCallback.rrn());
         callback.setAmount(collectCallback.amount());
         callback.setType(collectCallback.type());
-        callback.setPayervpa(collectCallback.payerVpa());
-        callback.setPayeevpa(collectCallback.payeeVpa());
-        callback.setRefurl(collectCallback.refUrl());
-        callback.setRefid(collectCallback.refId());
-        callback.setInitmode(collectCallback.initMode());
+        callback.setPayerVpa(collectCallback.payerVpa());
+        callback.setPayeeVpa(collectCallback.payeeVpa());
+        callback.setRefUrl(collectCallback.refUrl());
+        callback.setRefId(collectCallback.refId());
+        callback.setInitMode(collectCallback.initMode());
         callback.setTransactionTimestamp(collectCallback.transactionTimestamp());
         callback.setChecksum(collectCallback.checksum());
         callback.setAccType(collectCallback.accType());
