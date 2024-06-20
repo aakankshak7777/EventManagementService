@@ -24,3 +24,9 @@ The following guides illustrate how to use some features concretely:
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 * [Samples for using Apache Kafka Streams with Spring Cloud stream](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/master/kafka-streams-samples)
 
+  <groupId>com.kotak.merchant.payments.gateway.service</groupId>
+  <artifactId>Event-Management-Service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>EventManagementService</name>
+  <description>Event Management Service</description>
+
