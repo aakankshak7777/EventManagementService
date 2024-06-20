@@ -1,6 +1,9 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.config;
 
-import java.net.URI;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSMetricUtil;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EpochProvider;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.DdbCollectCallbackDao;
+import io.micrometer.core.instrument.MeterRegistry;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,6 +16,8 @@ import software.amazon.awssdk.enhanced.dynamodb.extensions.VersionedRecordExtens
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
+import java.net.URI;
+
 @Configuration
 @Slf4j
 @NoArgsConstructor
@@ -21,7 +26,7 @@ public class DynamoDbConfig {
     @Value("${aws.dynamodb.endpointOverride}")
     private String dynamodbEndpoint;
 
-    @Value("${region}")
+    @Value("${aws.region}")
     private String region;
 
     @Bean
@@ -43,5 +48,20 @@ public class DynamoDbConfig {
                 .extensions(VersionedRecordExtension.builder().build())
                 .dynamoDbClient(ddbc)
                 .build();
+    }
+
+    @Bean
+    public EMSMetricUtil emsMetricUtil(MeterRegistry registry) {
+        return new EMSMetricUtil(registry);
+    }
+
+    @Bean
+    public EpochProvider epochProvider() {
+        return new EpochProvider();
+    }
+
+    @Bean
+    public DdbCollectCallbackDao collectCallbackDao(DynamoDbEnhancedClient ddb, EMSMetricUtil metricUtil) {
+        return new DdbCollectCallbackDao(ddb, metricUtil);
     }
 }

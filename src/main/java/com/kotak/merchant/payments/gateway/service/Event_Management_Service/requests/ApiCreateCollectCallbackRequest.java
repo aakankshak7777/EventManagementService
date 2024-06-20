@@ -25,4 +25,5 @@ public record ApiCreateCollectCallbackRequest(
         String payerMobileNumber,
         String payerAccountNumber,
         String payerAccountName,
-        String payerAccountIFSC) {}
+        String payerAccountIFSC) {
+}

@@ -1,4 +1,4 @@
- package com.kotak.merchant.payments.gateway.service.Config;
+package com.kotak.merchant.payments.gateway.service.Config;
 
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.CLOUDWATCH;
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.DYNAMODB;
@@ -18,14 +18,9 @@ import org.testcontainers.containers.localstack.LocalStackContainer;
 import org.testcontainers.containers.wait.strategy.DockerHealthcheckWaitStrategy;
 import org.testcontainers.utility.DockerImageName;
 
- import static org.testcontainers.containers.localstack.LocalStackContainer.Service.DYNAMODB;
-
- import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
- import com.redis.testcontainers.RedisContainer;
-
- @Slf4j
- @Configuration
- public class ContainerConfig {
+@Slf4j
+@Configuration
+public class ContainerConfig {
 
     // https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.testcontainers
     // https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testcontainers
@@ -145,5 +140,4 @@ import org.testcontainers.utility.DockerImageName;
             container.start();
         }
     }
- }
-
+}

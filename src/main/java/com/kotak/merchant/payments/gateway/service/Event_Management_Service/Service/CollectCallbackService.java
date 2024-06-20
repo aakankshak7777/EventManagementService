@@ -7,23 +7,26 @@ import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enum
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventStatus;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.exceptions.CollectCallbackExistsException;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
-import com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests.CreateCollectCallbackRequest;
-import javax.annotation.concurrent.ThreadSafe;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.requests.CreateCollectCallbackRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.concurrent.ThreadSafe;
 
 @Slf4j
 @ThreadSafe
 @RequiredArgsConstructor
+@Service
 public class CollectCallbackService {
     private final CollectCallbackDao dao;
     private final EMSMetricUtil metricUtil;
     private final EpochProvider epochProvider;
 
     public CollectCallback create(CreateCollectCallbackRequest request) {
-        var currentEpoch = epochProvider.currentEpoch();
+        var currentTime = epochProvider.currentEpoch();
         var collectCallback = request.toCollectCallback().toBuilder()
-                .creationTime(currentEpoch)
+                .creationTime(currentTime)
                 .createdBy(EventName.COLLECT_CALLBACK_API)
                 .eventStatus(EventStatus.PENDING)
                 .build();

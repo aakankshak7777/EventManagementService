@@ -11,8 +11,6 @@ public class LocalApplication {
         System.setProperty("aws.region", Region.AP_SOUTH_1.toString());
         System.setProperty("spring.devtools.restart.enabled", "false");
         System.setProperty("spring.profiles.active", "local");
-        SpringApplication.from(EventManagementServiceApplication::main)
-                .with(ContainerConfig.class)
-                .run(args);
+        SpringApplication.from(EventManagementServiceApplication::main).with(ContainerConfig.class).run(args);
     }
 }

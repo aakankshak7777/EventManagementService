@@ -4,8 +4,10 @@ import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Serv
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSMetricUtil;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.CollectCallbackStatus;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests.ApiCreateCollectCallbackRequest;
-import com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests.CreateCollectCallbackRequest;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.requests.CreateCollectCallbackRequest;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.responses.ApiCreateCollectCallbackResponse;
+import io.micrometer.core.annotation.Timed;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
@@ -16,19 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @ConditionalOnProperty(prefix = "app", name = "server-enabled", havingValue = "true", matchIfMissing = true)
+@RequiredArgsConstructor
 @RestController
-// @Timed(percentiles = {0.0, 0.75, 0.9, 0.95, 0.99, 1.0})
+@Timed(percentiles = {0.0, 0.75, 0.9, 0.95, 0.99, 1.0})
 public class CollectCallbackController {
     public static final String EP_CREATE_COLLECT_CALLBACK = "/collect-callback";
     public static final String EP_COLLECT_CALLBACK = "/collect-callback/{id}";
 
     private final CollectCallbackService collectCallbackService;
     private final EMSMetricUtil metricUtil;
-
-    public CollectCallbackController(CollectCallbackService collectCallbackService, EMSMetricUtil metricUtil) {
-        this.collectCallbackService = collectCallbackService;
-        this.metricUtil = metricUtil;
-    }
 
     @PostMapping(EP_CREATE_COLLECT_CALLBACK)
     @ResponseStatus(HttpStatus.CREATED)

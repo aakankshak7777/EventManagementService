@@ -1,8 +1,11 @@
-package com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests;
+package com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.requests;
 
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests.ApiCreateCollectCallbackRequest;
 import lombok.Builder;
 import lombok.With;
+
+import java.time.Instant;
 
 @Builder(toBuilder = true)
 @With
@@ -51,7 +54,7 @@ public record CreateCollectCallbackRequest(
                 .refUrl(refUrl())
                 .refId(refId())
                 .initMode(initMode())
-                .transactionTimestamp(Long.parseLong(transactionTimestamp()))
+                .transactionTimestamp(Instant.parse(transactionTimestamp()).toEpochMilli())
                 .checksum(checksum())
                 .accType(accType())
                 .cardType(cardType())

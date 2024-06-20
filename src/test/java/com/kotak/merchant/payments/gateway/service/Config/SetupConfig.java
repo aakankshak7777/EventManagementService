@@ -5,10 +5,11 @@ import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.Configuration;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
 @Slf4j
-@TestConfiguration
+@Configuration
 public class SetupConfig {
 
     @Value("${awsS3.bucket.name}")
