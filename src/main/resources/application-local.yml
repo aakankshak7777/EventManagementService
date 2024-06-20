@@ -1,0 +1,50 @@
+web:
+  filter:
+    requestSizeFilterEnabled: true
+    requestSizeMaxBytes: 10240
+    securityHeaderFilterEnabled: true
+    correlationIdFilterEnabled: true
+
+
+response:
+  error:
+    masking:
+      enabled: false
+
+openapi:
+  validation:
+    enabled: true
+    specificationPath: openapi.yml
+
+
+spring:
+  application:
+    name: RealtimeTransactionService
+  main:
+    # https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment.cloud.kubernetes
+    # Explicitly set this to Kubernetes to enable all probes
+    # https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator.endpoints.kubernetes-probes
+    allow-bean-definition-overriding: true
+    cloud-platform: kubernetes
+  devtools:
+    restart:
+      enabled: true
+  lifecycle:
+    timeout-per-shutdown-phase: 2m
+  jackson:
+    deserialization:
+      use-big-decimal-for-floats: true
+
+# DynamoDB
+# Don't set this. Automatically set to localstack endpoint for local testing
+# and ignored while deploying in AWS
+aws:
+  accessKeyOverride: ignore
+  secretKeyOverride: ignore
+  dynamodb:
+    endpointOverride: ignore
+    max-connections: 10
+  cloudwatch:
+    endpointOverride: ignore
+  s3:
+    endpointOverride: ignore

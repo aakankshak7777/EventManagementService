@@ -5,6 +5,7 @@ import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Util
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.DdbCollectCallbackDao;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.NoArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -29,6 +30,7 @@ public class DynamoDbConfig {
     @Value("${aws.region}")
     private String region;
 
+    @SneakyThrows
     @Bean
     @DependsOn("dependencyPlaceholder")
     public DynamoDbClient getDynamoDbClient() {
