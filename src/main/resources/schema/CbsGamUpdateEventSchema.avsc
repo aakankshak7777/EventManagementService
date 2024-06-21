@@ -1,0 +1,786 @@
+{
+  "type" : "record",
+  "name" : "GeneralAcctMastTable",
+  "namespace" : "com.kmbl.realtimetransactionservice.event.schema.RtsCbsGamEvents",
+  "fields" : [ {
+    "name" : "table",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "op_type",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "op_ts",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "current_ts",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "pos",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "source_scn",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "before",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "GamColumns",
+      "fields" : [ {
+        "name" : "ACID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ENTITY_CRE_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DEL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SOL_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_PREFIX",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_NUM",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "BACID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FORACID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_NAME",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_SHORT_NAME",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CUST_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "EMP_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "GL_SUB_HEAD_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_OWNERSHIP",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SCHM_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DR_BAL_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_RPT_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_REASON_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_OPN_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CLS_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CLS_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "CLR_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "TOT_MOD_TIMES",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "LEDG_NUM",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "UN_CLR_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DRWNG_POWER",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "SANCT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ADHOC_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "EMER_ADVN",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DACC_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "SYSTEM_RESERVED_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "SINGLE_TRAN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLEAN_ADHOC_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLEAN_EMER_ADVN",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLEAN_SINGLE_TRAN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "SYSTEM_GEN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CHQ_ALWD_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CASH_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLG_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "XFER_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CASH_CR_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLG_CR_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "XFER_CR_EXCP_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CASH_ABNRML_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CLG_ABNRML_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "XFER_ABNRML_AMT_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CUM_DR_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CUM_CR_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ACRD_CR_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TRAN_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "MODE_OF_OPER_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PB_PS_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SERV_CHRG_COLL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREE_TEXT",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_TURNOVER_DET_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "NOM_AVAILABLE_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_LOCN_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_PURGE_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "BAL_ON_PURGE_DATE",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "INT_PAID_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "INT_COLL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_ANY_TRAN_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "HASHED_NO",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LCHG_USER_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LCHG_TIME",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "RCRE_USER_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "RCRE_TIME",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "LIMIT_B2KID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DRWNG_POWER_IND",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DRWNG_POWER_PCNT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "MICR_CHQ_CHRG_COLL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TURNOVER_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "NOTIONAL_RATE",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "NOTIONAL_RATE_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FX_CLR_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FX_BAL_ON_PURGE_DATE",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FD_REF_NUM",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FX_CUM_CR_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FX_CUM_DR_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CRNCY_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SOURCE_OF_FUND",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ANW_NON_CUST_ALWD_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CRNCY_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LIEN_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CLASSIFICATION_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SYSTEM_ONLY_ACCT_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SINGLE_TRAN_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "UTILISED_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "INTER_SOL_ACCESS_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PURGE_ALLOWED_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PURGE_TEXT",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "MIN_VALUE_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_MGR_USER_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SCHM_TYPE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_FREZ_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "LAST_UNFREZ_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "BAL_ON_FREZ_DATE",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "SWIFT_ALLOWED_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DACC_LIM_PCNT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DACC_LIM_ABS",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "CHRG_LEVEL_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CLS_CHRG_PEND_VERF",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PARTITIONED_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PARTITIONED_TYPE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PBF_DOWNLOAD_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PBF_DELINK_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_AMOUNT_SCOPE_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "INT_ADJ_FOR_DEDUCTION_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "OPERATIVE_ACID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PHONE_NUM",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "NATIVE_LANG_NAME",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "NAT_LANG_TITLE_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LANG_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "TS_CNT",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "POOL_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ALLOW_SWEEPS",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ORDER_OF_UTILISATION",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_PCNT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_FLOOR_LIMIT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DSA_PENAL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PRODUCT_GROUP",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SOURCE_DEAL_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DISBURSE_DEAL_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SWEEP_IN_MIN_BAL",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "USED_SINGLE_TRAN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "USED_CLEAN_SINGLE_TRAN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "USED_UN_CLR_OVER_DACC_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FFD_CONTRIB_TO_ACCT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CREATION_MODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_LEVEL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_MODIFIED_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "CIF_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FUTURE_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "UTIL_FUTURE_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DAFA_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DAFA_LIM_ABS",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DAFA_LIM_PCNT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FUTURE_OC_TOD_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "USED_OC_CLN_SINGLE_TRAN_LIM",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "IBAN_NUMBER",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CHANNEL_LEVEL_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CHANNEL_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FUTURE_CLR_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "FUTURE_UN_CLR_BAL_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "MASTER_B2K_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "BANK_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_REASON_CODE_2",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_REASON_CODE_3",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_REASON_CODE_4",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "FREZ_REASON_CODE_5",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "IS_LOAN_AGNST_CLTRL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "PREFERRED_CAL_BASE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ADDITIONAL_CAL_BASE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "MUD_POOL_ACCT_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ALT1_ACCT_SHORT_NAME",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ALT1_ACCT_NAME",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_FLOOR_LIMIT_FREQ",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CHQ_PROV_BY_BANK_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CHQ_VAL_PRD_MNTH",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "CHQ_VAL_PRD_DAY",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "PYMNT_REF_NUM",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "RA_REF_NUM",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "EXTERNAL_PRICING_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_MOD_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ASYNCH_BAL_UPD_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TRAN_DATE_CR",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TRAN_DATE_DR",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TRAN_ID_CR",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "LAST_TRAN_ID_DR",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DR_INT_METHOD",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "CONS_BAL_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SCHM_SUB_TYPE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "SSA_PLAN_ID",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_WAIVER_START_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_WAIVER_END_DATE",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "TAX_EVENT_REASON_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "WTAX_FLOOR_LIMIT_SCOPE_FLG",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "ACCT_CLS_ADVICE_PRINTED",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "MIN_TELLER_BAL",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "ACTIVE_STATUS",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "NEXT_TRAN_SRL_NUM",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "SYS_BEHAVIOR_CODE",
+        "type" : [ "null", "bytes" ],
+        "default" : null
+      }, {
+        "name" : "DIGISCO_RESERVED_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      }, {
+        "name" : "DIGISCO_POSTED_AMT",
+        "type" : [ "null", "double" ],
+        "default" : null
+      } ]
+    } ],
+    "default" : null
+  }, {
+    "name" : "after",
+    "type" : [ "null", "GamColumns" ],
+    "default" : null
+  } ]
+}
