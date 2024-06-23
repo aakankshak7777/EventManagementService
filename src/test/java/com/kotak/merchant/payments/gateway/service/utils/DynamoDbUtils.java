@@ -28,7 +28,7 @@ public class DynamoDbUtils {
         var ddb = DynamoDbEnhancedClient.builder().dynamoDbClient(ddbClient).build();
         var ddbModelClasses = ClassPath.from(ClassLoader.getSystemClassLoader())
                 .getTopLevelClassesRecursive(
-                        "com.kotak.mb2.merchant.payments.gateway.service.Event_Management_Service.dao")
+                        "com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao")
                 .stream()
                 .map(ClassInfo::load)
                 .filter(c -> c.getDeclaredAnnotation(DynamoDbBean.class) != null)
