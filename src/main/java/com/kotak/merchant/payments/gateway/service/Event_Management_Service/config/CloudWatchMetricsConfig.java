@@ -1,6 +1,5 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.config;
 
-
 import io.micrometer.cloudwatch2.CloudWatchConfig;
 import io.micrometer.cloudwatch2.CloudWatchMeterRegistry;
 import io.micrometer.core.instrument.Clock;
@@ -8,6 +7,8 @@ import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.binder.logging.LogbackMetrics;
 import io.micrometer.core.instrument.composite.CompositeMeterRegistry;
 import io.opentelemetry.instrumentation.awssdk.v2_2.AwsSdkTelemetry;
+import java.net.URI;
+import java.util.List;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,9 +22,6 @@ import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider;
 import software.amazon.awssdk.metrics.MetricPublisher;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudwatch.CloudWatchAsyncClient;
-
-import java.net.URI;
-import java.util.List;
 
 /**
  * CloudWatch integration is present only in production at the moment.
@@ -86,8 +84,7 @@ public class CloudWatchMetricsConfig {
         private final String namespace;
 
         public MicrometerCloudWatchConfig(String namespace) {
-            super(new StepRegistryProperties() {
-            });
+            super(new StepRegistryProperties() {});
             this.namespace = namespace;
         }
 
