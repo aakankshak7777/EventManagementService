@@ -1,4 +1,4 @@
-package com.kotak.merchant.payments.gateway.service.Config;
+package com.kotak.merchant.payments.gateway.service.integration.config;
 
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.CLOUDWATCH;
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.DYNAMODB;

@@ -1,4 +1,4 @@
-package com.kotak.merchant.payments.gateway.service.Config;
+package com.kotak.merchant.payments.gateway.service.integration.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

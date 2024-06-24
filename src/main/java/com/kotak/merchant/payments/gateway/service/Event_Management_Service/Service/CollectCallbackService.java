@@ -4,7 +4,7 @@ import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Serv
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSEventPublisher;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSMetricUtil;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EpochProvider;
-import com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.CollectCallbackDao;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.repository.dao.CollectCallbackDao;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventName;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.exceptions.CollectCallbackExistsException;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
