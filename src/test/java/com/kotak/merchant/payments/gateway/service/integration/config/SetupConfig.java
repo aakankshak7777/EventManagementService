@@ -1,9 +1,8 @@
-package com.kotak.merchant.payments.gateway.service.Config;
+package com.kotak.merchant.payments.gateway.service.integration.config;
 
 import com.kotak.merchant.payments.gateway.service.utils.DynamoDbUtils;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.TestConfiguration;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 

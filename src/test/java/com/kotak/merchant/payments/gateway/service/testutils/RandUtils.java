@@ -1,4 +1,4 @@
-package com.kotak.merchant.payments.gateway.service.utils;
+package com.kotak.merchant.payments.gateway.service.testutils;
 
 import java.time.Instant;
 import java.util.Random;

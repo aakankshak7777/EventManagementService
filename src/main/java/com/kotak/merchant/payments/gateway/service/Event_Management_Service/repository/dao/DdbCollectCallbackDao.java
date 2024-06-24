@@ -1,8 +1,8 @@
-package com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao;
+package com.kotak.merchant.payments.gateway.service.Event_Management_Service.repository.dao;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSMetricUtil;
-import com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.models.DbCollectCallback;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.repository.dao.models.DbCollectCallback;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.exceptions.CollectCallbackExistsException;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;

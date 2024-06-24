@@ -1,10 +1,15 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.requests;
 
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.dtos.Currency;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.dtos.TransactionAmount;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventName;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventStatus;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.PaymentStatus;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallbackEvent;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests.ApiCreateCollectCallbackRequest;
+
+import java.math.BigDecimal;
 import java.time.Instant;
 import lombok.Builder;
 import lombok.With;
@@ -15,7 +20,7 @@ public record CreateCollectCallbackRequest(
         String transactionId,
         String aggregatorCode,
         String merchantCode,
-        String status,
+        PaymentStatus status,
         String statusCode,
         String description,
         String remarks,
@@ -39,17 +44,19 @@ public record CreateCollectCallbackRequest(
         String payerAccountIfsc) {
 
     public CollectCallback toCollectCallback(long currentTime, EventName eventName) {
+        BigDecimal amount = new BigDecimal(amount());
+        TransactionAmount trm= new TransactionAmount(amount, Currency.INR);
         return CollectCallback.builder()
                 .transactionId(transactionId())
                 .aggregatorCode(aggregatorCode())
                 .merchantCode(merchantCode())
-                .status(status())
+                .status(String.valueOf(status()))
                 .statusCode(statusCode())
                 .description(description())
                 .remarks(remarks())
                 .transactionReferenceNumber(transactionReferenceNumber())
                 .rrn(rrn())
-                .amount(amount())
+                .amount(trm)
                 .type(type()) // @NotNull field, assuming non-null in CreateCollectCallbackRequest
                 .payerVpa(payerVpa())
                 .payeeVpa(payeeVpa())
@@ -76,7 +83,7 @@ public record CreateCollectCallbackRequest(
                 .transactionId(transactionId())
                 .aggregatorCode(aggregatorCode())
                 .merchantCode(merchantCode())
-                .status(status())
+                .status(String.valueOf(status()))
                 .statusCode(statusCode())
                 .description(description())
                 .remarks(remarks())

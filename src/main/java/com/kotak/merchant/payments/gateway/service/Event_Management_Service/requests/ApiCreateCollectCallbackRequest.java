@@ -1,10 +1,12 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests;
 
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.PaymentStatus;
+
 public record ApiCreateCollectCallbackRequest(
         String transactionid,
         String aggregatorcode,
         String merchantcode,
-        String status,
+        PaymentStatus status,
         String statusCode,
         String description,
         String remarks,

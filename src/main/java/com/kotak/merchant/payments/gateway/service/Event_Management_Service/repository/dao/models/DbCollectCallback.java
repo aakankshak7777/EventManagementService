@@ -1,7 +1,8 @@
-package com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.models;
+package com.kotak.merchant.payments.gateway.service.Event_Management_Service.repository.dao.models;
 
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventName;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventStatus;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.PaymentStatus;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.model.CollectCallback;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +34,7 @@ public class DbCollectCallback {
     private String remarks;
     private String transactionReferenceNumber;
     private String rrn;
-    private String amount;
+    private DbTransactionAmount amount;
     private String type;
     private String payerVpa;
     private String payeeVpa;
@@ -87,7 +88,7 @@ public class DbCollectCallback {
                 .remarks(remarks)
                 .transactionReferenceNumber(transactionReferenceNumber)
                 .rrn(rrn)
-                .amount(amount)
+                .amount(amount.to())
                 .type(type)
                 .payerVpa(payerVpa)
                 .payeeVpa(payeeVpa)
@@ -117,13 +118,13 @@ public class DbCollectCallback {
         callback.setTransactionId(collectCallback.transactionId());
         callback.setAggregatorCode(collectCallback.aggregatorCode());
         callback.setMerchantCode(collectCallback.merchantCode());
-        callback.setStatus(collectCallback.status());
+        callback.setStatus(collectCallback.status().toString());
         callback.setStatusCode(collectCallback.statusCode());
         callback.setDescription(collectCallback.description());
         callback.setRemarks(collectCallback.remarks());
         callback.setTransactionReferenceNumber(collectCallback.transactionReferenceNumber());
         callback.setRrn(collectCallback.rrn());
-        callback.setAmount(collectCallback.amount());
+        callback.setAmount(DbTransactionAmount.from(collectCallback.amount()));
         callback.setType(collectCallback.type());
         callback.setPayerVpa(collectCallback.payerVpa());
         callback.setPayeeVpa(collectCallback.payeeVpa());

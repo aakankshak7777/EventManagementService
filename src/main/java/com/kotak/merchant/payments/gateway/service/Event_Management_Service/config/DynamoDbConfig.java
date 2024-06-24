@@ -2,7 +2,7 @@ package com.kotak.merchant.payments.gateway.service.Event_Management_Service.con
 
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EMSMetricUtil;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils.EpochProvider;
-import com.kotak.merchant.payments.gateway.service.Event_Management_Service.dao.DdbCollectCallbackDao;
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.repository.dao.DdbCollectCallbackDao;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.NoArgsConstructor;
 import lombok.SneakyThrows;

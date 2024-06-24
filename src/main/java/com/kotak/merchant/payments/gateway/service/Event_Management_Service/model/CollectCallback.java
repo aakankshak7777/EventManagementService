@@ -1,5 +1,6 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.model;
 
+import com.kotak.merchant.payments.gateway.service.Event_Management_Service.Service.dtos.TransactionAmount;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventName;
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.EventStatus;
 import jakarta.validation.constraints.NotNull;
@@ -18,7 +19,7 @@ public record CollectCallback(
         String remarks,
         String transactionReferenceNumber,
         String rrn,
-        String amount,
+        TransactionAmount amount,
         @NotNull String type,
         String payerVpa,
         String payeeVpa,
