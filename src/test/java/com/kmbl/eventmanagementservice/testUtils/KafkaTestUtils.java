@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.unittests.service.streams;
+package com.kmbl.eventmanagementservice.testUtils;
 
 
 import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
@@ -19,7 +19,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 
 @Slf4j
-public class CbsKafka<T> {
+public class KafkaTestUtils<T> {
 
     ReactiveKafkaConsumer<T> newConsumer(
             String bootstrapServers,
