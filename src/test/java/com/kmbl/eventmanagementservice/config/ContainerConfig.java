@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/test/java/com/kmbl/eventmanagementservice/config/ContainerConfig.java
 package com.kmbl.eventmanagementservice.config;
+========
+package com.kotak.merchant.payments.gateway.service.integration.config;
+>>>>>>>> origin/EMS:src/test/java/com/kotak/merchant/payments/gateway/service/integration/config/ContainerConfig.java
 
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.CLOUDWATCH;
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.DYNAMODB;

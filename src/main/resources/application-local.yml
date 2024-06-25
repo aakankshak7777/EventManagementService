@@ -11,11 +11,15 @@ response:
     masking:
       enabled: false
 
+openapi:
+  validation:
+    enabled: true
+    specificationPath: openapi.yml
 
 
 spring:
   application:
-    name: EventManagementService
+    name: RealtimeTransactionService
   main:
     # https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment.cloud.kubernetes
     # Explicitly set this to Kubernetes to enable all probes
@@ -44,78 +48,3 @@ aws:
     endpointOverride: ignore
   s3:
     endpointOverride: ignore
-
-
-server:
-  shutdown: graceful
-  tomcat:
-    threads:
-      max: 10
-      min-spare: 10
-#    max-keep-alive-requests: 5
-#    accept-count: 0
-#    max-connections: 4
-
-management:
-  endpoint:
-    shutdown:
-      enabled: true
-    env:
-      enabled: true
-    health:
-      enabled: true
-      show-details: always
-    heapdump:
-      enabled: true
-    info:
-      enabled: true
-    loggers:
-      enabled: true
-    logfile:
-      enabled: true
-    metrics:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  metrics:
-    use-global-registry: true
-    enable:
-      jvm: true
-      http: true
-      system: true
-
-logging:
-  level:
-    reactor: # Logging level for debugging reactor kafka
-      kafka:
-        receiver: debug
-  # Turn off automatic cleanup of logging system which happens after a default
-  # of 30 seconds
-  # TODO: Disable this back after investigation
-  register-shutdown-hook: true
-
-
-ems-cbs-tranlog-events:
-  kafka:
-    consumer:
-      bootstrap-servers: dummy-server
-      topic: ems-cbs-tranlog-events
-      dlq-topic: ems-cbs-tranlog-failure-events
-      deferred-commit-config:
-        commit-batch-size: 50
-        commit-interval-millis: 2000
-        max-deferred-commits: 150
-      group-id: rts-cbs-gam-events-consumers
-      in-memory-partitions: 25
-      max-poll-records: 500
-      processor-thread-pool-name: rts-cbs-gam-events-kafka
-      value-deserializer: com.kmbl.realtimetransactionservice.service.streams.serializers.CBSTransactionLogsDeserializers
-      tracker-flush-frequency-millis: 2000
-
-# Set this to true to dump auto-configuration logs
-debug:
-  false
-
-
