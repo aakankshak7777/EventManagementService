@@ -1,9 +1,8 @@
 package com.kmbl.eventmanagementservice.utils;
 
-import org.springframework.stereotype.Component;
-
 import java.time.Instant;
 import javax.annotation.concurrent.ThreadSafe;
+import org.springframework.stereotype.Component;
 
 @ThreadSafe
 @Component
