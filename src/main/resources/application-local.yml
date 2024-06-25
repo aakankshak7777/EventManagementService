@@ -11,7 +11,10 @@ response:
     masking:
       enabled: false
 
-
+openapi:
+  validation:
+    enabled: true
+    specificationPath: openapi.yml
 
 spring:
   application:

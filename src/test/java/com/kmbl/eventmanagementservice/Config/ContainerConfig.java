@@ -27,14 +27,6 @@ public class ContainerConfig {
     // https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.testcontainers
     // https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testcontainers
 
-    @Value("${dependencies.cbs.iso-spec.file}")
-    private String specFile;
-
-    @Value("${dependencies.cbs.iso-config.test-deploy-dir}")
-    private String deployDir;
-
-    @Value("${dependencies.cbs.port}")
-    private String port;
 
     @Bean
     public KafkaContainer kafkaContainer() {
@@ -122,19 +114,6 @@ public class ContainerConfig {
         return -1;
     }
 
-    @Bean
-    public Q2 testq2() {
-        System.setProperty("dependencies.cbs.iso-spec.file", specFile);
-        System.setProperty("dependencies.cbs.port", port);
-        // System.setProperty("dependencies.cbs.iso-config.test-deploy-dir", deployDir);
-        var q2 = new Q2(deployDir);
-        Thread thread = new Thread(q2);
-        thread.start();
-        while (!q2.ready()) {
-            ISOUtil.sleep(10);
-        }
-        return q2;
-    }
 
     private static <T extends GenericContainer<T>> void configureForReuse(GenericContainer<T> container) {
         container.withReuse(true);
