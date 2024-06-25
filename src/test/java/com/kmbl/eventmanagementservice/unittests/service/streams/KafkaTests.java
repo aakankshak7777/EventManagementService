@@ -11,6 +11,7 @@ import com.kmbl.eventmanagementservice.service.streams.CBSTranLogConsumer;
 import com.kmbl.eventmanagementservice.service.streams.ConsumerService;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializers;
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
+import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;
 import com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -58,10 +59,10 @@ public class KafkaTests
         this.cbsTranLogConsumer = new CBSTranLogConsumer(consumerService);
         // form data for publishing and expected data in DDB.
         var gamEvent = UnitDataGenUtils.getCBSInsertDataEvent();
-        CbsKafka<CBSTransactionLogs> cbsKafka = new CbsKafka<CBSTransactionLogs>();
+        KafkaTestUtils<CBSTransactionLogs> kafkaTestUtils = new KafkaTestUtils<CBSTransactionLogs>();
         try (var kafkaConsumer =
-                     cbsKafka.newConsumer(bootstrapServers, topic, groupId, cbsTranLogConsumer, CBSTransactionLogsDeserializers.class)) {
-            cbsKafka.publishMessages(bootstrapServers, topic, gamEvent);
+                     kafkaTestUtils.newConsumer(bootstrapServers, topic, groupId, cbsTranLogConsumer, CBSTransactionLogsDeserializers.class)) {
+            kafkaTestUtils.publishMessages(bootstrapServers, topic, gamEvent);
             Thread.sleep(100000);
 
         }
