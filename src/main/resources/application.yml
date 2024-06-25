@@ -1,0 +1,62 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+    import: application-local.yml
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+    import: application-local.yml
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+    import: application-local.yml
+
+rts-transactions:
+  kafka:
+    consumer:
+      # Copied over in Dockerfile
+      # https://dev.azure.com/kmbl-devops/Payments/_git/kotak-payments-realtime-transaction-service?path=%2FDockerfile
+      ssl-trust-store-location: /tmp/kafka.client.truststore.jks
+---
+spring:
+  config:
+    activate:
+      on-profile: uat
+    import: application-local.yml
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+    import: application-local.yml
+
+rts-transactions:
+  kafka:
+    consumer:
+      ssl-trust-store-location: /tmp/kafka.client.truststore.jks
+
+rts-cbs-gam-events: &cbsSSLProp
+  kafka:
+    consumer:    
+      ssl-key-store-location: /tmp/kafka.client.keystore.uat.jks
+      ssl-trust-store-location: /tmp/kafka.client.truststore.uat.jks
+
+rts-cbs-aas-events: *cbsSSLProp
+rts-cbs-smt-events: *cbsSSLProp
+rts-cbs-cam-events: *cbsSSLProp
+rts-cbs-tam-events: *cbsSSLProp
+rts-cbs-gsp-events: *cbsSSLProp
+rts-cbs-csp-events: *cbsSSLProp
+rts-cbs-ext-events: *cbsSSLProp
+rts-cbs-lrct-events: *cbsSSLProp
+rts-cbs-setvar-events: *cbsSSLProp
+rts-cbs-ssp-events: *cbsSSLProp
+---

@@ -1,0 +1,374 @@
+{
+"type" : "record",
+"name" : "CBSTransactionLogs",
+"namespace" : "com.kmbl.eventmanagementservice.Schema",
+"fields" : [ {
+"name" : "table",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "op_type",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "op_ts",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "current_ts",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "pos",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "source_scn",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "before",
+"type" : [ "null", {
+"type" : "record",
+"name" : "CBSTranCol",
+"fields" : [ {
+"name" : "ID",
+"type" : [ "null", "double" ],
+"default" : null
+}, {
+"name" : "AMOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CBSRC",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREDITACCOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CUSTOMERID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DEBITACCOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "MSGID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "REVERSAL",
+"type" : [ "null", "long" ],
+"default" : null
+}, {
+"name" : "REVERSALSTATUS",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "RRN",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "STAN",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "TXN_DATE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "TXNID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "TYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "UPIRC",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ORGTXNID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "REMARKS",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CUSTOMERACCOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "NAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYEEVPA",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERVPA",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "SEQNO",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "COMMISSIONAMOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CUSTOMERREFID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "TRANTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREDITBANKNAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DEBITBANKNAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "OTHERSACCOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CHANNEL",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "APPID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PREAPPROVED",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "BENEFICIARYNAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "OTHERMOBILENO",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "REMITTERNAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "APPROVALNUM",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "MCCCODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "SERVERIP",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CBSRESP_DATE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "INITMODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PURPOSECODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREDITACCOUNTTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREDITIFSC",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DEBITACCOUNTTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DEBITIFSC",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ORDERID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYEECODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERCODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "SUBTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "REMITTORMOBILENUMBER",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYEEIMEI",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERIMEI",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "GMTDATE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYEEACCOUNTTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERACCOUNTTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERCONSENTNAME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERCONSENTTYPE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "PAYERCONSENTVALUE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADJCODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADJFLAG",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREATE_DATE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CREDITACCTNARRATION_103",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DE46",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "DEBITACCTNARRATION_102",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "GST",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "LOANNUMBER",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "LOCALTIME",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "NARRATION_125",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "P2PTXNCHARGES",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "SCHEMECODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "TXNAMOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "BATCH_ID",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "BASEAMOUNT",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "BASECURR",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CONCODE",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "FX",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "MKUP",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADDITIONAL4",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "D12",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADDITIONAL1",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADDITIONAL2",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADDITIONAL3",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "ADDITIONAL5",
+"type" : [ "null", "string" ],
+"default" : null
+}, {
+"name" : "CBS_ROUTING",
+"type" : [ "null", "string" ],
+"default" : null
+} ]
+} ],
+"default" : null
+}, {
+"name" : "after",
+"type" : [ "null", "CBSTranCol" ],
+"default" : null
+} ]
+}

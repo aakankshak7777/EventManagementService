@@ -1,0 +1,26 @@
+components:
+  parameters:
+    transactionId:
+      name: transactionId
+      in: path
+      schema:
+        $ref: "common-schemas.yml#/components/schemas/ApiTransactionId"
+    accountId:
+      name: accountId
+      in: path
+      schema:
+        $ref: "common-schemas.yml#/components/schemas/ApiAccountId"
+    transactionType:
+      name: transactionType
+      in: query
+      schema:
+        $ref: "common-schemas.yml#/components/schemas/ApiTransactionType"
+
+    requestId:
+      name: X-Request-Id
+      in: header
+      schema:
+        type: string
+        format: uuid
+
+

@@ -1,0 +1,515 @@
+openapi: 3.0.3
+info:
+  title: Book Store API
+  description: This is a reference bookstore API specification for Kotak
+  contact:
+    email: api-engineering@kotak.com
+  version: 1.0.0
+  license:
+    name: Kotak Mahindra License
+    url: https://www.kotak.com/licenses/license.html
+  x-sla: ./sla4oai/application-sla.yml
+servers:
+  - url: http://bookstore.dev.kotak.com
+    description: Bookstore API
+    variables:
+      basePath:
+        default: /api/v1/
+tags:
+  - name: Bookstore API
+    description: Bookstore API
+paths:
+  /bookstore:
+    get:
+      summary: Retrieve all the books in the system.
+      operationId: getAllBooks
+      description: Retrieve all the books in the system.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+      responses:
+        "200":
+          description: Search results matching the given criteria.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Book"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      summary: Add a new book to the bookstore.
+      operationId: addBook
+      description: Adds a new book to the system. Book can have 0 or more reviews.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+      requestBody:
+        description: Adding a new book.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Book"
+      responses:
+        201:
+          description: Item Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Book"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+    delete:
+      summary: Delete all books in the bookstore.
+      operationId: deleteAll
+      description: Delete all the books from the system.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+      responses:
+        200:
+          $ref: "#/components/responses/Deleted"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /bookstore/{book-id}:
+    get:
+      summary: Retrieve the book resource identified by the book-id.
+      operationId: getBook
+      description: Retrieve the book resource identified by the book-id.
+      tags:
+        - View Book Feature
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+      responses:
+        200:
+          description: List of all the Books
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Book"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+    put:
+      summary: Update the details of the book identified by the book-id.
+      operationId: updateBook
+      description: Update the details of the book identified by the book-id.
+      requestBody:
+        description: Details of the book.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Book"
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+      responses:
+        200:
+          $ref: "#/components/responses/Updated"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+    delete:
+      summary: Removes a book.
+      operationId: deleteBook
+      description: Removes a book from the system with it"s reviews.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+      responses:
+        200:
+          $ref: "#/components/responses/Deleted"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+  /bookstore/{book-id}/reviews:
+    get:
+      summary: Retrieve all the reviews of the book.
+      operationId: getAllReviews
+      description: Retrieve all the reviews of the book identified by the book-id.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+      responses:
+        200:
+          description: Item Created
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Review"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+    post:
+      summary: Adds a new review to the book.
+      operationId: addReview
+      description: Adds a new review to the book identified by the book-id.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+      requestBody:
+        description: Review object to be added.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Review"
+      responses:
+        201:
+          description: Added a new review to the given book
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Book"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+  /bookstore/{book-id}/reviews/{review-id}:
+    get:
+      summary: Retrieve the Review of the book.
+      operationId: getReview
+      description: Retrieve the Review identified by the review-id of the book identified by the book-id.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+        - $ref: "#/components/parameters/reviewId"
+      responses:
+        200:
+          description: Details of the reviews for the given book-id and review-id
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Review"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+    put:
+      summary: Replace the review content.
+      operationId: updateReview
+      description: Replace the review content identified by the book-id and the review-id/
+      requestBody:
+        description: Review object to be added.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Review"
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+      responses:
+        200:
+          $ref: "#/components/responses/Updated"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+    delete:
+      summary: Removes a review.
+      operationId: deleteReview
+      description: Removes a review from the system identified by the book-d and the review-id.
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookId"
+        - $ref: "#/components/parameters/reviewId"
+      responses:
+        200:
+          $ref: "#/components/responses/Deleted"
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        404:
+          $ref: "#/components/responses/NotFound"
+        409:
+          $ref: "#/components/responses/Conflict"
+        500:
+          $ref: "#/components/responses/ServerError"
+  /publisher/{book-name}:
+    get:
+      summary: Details of the publisher.
+      operationId: getPublisherDetails
+      description: Provides the publisher details of the book by book name.
+      x-feature-name: Feature View
+      tags:
+        - View Book Feature
+      parameters:
+        - $ref: "#/components/parameters/requestId"
+        - $ref: "#/components/parameters/bookName"
+      responses:
+        "200":
+          description: Search results matching the given criteria.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Publisher"
+        401:
+          $ref: "#/components/responses/Unauthorized"
+        403:
+          $ref: "#/components/responses/Forbidden"
+        500:
+          $ref: "#/components/responses/ServerError"
+components:
+  schemas:
+    SuccessResponse:
+      type: string
+      description: Success message
+    Book:
+      type: object
+      required:
+        - name
+        - author
+        - price
+      properties:
+        id:
+          type: integer
+          example: 123
+          description: Unique id of the book.
+        name:
+          type: string
+          example: Shawshank redemption book
+          description: Name of the book.
+        author:
+          type: string
+          example: Stephen King
+          description: Author of the book.
+        price:
+          type: number
+          example: 500.50
+          description: Price of the book.
+        reviews:
+          type: array
+          description: Reviews of the book.
+          items:
+            $ref: "#/components/schemas/Review"
+    Review:
+      type: object
+      required:
+        - score
+        - comment
+        - reviewer
+      properties:
+        id:
+          type: integer
+          example: 123
+          description: Unique id of the review.
+        score:
+          type: number
+          multipleOf: 0.1
+          example: 4.3
+          description: Review score.
+        comment:
+          type: string
+          example: Good book to read.
+          description: Review comment.
+        reviewer:
+          type: string
+          example: Alex
+          description: Reviewer.
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          example: "ET0001"
+        message:
+          type: string
+          example: "Some Error Message"
+        description:
+          type: string
+          example: "Some Error Description"
+        traceId:
+          type: string
+          example: "TR0001"
+    Publisher:
+      type: object
+      required:
+        - id
+        - name
+        - description
+        - address
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: "Indian Thought Publications"
+        description:
+          type: string
+          example: "Indian Thought Publications is a publisher founded in 1942, in Mysore by R. K. Narayan"
+        address:
+          type: string
+          example: "Mysore"
+  responses:
+    Book:
+      description: Book Details
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Book"
+    Review:
+      description: Review details
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Review"
+    NotFound:
+      description: Error Details
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Unauthorized:
+      description: Invalid Credentials
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Forbidden:
+      description: User does not have the required privileges to access requested endpoint
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    BadRequest:
+      description: The inputs provided to create a book entry is invalid
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    ServerError:
+      description: There was an internal server error while processing the request
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Conflict:
+      description: The request entity already exist
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Deleted:
+      description: Item was deleted
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/SuccessResponse"
+    Updated:
+      description: Item was updated
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/SuccessResponse"
+  parameters:
+    bookId:
+      in: path
+      name: book-id
+      required: true
+      schema:
+        type: integer
+      description: Unique book ID
+      style: simple
+    reviewId:
+      in: path
+      name: review-id
+      required: true
+      schema:
+        type: integer
+      description: Unique review ID
+    requestId:
+      in: header
+      name: X-Request-ID
+      schema:
+        type: string
+        format: UUID
+      required: false
+    bookName:
+      in: path
+      name: book-name
+      required: true
+      description: Book name
+      schema:
+        type: string

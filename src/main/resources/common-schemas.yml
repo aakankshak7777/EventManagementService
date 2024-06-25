@@ -1,0 +1,253 @@
+components:
+  schemas:
+    # Schemas contain type definitions that can be referenced
+    # in request and responses
+    Code:
+      type: string
+      format: ResponseCode
+      description: Response code which further qualifies failure/success of an operation
+    Message:
+      type: string
+      description: Message explaining a response code
+    Error:
+      type: object
+      description: Error response
+      properties:
+        result:
+          type: string
+          enum: [NOT_FOUND, FAILURE]
+        code:
+          $ref: "#/components/schemas/Code"
+          example: F0001
+        message:
+          $ref: "#/components/schemas/Message"
+          example: Failed because of a concurrent update
+
+    ApiTransactionId:
+      type: string
+      example: PTM66ff8319e04e4768a15480f1d
+      description: Unique Identifier of the transaction across all entities, created by the originator
+
+    ApiTransaction:
+      type: object
+      required:
+        - id
+        - customerRef
+        - initiationMode
+        - note
+        - purpose
+        - refId
+        - refUrl
+        - type
+        - subtype
+        - creationTimestamp
+      properties:
+        id:
+          $ref: '#/components/schemas/ApiTransactionId'
+        customerRef:
+          type: string
+          description: RRN
+          example: 336315649377
+        initiationMode:
+          type: string
+          example: 00
+        note:
+          type: string
+          description: Description of the transaction which will be printed on passbook
+        purpose:
+          type: string
+          description: per NPCI, codes 00-24
+          example: 00
+        refId:
+          type: string
+          description: Consumer reference number/STAN number
+          example: MU171324203845220997
+        refUrl:
+          type: string
+          description: url for the transaction
+          example: http://www.paytmbank.com
+        type:
+          $ref: '#/components/schemas/ApiTransactionType'
+        subtype:
+          type: string
+          description: the subType field is only applicable for ReqPay_debit/credit/reversal
+        creationTimestamp:
+          type: string
+          example: 2024-01-22T00:00:08+05:30
+
+    ApiUDIRTransaction:
+      type: object
+      required:
+        - id
+        - originalTransactionId
+        - customerRef
+        - initiationMode
+        - note
+        - purpose
+        - refId
+        - type
+        - subtype
+        - creationTimestamp
+        - requestTimestamp
+      properties:
+        id:
+          $ref: '#/components/schemas/ApiTransactionId'
+        originalTransactionId:
+          $ref: '#/components/schemas/ApiTransactionId'
+        customerRef:
+          type: string
+          description: RRN
+          example: 336315649377
+        initiationMode:
+          type: string
+          example: 00
+        note:
+          type: string
+          description: Description of the transaction which will be printed on passbook
+        purpose:
+          type: string
+          description: per NPCI, codes 00-24
+          example: 00
+        refId:
+          type: string
+          description: Consumer reference number/STAN number
+          example: MU171324203845220997
+        type:
+          $ref: '#/components/schemas/ApiTransactionType'
+        subtype:
+          type: string
+          description: the subType field is only applicable for ReqPay_debit/credit/reversal
+        creationTimestamp:
+          type: string
+          example: 2024-01-22T00:00:08+05:30
+        requestTimestamp:
+          type: string
+          example: 2024-01-22T00:00:08+05:30
+
+    IdempotenceKey:
+      type: string
+      description: Caller can optionally include this field to ensure request replays are idempotent. the key + request combination must be unique for the day
+
+    ApiChannel:
+      type: string
+      enum: [UPI]
+
+    ApiCurrency:
+      type: string
+      enum: [INR]
+
+    ApiTransactionType:
+      type: string
+      enum: [DEBIT, CREDIT, PAY, COLLECT, REVERSAL, REFUND, AUTOUPDATE]
+
+    ApiAccountId:
+      type: string
+      format: ApiAccountId
+      description: ID of an account
+      example: 6410910000417
+
+    ApiAccountType:
+      type: string
+      example: CURRENT
+
+    Amount:
+      type: object
+      properties:
+        currency:
+          $ref: '#/components/schemas/ApiCurrency'
+        value:
+          type: number
+          format: double
+          example: 1300.00
+          description: Amount associated with the transaction
+
+    Account:
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/ApiAccountId'
+        type:
+          $ref: '#/components/schemas/ApiAccountType'
+        ifscCode:
+          type: string
+          example: KKBK0000958
+
+    Participant:
+      type: object
+      required:
+        - address
+        - name
+        - type
+        - account
+        - amount
+      properties:
+        address:
+          type: string
+          example: nre1@kotak
+        code:
+          type: string
+          example: null
+          description: merchant category code. required for type "entity"
+        name:
+          type: string
+          example: Dream11
+        type:
+          type: string
+          enum: [PERSON, ENTITY]
+          example: Entity
+        accountDetails:
+          $ref: '#/components/schemas/Account'
+        amount:
+          $ref: '#/components/schemas/Amount'
+        device:
+          $ref: '#/components/schemas/Device'
+
+    Device:
+      type: object
+      properties:
+        mobile:
+          type: string
+          example: 919993629630
+        deviceType:
+          type: string
+          example: MOB
+        id:
+          type: string
+          example: f4a4c8b790fd687e
+        app:
+          type: string
+          example: net.one97.paytm
+
+    ApiAccountMetadata:
+      type: object
+      required:
+        - accountId
+        - internalAccountId
+      properties:
+        accountId:
+          $ref: '#/components/schemas/ApiAccountId'
+        internalAccountId:
+          type: string
+        accountName:
+          type: string
+        accountShortName:
+          type: string
+        schemeType:
+          type: string
+          example: SBA
+        schemeCode:
+          type: string
+          example:
+        accountOpenDate:
+          type: string
+          format: date-time
+          example: 2024-01-22T00:00:08+05:30
+        relationCode:
+          type: string
+        freezeCode:
+          type: string
+          example: C
+        accountStatus:
+          type: string
+          enum: [ACTIVE, INACTIVE, DORMANT]
+

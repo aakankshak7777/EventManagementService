@@ -1,0 +1,32 @@
+components:
+  responses:
+    NotFound:
+      description: Entity not found
+      content:
+        application/json:
+          schema:
+            $ref: "common-schemas.yml#/components/schemas/Error"
+    Unauthorized:
+      description: Invalid Credentials
+      content:
+        application/json:
+          schema:
+            $ref: "common-schemas.yml#/components/schemas/Error"
+    Forbidden:
+      description: User does not have the required privileges to access requested endpoint
+      content:
+        application/json:
+          schema:
+            $ref: "common-schemas.yml#/components/schemas/Error"
+    BadRequest:
+      description: The inputs provided to create a book entry is invalid
+      content:
+        application/json:
+          schema:
+            $ref: "common-schemas.yml#/components/schemas/Error"
+    ServerError:
+      description: There was an internal server error while processing the request
+      content:
+        application/json:
+          schema:
+            $ref: "common-schemas.yml#/components/schemas/Error"
