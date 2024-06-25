@@ -1,7 +1,9 @@
 package com.kotak.merchant.payments.gateway.service.Event_Management_Service.requests;
 
 import com.kotak.merchant.payments.gateway.service.Event_Management_Service.enums.PaymentStatus;
+import lombok.Builder;
 
+@Builder(toBuilder = true)
 public record ApiCreateCollectCallbackRequest(
         String transactionid,
         String aggregatorcode,

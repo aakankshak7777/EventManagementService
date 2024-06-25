@@ -18,7 +18,6 @@ public class SetupConfig {
 
     @PostConstruct
     public void setupTables() {
-
         DynamoDbUtils.createAllTables(ddbClient);
         log.info("Finished creating DynamoDB tables");
     }
