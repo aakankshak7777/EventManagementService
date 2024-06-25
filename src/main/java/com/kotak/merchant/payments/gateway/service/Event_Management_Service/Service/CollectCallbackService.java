@@ -25,7 +25,7 @@ public class CollectCallbackService {
     public CollectCallbackService(CollectCallbackDao dao, EMSMetricUtil metricUtil, EpochProvider epochProvider) {
         this.dao = dao;
         this.metricUtil = metricUtil;
-        this.epochProvider = epochProvider;
+        this.epochProvider = new EpochProvider();
         this.emsEventPublisher = new EMSEventPublisher();
     }
 

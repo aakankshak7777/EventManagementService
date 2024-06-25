@@ -63,7 +63,7 @@ public record CreateCollectCallbackRequest(
                 .refUrl(refUrl())
                 .refId(refId())
                 .initMode(initMode())
-                .transactionTimestamp(Instant.parse(transactionTimestamp()).toEpochMilli())
+                .transactionTimestamp(processTransactionTimestamp(transactionTimestamp()))
                 .checksum(checksum())
                 .accType(accType())
                 .cardType(cardType())
@@ -72,7 +72,7 @@ public record CreateCollectCallbackRequest(
                 .payerAccountNumber(payerAccountNumber())
                 .payerAccountName(payerAccountName())
                 .payerAccountIFSC(payerAccountIfsc())
-                .eventStatus(EventStatus.PENDING)
+                .eventStatus(EventStatus.DELIVERED)
                 .creationTime(currentTime)
                 .createdBy(eventName)
                 .build();
@@ -96,7 +96,7 @@ public record CreateCollectCallbackRequest(
                 .refUrl(refUrl())
                 .refId(refId())
                 .initMode(initMode())
-                .transactionTimestamp(Instant.parse(transactionTimestamp()).toEpochMilli())
+                .transactionTimestamp(processTransactionTimestamp(transactionTimestamp()))
                 .checksum(checksum())
                 .accType(accType())
                 .cardType(cardType())
@@ -138,5 +138,12 @@ public record CreateCollectCallbackRequest(
                 .payerAccountName(apiRequest.payerAccountName())
                 .payerAccountIfsc(apiRequest.payerAccountIFSC())
                 .build();
+    }
+
+    private static Long processTransactionTimestamp(String str) {
+        if (str == null || str.isBlank() || str.isEmpty()) {
+            return 0L;
+        }
+        return Long.parseLong(str);
     }
 }
