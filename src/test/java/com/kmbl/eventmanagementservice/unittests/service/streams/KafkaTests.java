@@ -2,17 +2,17 @@ package com.kmbl.eventmanagementservice.unittests.service.streams;
 
 
 
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
+import static com.kmbl.eventmanagementservice.testutils.RandUtils.randEpoch;
+import static com.kmbl.eventmanagementservice.testutils.RandUtils.randStr;
 
-import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
+import com.kmbl.eventmanagementservice.config.ContainerConfig;
 import com.kmbl.eventmanagementservice.service.streams.CBSTranLogConsumer;
 import com.kmbl.eventmanagementservice.service.streams.ConsumerService;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializers;
-import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
-import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;
-import com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils;
+import com.kmbl.eventmanagementservice.testutils.KafkaAdminUtils;
+import com.kmbl.eventmanagementservice.testutils.KafkaTestUtils;
+import com.kmbl.eventmanagementservice.testutils.UnitDataGenUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -63,7 +63,7 @@ public class KafkaTests
         try (var kafkaConsumer =
                      kafkaTestUtils.newConsumer(bootstrapServers, topic, groupId, cbsTranLogConsumer, CBSTransactionLogsDeserializers.class)) {
             kafkaTestUtils.publishMessages(bootstrapServers, topic, gamEvent);
-            Thread.sleep(100000);
+            Thread.sleep(10000);
 
         }
     }

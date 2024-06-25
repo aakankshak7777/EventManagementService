@@ -1,11 +1,9 @@
-package com.kmbl.eventmanagementservice.utils;
+package com.kotak.merchant.payments.gateway.service.Event_Management_Service.Utils;
 
 import java.time.Instant;
 import javax.annotation.concurrent.ThreadSafe;
-import org.springframework.stereotype.Component;
 
 @ThreadSafe
-@Component
 public class EpochProvider {
     public long currentEpoch() {
         return System.currentTimeMillis();
