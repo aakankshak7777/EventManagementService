@@ -53,7 +53,7 @@ public class KafkaTests
     }
 
     @Test
-    public void gamConsumerToDDB_insertEvent_insertedEventDataInDDB() throws InterruptedException {
+    public void CbsTranLogConsumerToDDB_insertEvent_insertedEventDataInDDB() throws InterruptedException {
           consumerService = new ConsumerService();
         this.cbsTranLogConsumer = new CBSTranLogConsumer(consumerService);
         // form data for publishing and expected data in DDB.
