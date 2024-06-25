@@ -6,13 +6,20 @@ import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 
 import com.kmbl.eventmanagementservice.Schema.CBSTranCol;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
+import com.kmbl.eventmanagementservice.utils.EpochProvider;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
-
+@Component
 public class UnitDataGenUtils {
+
+    private  static EpochProvider epochProvider;
+
 
     public static CBSTransactionLogs getCBSInsertDataEvent() {
         CBSTranCol before = null;
@@ -21,6 +28,7 @@ public class UnitDataGenUtils {
         event.setAfter(after);
         event.setBefore(before);
         event.setOpType("I");
+
         event.setOpTs(formatDateTime(
                 randEpoch(), OP_DATETIME_FORMAT, ZoneId.of(UTC_ZONE_ID)));
         event.setCurrentTs(formatDateTime(

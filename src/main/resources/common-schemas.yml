@@ -136,7 +136,6 @@ components:
       type: string
       enum: [INR]
 
-    ApiTransactionType:
       type: string
       enum: [DEBIT, CREDIT, PAY, COLLECT, REVERSAL, REFUND, AUTOUPDATE]
 

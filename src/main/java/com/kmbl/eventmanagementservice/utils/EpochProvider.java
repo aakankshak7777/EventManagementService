@@ -1,9 +1,12 @@
 package com.kmbl.eventmanagementservice.utils;
 
+import org.springframework.stereotype.Component;
+
 import java.time.Instant;
 import javax.annotation.concurrent.ThreadSafe;
 
 @ThreadSafe
+@Component
 public class EpochProvider {
     public long currentEpoch() {
         return System.currentTimeMillis();

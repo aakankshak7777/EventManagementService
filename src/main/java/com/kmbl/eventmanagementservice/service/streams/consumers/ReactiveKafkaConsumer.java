@@ -33,11 +33,8 @@ public class ReactiveKafkaConsumer<T> extends Thread implements AutoCloseable {
 
     private final ConsumerConfiguration<T> config;
     private final KafkaReceiver<String, T> receiver;
-
     private final MeterRegistry meterRegistry;
-
     private Disposable flux;
-
     private final boolean enableLagLog;
 
     public ReactiveKafkaConsumer(ConsumerConfiguration<T> config, MeterRegistry meterRegistry) {

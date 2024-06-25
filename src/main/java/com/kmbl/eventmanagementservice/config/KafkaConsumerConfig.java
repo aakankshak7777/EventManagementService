@@ -17,7 +17,7 @@
  @ConditionalOnProperty(prefix = "app", name = "cbs-transactions-consumer-enabled", havingValue = "true")
  @Component
  @RequiredArgsConstructor
- public class CbsKafkaConsumerConfig {
+ public class KafkaConsumerConfig {
     @Bean
     @ConfigurationProperties(prefix = "cbs-tran-log-events.kafka.consumer")
     @Qualifier("cbsTransactionLogsKafka")
