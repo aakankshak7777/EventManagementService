@@ -83,9 +83,7 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
             EpochProvider epochProvider,
             @Nullable CommitCallback<T> commitCallback,
             int callbackThreads,
-            KafkaProducerFactory<T> producerFactory,
-            RedissonClient redisson,
-            Duration trackerFlushFrequency) {
+            KafkaProducerFactory<T> producerFactory) {
         this.topic = producerFactory.topic();
         this.epochProvider = epochProvider;
         this.inMemoryPartitions = inMemoryPartitions;
