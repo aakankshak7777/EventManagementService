@@ -1246,18 +1246,6 @@
         <version>${maven.site.plugin.version}</version>
       </plugin>
 
-      <!-- Surefire plugin - Test classes trigger -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <argLine>${surefireArgLine}</argLine>
-          <runOrder>alphabetical</runOrder>
-          <systemPropertyVariables>
-            <pact.rootDir>${project.build.testOutputDirectory}/pacts</pact.rootDir>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
 
       <!-- Spring boot maven plugin - Expose build info in actuator -->
       <plugin>
@@ -1291,23 +1279,7 @@
         <version>4.7.0</version>
       </plugin>
 
-      <!--			<plugin>-->
-      <!--				<groupId>org.apache.avro</groupId>-->
-      <!--				<artifactId>avro-maven-plugin</artifactId>-->
-      <!--				<version>1.11.3</version>-->
-      <!--				<executions>-->
-      <!--					<execution>-->
-      <!--						<goals>-->
-      <!--							<goal>schema</goal>-->
-      <!--						</goals>-->
-      <!--						<phase>generate-sources</phase>-->
-      <!--&lt;!&ndash;						<configuration>&ndash;&gt;-->
-      <!--&lt;!&ndash;							<sourceDirectory>${project.basedir}/src/main/resources/schemas/avro/</sourceDirectory>&ndash;&gt;-->
-      <!--&lt;!&ndash;							<outputDirectory>${project.basedir}/src/main/java/</outputDirectory>&ndash;&gt;-->
-      <!--&lt;!&ndash;						</configuration>&ndash;&gt;-->
-      <!--					</execution>-->
-      <!--				</executions>-->
-      <!--			</plugin>-->
+
       <plugin>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-maven-plugin</artifactId>
