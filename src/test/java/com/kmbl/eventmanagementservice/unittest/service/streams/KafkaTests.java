@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.unittests.service.streams;
+package com.kmbl.eventmanagementservice.unittest.service.streams;
 
 
 
