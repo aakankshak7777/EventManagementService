@@ -72,14 +72,14 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
     return DECODER.decode(b);
   }
 
-  private CharSequence table;
-  private CharSequence op_type;
-  private CharSequence op_ts;
-  private CharSequence current_ts;
-  private CharSequence pos;
-  private CharSequence source_scn;
-  private CBSTranCol before;
-  private CBSTranCol after;
+  private java.lang.CharSequence table;
+  private java.lang.CharSequence op_type;
+  private java.lang.CharSequence op_ts;
+  private java.lang.CharSequence current_ts;
+  private java.lang.CharSequence pos;
+  private java.lang.CharSequence source_scn;
+  private com.kmbl.eventmanagementservice.Schema.CBSTranCol before;
+  private com.kmbl.eventmanagementservice.Schema.CBSTranCol after;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -99,7 +99,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * @param before The new value for before
    * @param after The new value for after
    */
-  public CBSTransactionLogs(CharSequence table, CharSequence op_type, CharSequence op_ts, CharSequence current_ts, CharSequence pos, CharSequence source_scn, CBSTranCol before, CBSTranCol after) {
+  public CBSTransactionLogs(java.lang.CharSequence table, java.lang.CharSequence op_type, java.lang.CharSequence op_ts, java.lang.CharSequence current_ts, java.lang.CharSequence pos, java.lang.CharSequence source_scn, com.kmbl.eventmanagementservice.Schema.CBSTranCol before, com.kmbl.eventmanagementservice.Schema.CBSTranCol after) {
     this.table = table;
     this.op_type = op_type;
     this.op_ts = op_ts;
@@ -111,14 +111,14 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
   }
 
   @Override
-  public SpecificData getSpecificData() { return MODEL$; }
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
 
   @Override
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
 
   // Used by DatumWriter.  Applications should not call.
   @Override
-  public Object get(int field$) {
+  public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return table;
     case 1: return op_type;
@@ -135,16 +135,16 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
   // Used by DatumReader.  Applications should not call.
   @Override
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, Object value$) {
+  public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: table = (CharSequence)value$; break;
-    case 1: op_type = (CharSequence)value$; break;
-    case 2: op_ts = (CharSequence)value$; break;
-    case 3: current_ts = (CharSequence)value$; break;
-    case 4: pos = (CharSequence)value$; break;
-    case 5: source_scn = (CharSequence)value$; break;
-    case 6: before = (CBSTranCol)value$; break;
-    case 7: after = (CBSTranCol)value$; break;
+    case 0: table = (java.lang.CharSequence)value$; break;
+    case 1: op_type = (java.lang.CharSequence)value$; break;
+    case 2: op_ts = (java.lang.CharSequence)value$; break;
+    case 3: current_ts = (java.lang.CharSequence)value$; break;
+    case 4: pos = (java.lang.CharSequence)value$; break;
+    case 5: source_scn = (java.lang.CharSequence)value$; break;
+    case 6: before = (com.kmbl.eventmanagementservice.Schema.CBSTranCol)value$; break;
+    case 7: after = (com.kmbl.eventmanagementservice.Schema.CBSTranCol)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -153,7 +153,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'table' field.
    * @return The value of the 'table' field.
    */
-  public CharSequence getTable() {
+  public java.lang.CharSequence getTable() {
     return table;
   }
 
@@ -162,7 +162,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'table' field.
    * @param value the value to set.
    */
-  public void setTable(CharSequence value) {
+  public void setTable(java.lang.CharSequence value) {
     this.table = value;
   }
 
@@ -170,7 +170,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'op_type' field.
    * @return The value of the 'op_type' field.
    */
-  public CharSequence getOpType() {
+  public java.lang.CharSequence getOpType() {
     return op_type;
   }
 
@@ -179,7 +179,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'op_type' field.
    * @param value the value to set.
    */
-  public void setOpType(CharSequence value) {
+  public void setOpType(java.lang.CharSequence value) {
     this.op_type = value;
   }
 
@@ -187,7 +187,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'op_ts' field.
    * @return The value of the 'op_ts' field.
    */
-  public CharSequence getOpTs() {
+  public java.lang.CharSequence getOpTs() {
     return op_ts;
   }
 
@@ -196,7 +196,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'op_ts' field.
    * @param value the value to set.
    */
-  public void setOpTs(CharSequence value) {
+  public void setOpTs(java.lang.CharSequence value) {
     this.op_ts = value;
   }
 
@@ -204,7 +204,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'current_ts' field.
    * @return The value of the 'current_ts' field.
    */
-  public CharSequence getCurrentTs() {
+  public java.lang.CharSequence getCurrentTs() {
     return current_ts;
   }
 
@@ -213,7 +213,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'current_ts' field.
    * @param value the value to set.
    */
-  public void setCurrentTs(CharSequence value) {
+  public void setCurrentTs(java.lang.CharSequence value) {
     this.current_ts = value;
   }
 
@@ -221,7 +221,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'pos' field.
    * @return The value of the 'pos' field.
    */
-  public CharSequence getPos() {
+  public java.lang.CharSequence getPos() {
     return pos;
   }
 
@@ -230,7 +230,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'pos' field.
    * @param value the value to set.
    */
-  public void setPos(CharSequence value) {
+  public void setPos(java.lang.CharSequence value) {
     this.pos = value;
   }
 
@@ -238,7 +238,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'source_scn' field.
    * @return The value of the 'source_scn' field.
    */
-  public CharSequence getSourceScn() {
+  public java.lang.CharSequence getSourceScn() {
     return source_scn;
   }
 
@@ -247,7 +247,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'source_scn' field.
    * @param value the value to set.
    */
-  public void setSourceScn(CharSequence value) {
+  public void setSourceScn(java.lang.CharSequence value) {
     this.source_scn = value;
   }
 
@@ -255,7 +255,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'before' field.
    * @return The value of the 'before' field.
    */
-  public CBSTranCol getBefore() {
+  public com.kmbl.eventmanagementservice.Schema.CBSTranCol getBefore() {
     return before;
   }
 
@@ -264,7 +264,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'before' field.
    * @param value the value to set.
    */
-  public void setBefore(CBSTranCol value) {
+  public void setBefore(com.kmbl.eventmanagementservice.Schema.CBSTranCol value) {
     this.before = value;
   }
 
@@ -272,7 +272,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Gets the value of the 'after' field.
    * @return The value of the 'after' field.
    */
-  public CBSTranCol getAfter() {
+  public com.kmbl.eventmanagementservice.Schema.CBSTranCol getAfter() {
     return after;
   }
 
@@ -281,7 +281,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Sets the value of the 'after' field.
    * @param value the value to set.
    */
-  public void setAfter(CBSTranCol value) {
+  public void setAfter(com.kmbl.eventmanagementservice.Schema.CBSTranCol value) {
     this.after = value;
   }
 
@@ -289,8 +289,8 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * Creates a new CBSTransactionLogs RecordBuilder.
    * @return A new CBSTransactionLogs RecordBuilder
    */
-  public static Builder newBuilder() {
-    return new Builder();
+  public static com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder newBuilder() {
+    return new com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder();
   }
 
   /**
@@ -298,11 +298,11 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * @param other The existing builder to copy.
    * @return A new CBSTransactionLogs RecordBuilder
    */
-  public static Builder newBuilder(Builder other) {
+  public static com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder newBuilder(com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder other) {
     if (other == null) {
-      return new Builder();
+      return new com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder();
     } else {
-      return new Builder(other);
+      return new com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder(other);
     }
   }
 
@@ -311,11 +311,11 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
    * @param other The existing instance to copy.
    * @return A new CBSTransactionLogs RecordBuilder
    */
-  public static Builder newBuilder(CBSTransactionLogs other) {
+  public static com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder newBuilder(com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs other) {
     if (other == null) {
-      return new Builder();
+      return new com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder();
     } else {
-      return new Builder(other);
+      return new com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder(other);
     }
   }
 
@@ -326,16 +326,16 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<CBSTransactionLogs>
     implements org.apache.avro.data.RecordBuilder<CBSTransactionLogs> {
 
-    private CharSequence table;
-    private CharSequence op_type;
-    private CharSequence op_ts;
-    private CharSequence current_ts;
-    private CharSequence pos;
-    private CharSequence source_scn;
-    private CBSTranCol before;
-    private CBSTranCol.Builder beforeBuilder;
-    private CBSTranCol after;
-    private CBSTranCol.Builder afterBuilder;
+    private java.lang.CharSequence table;
+    private java.lang.CharSequence op_type;
+    private java.lang.CharSequence op_ts;
+    private java.lang.CharSequence current_ts;
+    private java.lang.CharSequence pos;
+    private java.lang.CharSequence source_scn;
+    private com.kmbl.eventmanagementservice.Schema.CBSTranCol before;
+    private com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder beforeBuilder;
+    private com.kmbl.eventmanagementservice.Schema.CBSTranCol after;
+    private com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder afterBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -346,7 +346,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(Builder other) {
+    private Builder(com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.table)) {
         this.table = data().deepCopy(fields()[0].schema(), other.table);
@@ -377,14 +377,14 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
         fieldSetFlags()[6] = other.fieldSetFlags()[6];
       }
       if (other.hasBeforeBuilder()) {
-        this.beforeBuilder = CBSTranCol.newBuilder(other.getBeforeBuilder());
+        this.beforeBuilder = com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder(other.getBeforeBuilder());
       }
       if (isValidValue(fields()[7], other.after)) {
         this.after = data().deepCopy(fields()[7].schema(), other.after);
         fieldSetFlags()[7] = other.fieldSetFlags()[7];
       }
       if (other.hasAfterBuilder()) {
-        this.afterBuilder = CBSTranCol.newBuilder(other.getAfterBuilder());
+        this.afterBuilder = com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder(other.getAfterBuilder());
       }
     }
 
@@ -392,7 +392,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * Creates a Builder by copying an existing CBSTransactionLogs instance
      * @param other The existing instance to copy.
      */
-    private Builder(CBSTransactionLogs other) {
+    private Builder(com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.table)) {
         this.table = data().deepCopy(fields()[0].schema(), other.table);
@@ -434,7 +434,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'table' field.
       * @return The value.
       */
-    public CharSequence getTable() {
+    public java.lang.CharSequence getTable() {
       return table;
     }
 
@@ -444,7 +444,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'table'.
       * @return This builder.
       */
-    public Builder setTable(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setTable(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.table = value;
       fieldSetFlags()[0] = true;
@@ -464,7 +464,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'table' field.
       * @return This builder.
       */
-    public Builder clearTable() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearTable() {
       table = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -474,7 +474,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'op_type' field.
       * @return The value.
       */
-    public CharSequence getOpType() {
+    public java.lang.CharSequence getOpType() {
       return op_type;
     }
 
@@ -484,7 +484,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'op_type'.
       * @return This builder.
       */
-    public Builder setOpType(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setOpType(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.op_type = value;
       fieldSetFlags()[1] = true;
@@ -504,7 +504,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'op_type' field.
       * @return This builder.
       */
-    public Builder clearOpType() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearOpType() {
       op_type = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -514,7 +514,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'op_ts' field.
       * @return The value.
       */
-    public CharSequence getOpTs() {
+    public java.lang.CharSequence getOpTs() {
       return op_ts;
     }
 
@@ -524,7 +524,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'op_ts'.
       * @return This builder.
       */
-    public Builder setOpTs(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setOpTs(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.op_ts = value;
       fieldSetFlags()[2] = true;
@@ -544,7 +544,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'op_ts' field.
       * @return This builder.
       */
-    public Builder clearOpTs() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearOpTs() {
       op_ts = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -554,7 +554,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'current_ts' field.
       * @return The value.
       */
-    public CharSequence getCurrentTs() {
+    public java.lang.CharSequence getCurrentTs() {
       return current_ts;
     }
 
@@ -564,7 +564,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'current_ts'.
       * @return This builder.
       */
-    public Builder setCurrentTs(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setCurrentTs(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.current_ts = value;
       fieldSetFlags()[3] = true;
@@ -584,7 +584,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'current_ts' field.
       * @return This builder.
       */
-    public Builder clearCurrentTs() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearCurrentTs() {
       current_ts = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -594,7 +594,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'pos' field.
       * @return The value.
       */
-    public CharSequence getPos() {
+    public java.lang.CharSequence getPos() {
       return pos;
     }
 
@@ -604,7 +604,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'pos'.
       * @return This builder.
       */
-    public Builder setPos(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setPos(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.pos = value;
       fieldSetFlags()[4] = true;
@@ -624,7 +624,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'pos' field.
       * @return This builder.
       */
-    public Builder clearPos() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearPos() {
       pos = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -634,7 +634,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'source_scn' field.
       * @return The value.
       */
-    public CharSequence getSourceScn() {
+    public java.lang.CharSequence getSourceScn() {
       return source_scn;
     }
 
@@ -644,7 +644,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'source_scn'.
       * @return This builder.
       */
-    public Builder setSourceScn(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setSourceScn(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.source_scn = value;
       fieldSetFlags()[5] = true;
@@ -664,7 +664,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'source_scn' field.
       * @return This builder.
       */
-    public Builder clearSourceScn() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearSourceScn() {
       source_scn = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -674,7 +674,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'before' field.
       * @return The value.
       */
-    public CBSTranCol getBefore() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol getBefore() {
       return before;
     }
 
@@ -684,7 +684,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'before'.
       * @return This builder.
       */
-    public Builder setBefore(CBSTranCol value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setBefore(com.kmbl.eventmanagementservice.Schema.CBSTranCol value) {
       validate(fields()[6], value);
       this.beforeBuilder = null;
       this.before = value;
@@ -704,12 +704,12 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * Gets the Builder instance for the 'before' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public CBSTranCol.Builder getBeforeBuilder() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder getBeforeBuilder() {
       if (beforeBuilder == null) {
         if (hasBefore()) {
-          setBeforeBuilder(CBSTranCol.newBuilder(before));
+          setBeforeBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder(before));
         } else {
-          setBeforeBuilder(CBSTranCol.newBuilder());
+          setBeforeBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder());
         }
       }
       return beforeBuilder;
@@ -721,7 +721,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * @return This builder.
      */
 
-    public Builder setBeforeBuilder(CBSTranCol.Builder value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setBeforeBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder value) {
       clearBefore();
       beforeBuilder = value;
       return this;
@@ -739,7 +739,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'before' field.
       * @return This builder.
       */
-    public Builder clearBefore() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearBefore() {
       before = null;
       beforeBuilder = null;
       fieldSetFlags()[6] = false;
@@ -750,7 +750,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Gets the value of the 'after' field.
       * @return The value.
       */
-    public CBSTranCol getAfter() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol getAfter() {
       return after;
     }
 
@@ -760,7 +760,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * @param value The value of 'after'.
       * @return This builder.
       */
-    public Builder setAfter(CBSTranCol value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setAfter(com.kmbl.eventmanagementservice.Schema.CBSTranCol value) {
       validate(fields()[7], value);
       this.afterBuilder = null;
       this.after = value;
@@ -780,12 +780,12 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * Gets the Builder instance for the 'after' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public CBSTranCol.Builder getAfterBuilder() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder getAfterBuilder() {
       if (afterBuilder == null) {
         if (hasAfter()) {
-          setAfterBuilder(CBSTranCol.newBuilder(after));
+          setAfterBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder(after));
         } else {
-          setAfterBuilder(CBSTranCol.newBuilder());
+          setAfterBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.newBuilder());
         }
       }
       return afterBuilder;
@@ -797,7 +797,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
      * @return This builder.
      */
 
-    public Builder setAfterBuilder(CBSTranCol.Builder value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder setAfterBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder value) {
       clearAfter();
       afterBuilder = value;
       return this;
@@ -815,7 +815,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
       * Clears the value of the 'after' field.
       * @return This builder.
       */
-    public Builder clearAfter() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs.Builder clearAfter() {
       after = null;
       afterBuilder = null;
       fieldSetFlags()[7] = false;
@@ -827,12 +827,12 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
     public CBSTransactionLogs build() {
       try {
         CBSTransactionLogs record = new CBSTransactionLogs();
-        record.table = fieldSetFlags()[0] ? this.table : (CharSequence) defaultValue(fields()[0]);
-        record.op_type = fieldSetFlags()[1] ? this.op_type : (CharSequence) defaultValue(fields()[1]);
-        record.op_ts = fieldSetFlags()[2] ? this.op_ts : (CharSequence) defaultValue(fields()[2]);
-        record.current_ts = fieldSetFlags()[3] ? this.current_ts : (CharSequence) defaultValue(fields()[3]);
-        record.pos = fieldSetFlags()[4] ? this.pos : (CharSequence) defaultValue(fields()[4]);
-        record.source_scn = fieldSetFlags()[5] ? this.source_scn : (CharSequence) defaultValue(fields()[5]);
+        record.table = fieldSetFlags()[0] ? this.table : (java.lang.CharSequence) defaultValue(fields()[0]);
+        record.op_type = fieldSetFlags()[1] ? this.op_type : (java.lang.CharSequence) defaultValue(fields()[1]);
+        record.op_ts = fieldSetFlags()[2] ? this.op_ts : (java.lang.CharSequence) defaultValue(fields()[2]);
+        record.current_ts = fieldSetFlags()[3] ? this.current_ts : (java.lang.CharSequence) defaultValue(fields()[3]);
+        record.pos = fieldSetFlags()[4] ? this.pos : (java.lang.CharSequence) defaultValue(fields()[4]);
+        record.source_scn = fieldSetFlags()[5] ? this.source_scn : (java.lang.CharSequence) defaultValue(fields()[5]);
         if (beforeBuilder != null) {
           try {
             record.before = this.beforeBuilder.build();
@@ -841,7 +841,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
             throw e;
           }
         } else {
-          record.before = fieldSetFlags()[6] ? this.before : (CBSTranCol) defaultValue(fields()[6]);
+          record.before = fieldSetFlags()[6] ? this.before : (com.kmbl.eventmanagementservice.Schema.CBSTranCol) defaultValue(fields()[6]);
         }
         if (afterBuilder != null) {
           try {
@@ -851,12 +851,12 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
             throw e;
           }
         } else {
-          record.after = fieldSetFlags()[7] ? this.after : (CBSTranCol) defaultValue(fields()[7]);
+          record.after = fieldSetFlags()[7] ? this.after : (com.kmbl.eventmanagementservice.Schema.CBSTranCol) defaultValue(fields()[7]);
         }
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
-      } catch (Exception e) {
+      } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }
@@ -1003,7 +1003,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
         this.before = null;
       } else {
         if (this.before == null) {
-          this.before = new CBSTranCol();
+          this.before = new com.kmbl.eventmanagementservice.Schema.CBSTranCol();
         }
         this.before.customDecode(in);
       }
@@ -1013,7 +1013,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
         this.after = null;
       } else {
         if (this.after == null) {
-          this.after = new CBSTranCol();
+          this.after = new com.kmbl.eventmanagementservice.Schema.CBSTranCol();
         }
         this.after.customDecode(in);
       }
@@ -1081,7 +1081,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
             this.before = null;
           } else {
             if (this.before == null) {
-              this.before = new CBSTranCol();
+              this.before = new com.kmbl.eventmanagementservice.Schema.CBSTranCol();
             }
             this.before.customDecode(in);
           }
@@ -1093,7 +1093,7 @@ public class CBSTransactionLogs extends org.apache.avro.specific.SpecificRecordB
             this.after = null;
           } else {
             if (this.after == null) {
-              this.after = new CBSTranCol();
+              this.after = new com.kmbl.eventmanagementservice.Schema.CBSTranCol();
             }
             this.after.customDecode(in);
           }

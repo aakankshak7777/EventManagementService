@@ -72,89 +72,89 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
     return DECODER.decode(b);
   }
 
-  private Double ID;
-  private CharSequence AMOUNT;
-  private CharSequence CBSRC;
-  private CharSequence CREDITACCOUNT;
-  private CharSequence CUSTOMERID;
-  private CharSequence DEBITACCOUNT;
-  private CharSequence MSGID;
-  private Long REVERSAL;
-  private CharSequence REVERSALSTATUS;
-  private CharSequence RRN;
-  private CharSequence STAN;
-  private CharSequence TXN_DATE;
-  private CharSequence TXNID;
-  private CharSequence TYPE;
-  private CharSequence UPIRC;
-  private CharSequence ORGTXNID;
-  private CharSequence REMARKS;
-  private CharSequence CUSTOMERACCOUNT;
-  private CharSequence NAME;
-  private CharSequence PAYEEVPA;
-  private CharSequence PAYERVPA;
-  private CharSequence SEQNO;
-  private CharSequence COMMISSIONAMOUNT;
-  private CharSequence CUSTOMERREFID;
-  private CharSequence TRANTYPE;
-  private CharSequence CREDITBANKNAME;
-  private CharSequence DEBITBANKNAME;
-  private CharSequence OTHERSACCOUNT;
-  private CharSequence CHANNEL;
-  private CharSequence APPID;
-  private CharSequence PREAPPROVED;
-  private CharSequence BENEFICIARYNAME;
-  private CharSequence OTHERMOBILENO;
-  private CharSequence REMITTERNAME;
-  private CharSequence APPROVALNUM;
-  private CharSequence MCCCODE;
-  private CharSequence SERVERIP;
-  private CharSequence CBSRESP_DATE;
-  private CharSequence INITMODE;
-  private CharSequence PURPOSECODE;
-  private CharSequence CREDITACCOUNTTYPE;
-  private CharSequence CREDITIFSC;
-  private CharSequence DEBITACCOUNTTYPE;
-  private CharSequence DEBITIFSC;
-  private CharSequence ORDERID;
-  private CharSequence PAYEECODE;
-  private CharSequence PAYERCODE;
-  private CharSequence SUBTYPE;
-  private CharSequence REMITTORMOBILENUMBER;
-  private CharSequence PAYEEIMEI;
-  private CharSequence PAYERIMEI;
-  private CharSequence GMTDATE;
-  private CharSequence PAYEEACCOUNTTYPE;
-  private CharSequence PAYERACCOUNTTYPE;
-  private CharSequence PAYERCONSENTNAME;
-  private CharSequence PAYERCONSENTTYPE;
-  private CharSequence PAYERCONSENTVALUE;
-  private CharSequence ADJCODE;
-  private CharSequence ADJFLAG;
-  private CharSequence CREATE_DATE;
-  private CharSequence CREDITACCTNARRATION_103;
-  private CharSequence DE46;
-  private CharSequence DEBITACCTNARRATION_102;
-  private CharSequence GST;
-  private CharSequence LOANNUMBER;
-  private CharSequence LOCALTIME;
-  private CharSequence NARRATION_125;
-  private CharSequence P2PTXNCHARGES;
-  private CharSequence SCHEMECODE;
-  private CharSequence TXNAMOUNT;
-  private CharSequence BATCH_ID;
-  private CharSequence BASEAMOUNT;
-  private CharSequence BASECURR;
-  private CharSequence CONCODE;
-  private CharSequence FX;
-  private CharSequence MKUP;
-  private CharSequence ADDITIONAL4;
-  private CharSequence D12;
-  private CharSequence ADDITIONAL1;
-  private CharSequence ADDITIONAL2;
-  private CharSequence ADDITIONAL3;
-  private CharSequence ADDITIONAL5;
-  private CharSequence CBS_ROUTING;
+  private java.lang.Double ID;
+  private java.lang.CharSequence AMOUNT;
+  private java.lang.CharSequence CBSRC;
+  private java.lang.CharSequence CREDITACCOUNT;
+  private java.lang.CharSequence CUSTOMERID;
+  private java.lang.CharSequence DEBITACCOUNT;
+  private java.lang.CharSequence MSGID;
+  private java.lang.Long REVERSAL;
+  private java.lang.CharSequence REVERSALSTATUS;
+  private java.lang.CharSequence RRN;
+  private java.lang.CharSequence STAN;
+  private java.lang.CharSequence TXN_DATE;
+  private java.lang.CharSequence TXNID;
+  private java.lang.CharSequence TYPE;
+  private java.lang.CharSequence UPIRC;
+  private java.lang.CharSequence ORGTXNID;
+  private java.lang.CharSequence REMARKS;
+  private java.lang.CharSequence CUSTOMERACCOUNT;
+  private java.lang.CharSequence NAME;
+  private java.lang.CharSequence PAYEEVPA;
+  private java.lang.CharSequence PAYERVPA;
+  private java.lang.CharSequence SEQNO;
+  private java.lang.CharSequence COMMISSIONAMOUNT;
+  private java.lang.CharSequence CUSTOMERREFID;
+  private java.lang.CharSequence TRANTYPE;
+  private java.lang.CharSequence CREDITBANKNAME;
+  private java.lang.CharSequence DEBITBANKNAME;
+  private java.lang.CharSequence OTHERSACCOUNT;
+  private java.lang.CharSequence CHANNEL;
+  private java.lang.CharSequence APPID;
+  private java.lang.CharSequence PREAPPROVED;
+  private java.lang.CharSequence BENEFICIARYNAME;
+  private java.lang.CharSequence OTHERMOBILENO;
+  private java.lang.CharSequence REMITTERNAME;
+  private java.lang.CharSequence APPROVALNUM;
+  private java.lang.CharSequence MCCCODE;
+  private java.lang.CharSequence SERVERIP;
+  private java.lang.CharSequence CBSRESP_DATE;
+  private java.lang.CharSequence INITMODE;
+  private java.lang.CharSequence PURPOSECODE;
+  private java.lang.CharSequence CREDITACCOUNTTYPE;
+  private java.lang.CharSequence CREDITIFSC;
+  private java.lang.CharSequence DEBITACCOUNTTYPE;
+  private java.lang.CharSequence DEBITIFSC;
+  private java.lang.CharSequence ORDERID;
+  private java.lang.CharSequence PAYEECODE;
+  private java.lang.CharSequence PAYERCODE;
+  private java.lang.CharSequence SUBTYPE;
+  private java.lang.CharSequence REMITTORMOBILENUMBER;
+  private java.lang.CharSequence PAYEEIMEI;
+  private java.lang.CharSequence PAYERIMEI;
+  private java.lang.CharSequence GMTDATE;
+  private java.lang.CharSequence PAYEEACCOUNTTYPE;
+  private java.lang.CharSequence PAYERACCOUNTTYPE;
+  private java.lang.CharSequence PAYERCONSENTNAME;
+  private java.lang.CharSequence PAYERCONSENTTYPE;
+  private java.lang.CharSequence PAYERCONSENTVALUE;
+  private java.lang.CharSequence ADJCODE;
+  private java.lang.CharSequence ADJFLAG;
+  private java.lang.CharSequence CREATE_DATE;
+  private java.lang.CharSequence CREDITACCTNARRATION_103;
+  private java.lang.CharSequence DE46;
+  private java.lang.CharSequence DEBITACCTNARRATION_102;
+  private java.lang.CharSequence GST;
+  private java.lang.CharSequence LOANNUMBER;
+  private java.lang.CharSequence LOCALTIME;
+  private java.lang.CharSequence NARRATION_125;
+  private java.lang.CharSequence P2PTXNCHARGES;
+  private java.lang.CharSequence SCHEMECODE;
+  private java.lang.CharSequence TXNAMOUNT;
+  private java.lang.CharSequence BATCH_ID;
+  private java.lang.CharSequence BASEAMOUNT;
+  private java.lang.CharSequence BASECURR;
+  private java.lang.CharSequence CONCODE;
+  private java.lang.CharSequence FX;
+  private java.lang.CharSequence MKUP;
+  private java.lang.CharSequence ADDITIONAL4;
+  private java.lang.CharSequence D12;
+  private java.lang.CharSequence ADDITIONAL1;
+  private java.lang.CharSequence ADDITIONAL2;
+  private java.lang.CharSequence ADDITIONAL3;
+  private java.lang.CharSequence ADDITIONAL5;
+  private java.lang.CharSequence CBS_ROUTING;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -249,7 +249,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * @param ADDITIONAL5 The new value for ADDITIONAL5
    * @param CBS_ROUTING The new value for CBS_ROUTING
    */
-  public CBSTranCol(Double ID, CharSequence AMOUNT, CharSequence CBSRC, CharSequence CREDITACCOUNT, CharSequence CUSTOMERID, CharSequence DEBITACCOUNT, CharSequence MSGID, Long REVERSAL, CharSequence REVERSALSTATUS, CharSequence RRN, CharSequence STAN, CharSequence TXN_DATE, CharSequence TXNID, CharSequence TYPE, CharSequence UPIRC, CharSequence ORGTXNID, CharSequence REMARKS, CharSequence CUSTOMERACCOUNT, CharSequence NAME, CharSequence PAYEEVPA, CharSequence PAYERVPA, CharSequence SEQNO, CharSequence COMMISSIONAMOUNT, CharSequence CUSTOMERREFID, CharSequence TRANTYPE, CharSequence CREDITBANKNAME, CharSequence DEBITBANKNAME, CharSequence OTHERSACCOUNT, CharSequence CHANNEL, CharSequence APPID, CharSequence PREAPPROVED, CharSequence BENEFICIARYNAME, CharSequence OTHERMOBILENO, CharSequence REMITTERNAME, CharSequence APPROVALNUM, CharSequence MCCCODE, CharSequence SERVERIP, CharSequence CBSRESP_DATE, CharSequence INITMODE, CharSequence PURPOSECODE, CharSequence CREDITACCOUNTTYPE, CharSequence CREDITIFSC, CharSequence DEBITACCOUNTTYPE, CharSequence DEBITIFSC, CharSequence ORDERID, CharSequence PAYEECODE, CharSequence PAYERCODE, CharSequence SUBTYPE, CharSequence REMITTORMOBILENUMBER, CharSequence PAYEEIMEI, CharSequence PAYERIMEI, CharSequence GMTDATE, CharSequence PAYEEACCOUNTTYPE, CharSequence PAYERACCOUNTTYPE, CharSequence PAYERCONSENTNAME, CharSequence PAYERCONSENTTYPE, CharSequence PAYERCONSENTVALUE, CharSequence ADJCODE, CharSequence ADJFLAG, CharSequence CREATE_DATE, CharSequence CREDITACCTNARRATION_103, CharSequence DE46, CharSequence DEBITACCTNARRATION_102, CharSequence GST, CharSequence LOANNUMBER, CharSequence LOCALTIME, CharSequence NARRATION_125, CharSequence P2PTXNCHARGES, CharSequence SCHEMECODE, CharSequence TXNAMOUNT, CharSequence BATCH_ID, CharSequence BASEAMOUNT, CharSequence BASECURR, CharSequence CONCODE, CharSequence FX, CharSequence MKUP, CharSequence ADDITIONAL4, CharSequence D12, CharSequence ADDITIONAL1, CharSequence ADDITIONAL2, CharSequence ADDITIONAL3, CharSequence ADDITIONAL5, CharSequence CBS_ROUTING) {
+  public CBSTranCol(java.lang.Double ID, java.lang.CharSequence AMOUNT, java.lang.CharSequence CBSRC, java.lang.CharSequence CREDITACCOUNT, java.lang.CharSequence CUSTOMERID, java.lang.CharSequence DEBITACCOUNT, java.lang.CharSequence MSGID, java.lang.Long REVERSAL, java.lang.CharSequence REVERSALSTATUS, java.lang.CharSequence RRN, java.lang.CharSequence STAN, java.lang.CharSequence TXN_DATE, java.lang.CharSequence TXNID, java.lang.CharSequence TYPE, java.lang.CharSequence UPIRC, java.lang.CharSequence ORGTXNID, java.lang.CharSequence REMARKS, java.lang.CharSequence CUSTOMERACCOUNT, java.lang.CharSequence NAME, java.lang.CharSequence PAYEEVPA, java.lang.CharSequence PAYERVPA, java.lang.CharSequence SEQNO, java.lang.CharSequence COMMISSIONAMOUNT, java.lang.CharSequence CUSTOMERREFID, java.lang.CharSequence TRANTYPE, java.lang.CharSequence CREDITBANKNAME, java.lang.CharSequence DEBITBANKNAME, java.lang.CharSequence OTHERSACCOUNT, java.lang.CharSequence CHANNEL, java.lang.CharSequence APPID, java.lang.CharSequence PREAPPROVED, java.lang.CharSequence BENEFICIARYNAME, java.lang.CharSequence OTHERMOBILENO, java.lang.CharSequence REMITTERNAME, java.lang.CharSequence APPROVALNUM, java.lang.CharSequence MCCCODE, java.lang.CharSequence SERVERIP, java.lang.CharSequence CBSRESP_DATE, java.lang.CharSequence INITMODE, java.lang.CharSequence PURPOSECODE, java.lang.CharSequence CREDITACCOUNTTYPE, java.lang.CharSequence CREDITIFSC, java.lang.CharSequence DEBITACCOUNTTYPE, java.lang.CharSequence DEBITIFSC, java.lang.CharSequence ORDERID, java.lang.CharSequence PAYEECODE, java.lang.CharSequence PAYERCODE, java.lang.CharSequence SUBTYPE, java.lang.CharSequence REMITTORMOBILENUMBER, java.lang.CharSequence PAYEEIMEI, java.lang.CharSequence PAYERIMEI, java.lang.CharSequence GMTDATE, java.lang.CharSequence PAYEEACCOUNTTYPE, java.lang.CharSequence PAYERACCOUNTTYPE, java.lang.CharSequence PAYERCONSENTNAME, java.lang.CharSequence PAYERCONSENTTYPE, java.lang.CharSequence PAYERCONSENTVALUE, java.lang.CharSequence ADJCODE, java.lang.CharSequence ADJFLAG, java.lang.CharSequence CREATE_DATE, java.lang.CharSequence CREDITACCTNARRATION_103, java.lang.CharSequence DE46, java.lang.CharSequence DEBITACCTNARRATION_102, java.lang.CharSequence GST, java.lang.CharSequence LOANNUMBER, java.lang.CharSequence LOCALTIME, java.lang.CharSequence NARRATION_125, java.lang.CharSequence P2PTXNCHARGES, java.lang.CharSequence SCHEMECODE, java.lang.CharSequence TXNAMOUNT, java.lang.CharSequence BATCH_ID, java.lang.CharSequence BASEAMOUNT, java.lang.CharSequence BASECURR, java.lang.CharSequence CONCODE, java.lang.CharSequence FX, java.lang.CharSequence MKUP, java.lang.CharSequence ADDITIONAL4, java.lang.CharSequence D12, java.lang.CharSequence ADDITIONAL1, java.lang.CharSequence ADDITIONAL2, java.lang.CharSequence ADDITIONAL3, java.lang.CharSequence ADDITIONAL5, java.lang.CharSequence CBS_ROUTING) {
     this.ID = ID;
     this.AMOUNT = AMOUNT;
     this.CBSRC = CBSRC;
@@ -336,14 +336,14 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   @Override
-  public SpecificData getSpecificData() { return MODEL$; }
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
 
   @Override
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
 
   // Used by DatumWriter.  Applications should not call.
   @Override
-  public Object get(int field$) {
+  public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return ID;
     case 1: return AMOUNT;
@@ -435,91 +435,91 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
   // Used by DatumReader.  Applications should not call.
   @Override
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, Object value$) {
+  public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: ID = (Double)value$; break;
-    case 1: AMOUNT = (CharSequence)value$; break;
-    case 2: CBSRC = (CharSequence)value$; break;
-    case 3: CREDITACCOUNT = (CharSequence)value$; break;
-    case 4: CUSTOMERID = (CharSequence)value$; break;
-    case 5: DEBITACCOUNT = (CharSequence)value$; break;
-    case 6: MSGID = (CharSequence)value$; break;
-    case 7: REVERSAL = (Long)value$; break;
-    case 8: REVERSALSTATUS = (CharSequence)value$; break;
-    case 9: RRN = (CharSequence)value$; break;
-    case 10: STAN = (CharSequence)value$; break;
-    case 11: TXN_DATE = (CharSequence)value$; break;
-    case 12: TXNID = (CharSequence)value$; break;
-    case 13: TYPE = (CharSequence)value$; break;
-    case 14: UPIRC = (CharSequence)value$; break;
-    case 15: ORGTXNID = (CharSequence)value$; break;
-    case 16: REMARKS = (CharSequence)value$; break;
-    case 17: CUSTOMERACCOUNT = (CharSequence)value$; break;
-    case 18: NAME = (CharSequence)value$; break;
-    case 19: PAYEEVPA = (CharSequence)value$; break;
-    case 20: PAYERVPA = (CharSequence)value$; break;
-    case 21: SEQNO = (CharSequence)value$; break;
-    case 22: COMMISSIONAMOUNT = (CharSequence)value$; break;
-    case 23: CUSTOMERREFID = (CharSequence)value$; break;
-    case 24: TRANTYPE = (CharSequence)value$; break;
-    case 25: CREDITBANKNAME = (CharSequence)value$; break;
-    case 26: DEBITBANKNAME = (CharSequence)value$; break;
-    case 27: OTHERSACCOUNT = (CharSequence)value$; break;
-    case 28: CHANNEL = (CharSequence)value$; break;
-    case 29: APPID = (CharSequence)value$; break;
-    case 30: PREAPPROVED = (CharSequence)value$; break;
-    case 31: BENEFICIARYNAME = (CharSequence)value$; break;
-    case 32: OTHERMOBILENO = (CharSequence)value$; break;
-    case 33: REMITTERNAME = (CharSequence)value$; break;
-    case 34: APPROVALNUM = (CharSequence)value$; break;
-    case 35: MCCCODE = (CharSequence)value$; break;
-    case 36: SERVERIP = (CharSequence)value$; break;
-    case 37: CBSRESP_DATE = (CharSequence)value$; break;
-    case 38: INITMODE = (CharSequence)value$; break;
-    case 39: PURPOSECODE = (CharSequence)value$; break;
-    case 40: CREDITACCOUNTTYPE = (CharSequence)value$; break;
-    case 41: CREDITIFSC = (CharSequence)value$; break;
-    case 42: DEBITACCOUNTTYPE = (CharSequence)value$; break;
-    case 43: DEBITIFSC = (CharSequence)value$; break;
-    case 44: ORDERID = (CharSequence)value$; break;
-    case 45: PAYEECODE = (CharSequence)value$; break;
-    case 46: PAYERCODE = (CharSequence)value$; break;
-    case 47: SUBTYPE = (CharSequence)value$; break;
-    case 48: REMITTORMOBILENUMBER = (CharSequence)value$; break;
-    case 49: PAYEEIMEI = (CharSequence)value$; break;
-    case 50: PAYERIMEI = (CharSequence)value$; break;
-    case 51: GMTDATE = (CharSequence)value$; break;
-    case 52: PAYEEACCOUNTTYPE = (CharSequence)value$; break;
-    case 53: PAYERACCOUNTTYPE = (CharSequence)value$; break;
-    case 54: PAYERCONSENTNAME = (CharSequence)value$; break;
-    case 55: PAYERCONSENTTYPE = (CharSequence)value$; break;
-    case 56: PAYERCONSENTVALUE = (CharSequence)value$; break;
-    case 57: ADJCODE = (CharSequence)value$; break;
-    case 58: ADJFLAG = (CharSequence)value$; break;
-    case 59: CREATE_DATE = (CharSequence)value$; break;
-    case 60: CREDITACCTNARRATION_103 = (CharSequence)value$; break;
-    case 61: DE46 = (CharSequence)value$; break;
-    case 62: DEBITACCTNARRATION_102 = (CharSequence)value$; break;
-    case 63: GST = (CharSequence)value$; break;
-    case 64: LOANNUMBER = (CharSequence)value$; break;
-    case 65: LOCALTIME = (CharSequence)value$; break;
-    case 66: NARRATION_125 = (CharSequence)value$; break;
-    case 67: P2PTXNCHARGES = (CharSequence)value$; break;
-    case 68: SCHEMECODE = (CharSequence)value$; break;
-    case 69: TXNAMOUNT = (CharSequence)value$; break;
-    case 70: BATCH_ID = (CharSequence)value$; break;
-    case 71: BASEAMOUNT = (CharSequence)value$; break;
-    case 72: BASECURR = (CharSequence)value$; break;
-    case 73: CONCODE = (CharSequence)value$; break;
-    case 74: FX = (CharSequence)value$; break;
-    case 75: MKUP = (CharSequence)value$; break;
-    case 76: ADDITIONAL4 = (CharSequence)value$; break;
-    case 77: D12 = (CharSequence)value$; break;
-    case 78: ADDITIONAL1 = (CharSequence)value$; break;
-    case 79: ADDITIONAL2 = (CharSequence)value$; break;
-    case 80: ADDITIONAL3 = (CharSequence)value$; break;
-    case 81: ADDITIONAL5 = (CharSequence)value$; break;
-    case 82: CBS_ROUTING = (CharSequence)value$; break;
+    case 0: ID = (java.lang.Double)value$; break;
+    case 1: AMOUNT = (java.lang.CharSequence)value$; break;
+    case 2: CBSRC = (java.lang.CharSequence)value$; break;
+    case 3: CREDITACCOUNT = (java.lang.CharSequence)value$; break;
+    case 4: CUSTOMERID = (java.lang.CharSequence)value$; break;
+    case 5: DEBITACCOUNT = (java.lang.CharSequence)value$; break;
+    case 6: MSGID = (java.lang.CharSequence)value$; break;
+    case 7: REVERSAL = (java.lang.Long)value$; break;
+    case 8: REVERSALSTATUS = (java.lang.CharSequence)value$; break;
+    case 9: RRN = (java.lang.CharSequence)value$; break;
+    case 10: STAN = (java.lang.CharSequence)value$; break;
+    case 11: TXN_DATE = (java.lang.CharSequence)value$; break;
+    case 12: TXNID = (java.lang.CharSequence)value$; break;
+    case 13: TYPE = (java.lang.CharSequence)value$; break;
+    case 14: UPIRC = (java.lang.CharSequence)value$; break;
+    case 15: ORGTXNID = (java.lang.CharSequence)value$; break;
+    case 16: REMARKS = (java.lang.CharSequence)value$; break;
+    case 17: CUSTOMERACCOUNT = (java.lang.CharSequence)value$; break;
+    case 18: NAME = (java.lang.CharSequence)value$; break;
+    case 19: PAYEEVPA = (java.lang.CharSequence)value$; break;
+    case 20: PAYERVPA = (java.lang.CharSequence)value$; break;
+    case 21: SEQNO = (java.lang.CharSequence)value$; break;
+    case 22: COMMISSIONAMOUNT = (java.lang.CharSequence)value$; break;
+    case 23: CUSTOMERREFID = (java.lang.CharSequence)value$; break;
+    case 24: TRANTYPE = (java.lang.CharSequence)value$; break;
+    case 25: CREDITBANKNAME = (java.lang.CharSequence)value$; break;
+    case 26: DEBITBANKNAME = (java.lang.CharSequence)value$; break;
+    case 27: OTHERSACCOUNT = (java.lang.CharSequence)value$; break;
+    case 28: CHANNEL = (java.lang.CharSequence)value$; break;
+    case 29: APPID = (java.lang.CharSequence)value$; break;
+    case 30: PREAPPROVED = (java.lang.CharSequence)value$; break;
+    case 31: BENEFICIARYNAME = (java.lang.CharSequence)value$; break;
+    case 32: OTHERMOBILENO = (java.lang.CharSequence)value$; break;
+    case 33: REMITTERNAME = (java.lang.CharSequence)value$; break;
+    case 34: APPROVALNUM = (java.lang.CharSequence)value$; break;
+    case 35: MCCCODE = (java.lang.CharSequence)value$; break;
+    case 36: SERVERIP = (java.lang.CharSequence)value$; break;
+    case 37: CBSRESP_DATE = (java.lang.CharSequence)value$; break;
+    case 38: INITMODE = (java.lang.CharSequence)value$; break;
+    case 39: PURPOSECODE = (java.lang.CharSequence)value$; break;
+    case 40: CREDITACCOUNTTYPE = (java.lang.CharSequence)value$; break;
+    case 41: CREDITIFSC = (java.lang.CharSequence)value$; break;
+    case 42: DEBITACCOUNTTYPE = (java.lang.CharSequence)value$; break;
+    case 43: DEBITIFSC = (java.lang.CharSequence)value$; break;
+    case 44: ORDERID = (java.lang.CharSequence)value$; break;
+    case 45: PAYEECODE = (java.lang.CharSequence)value$; break;
+    case 46: PAYERCODE = (java.lang.CharSequence)value$; break;
+    case 47: SUBTYPE = (java.lang.CharSequence)value$; break;
+    case 48: REMITTORMOBILENUMBER = (java.lang.CharSequence)value$; break;
+    case 49: PAYEEIMEI = (java.lang.CharSequence)value$; break;
+    case 50: PAYERIMEI = (java.lang.CharSequence)value$; break;
+    case 51: GMTDATE = (java.lang.CharSequence)value$; break;
+    case 52: PAYEEACCOUNTTYPE = (java.lang.CharSequence)value$; break;
+    case 53: PAYERACCOUNTTYPE = (java.lang.CharSequence)value$; break;
+    case 54: PAYERCONSENTNAME = (java.lang.CharSequence)value$; break;
+    case 55: PAYERCONSENTTYPE = (java.lang.CharSequence)value$; break;
+    case 56: PAYERCONSENTVALUE = (java.lang.CharSequence)value$; break;
+    case 57: ADJCODE = (java.lang.CharSequence)value$; break;
+    case 58: ADJFLAG = (java.lang.CharSequence)value$; break;
+    case 59: CREATE_DATE = (java.lang.CharSequence)value$; break;
+    case 60: CREDITACCTNARRATION_103 = (java.lang.CharSequence)value$; break;
+    case 61: DE46 = (java.lang.CharSequence)value$; break;
+    case 62: DEBITACCTNARRATION_102 = (java.lang.CharSequence)value$; break;
+    case 63: GST = (java.lang.CharSequence)value$; break;
+    case 64: LOANNUMBER = (java.lang.CharSequence)value$; break;
+    case 65: LOCALTIME = (java.lang.CharSequence)value$; break;
+    case 66: NARRATION_125 = (java.lang.CharSequence)value$; break;
+    case 67: P2PTXNCHARGES = (java.lang.CharSequence)value$; break;
+    case 68: SCHEMECODE = (java.lang.CharSequence)value$; break;
+    case 69: TXNAMOUNT = (java.lang.CharSequence)value$; break;
+    case 70: BATCH_ID = (java.lang.CharSequence)value$; break;
+    case 71: BASEAMOUNT = (java.lang.CharSequence)value$; break;
+    case 72: BASECURR = (java.lang.CharSequence)value$; break;
+    case 73: CONCODE = (java.lang.CharSequence)value$; break;
+    case 74: FX = (java.lang.CharSequence)value$; break;
+    case 75: MKUP = (java.lang.CharSequence)value$; break;
+    case 76: ADDITIONAL4 = (java.lang.CharSequence)value$; break;
+    case 77: D12 = (java.lang.CharSequence)value$; break;
+    case 78: ADDITIONAL1 = (java.lang.CharSequence)value$; break;
+    case 79: ADDITIONAL2 = (java.lang.CharSequence)value$; break;
+    case 80: ADDITIONAL3 = (java.lang.CharSequence)value$; break;
+    case 81: ADDITIONAL5 = (java.lang.CharSequence)value$; break;
+    case 82: CBS_ROUTING = (java.lang.CharSequence)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -528,7 +528,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ID' field.
    * @return The value of the 'ID' field.
    */
-  public Double getID() {
+  public java.lang.Double getID() {
     return ID;
   }
 
@@ -537,7 +537,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ID' field.
    * @param value the value to set.
    */
-  public void setID(Double value) {
+  public void setID(java.lang.Double value) {
     this.ID = value;
   }
 
@@ -545,7 +545,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'AMOUNT' field.
    * @return The value of the 'AMOUNT' field.
    */
-  public CharSequence getAMOUNT() {
+  public java.lang.CharSequence getAMOUNT() {
     return AMOUNT;
   }
 
@@ -554,7 +554,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'AMOUNT' field.
    * @param value the value to set.
    */
-  public void setAMOUNT(CharSequence value) {
+  public void setAMOUNT(java.lang.CharSequence value) {
     this.AMOUNT = value;
   }
 
@@ -562,7 +562,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CBSRC' field.
    * @return The value of the 'CBSRC' field.
    */
-  public CharSequence getCBSRC() {
+  public java.lang.CharSequence getCBSRC() {
     return CBSRC;
   }
 
@@ -571,7 +571,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CBSRC' field.
    * @param value the value to set.
    */
-  public void setCBSRC(CharSequence value) {
+  public void setCBSRC(java.lang.CharSequence value) {
     this.CBSRC = value;
   }
 
@@ -579,7 +579,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREDITACCOUNT' field.
    * @return The value of the 'CREDITACCOUNT' field.
    */
-  public CharSequence getCREDITACCOUNT() {
+  public java.lang.CharSequence getCREDITACCOUNT() {
     return CREDITACCOUNT;
   }
 
@@ -588,7 +588,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREDITACCOUNT' field.
    * @param value the value to set.
    */
-  public void setCREDITACCOUNT(CharSequence value) {
+  public void setCREDITACCOUNT(java.lang.CharSequence value) {
     this.CREDITACCOUNT = value;
   }
 
@@ -596,7 +596,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CUSTOMERID' field.
    * @return The value of the 'CUSTOMERID' field.
    */
-  public CharSequence getCUSTOMERID() {
+  public java.lang.CharSequence getCUSTOMERID() {
     return CUSTOMERID;
   }
 
@@ -605,7 +605,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CUSTOMERID' field.
    * @param value the value to set.
    */
-  public void setCUSTOMERID(CharSequence value) {
+  public void setCUSTOMERID(java.lang.CharSequence value) {
     this.CUSTOMERID = value;
   }
 
@@ -613,7 +613,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DEBITACCOUNT' field.
    * @return The value of the 'DEBITACCOUNT' field.
    */
-  public CharSequence getDEBITACCOUNT() {
+  public java.lang.CharSequence getDEBITACCOUNT() {
     return DEBITACCOUNT;
   }
 
@@ -622,7 +622,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DEBITACCOUNT' field.
    * @param value the value to set.
    */
-  public void setDEBITACCOUNT(CharSequence value) {
+  public void setDEBITACCOUNT(java.lang.CharSequence value) {
     this.DEBITACCOUNT = value;
   }
 
@@ -630,7 +630,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'MSGID' field.
    * @return The value of the 'MSGID' field.
    */
-  public CharSequence getMSGID() {
+  public java.lang.CharSequence getMSGID() {
     return MSGID;
   }
 
@@ -639,7 +639,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'MSGID' field.
    * @param value the value to set.
    */
-  public void setMSGID(CharSequence value) {
+  public void setMSGID(java.lang.CharSequence value) {
     this.MSGID = value;
   }
 
@@ -647,7 +647,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'REVERSAL' field.
    * @return The value of the 'REVERSAL' field.
    */
-  public Long getREVERSAL() {
+  public java.lang.Long getREVERSAL() {
     return REVERSAL;
   }
 
@@ -656,7 +656,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'REVERSAL' field.
    * @param value the value to set.
    */
-  public void setREVERSAL(Long value) {
+  public void setREVERSAL(java.lang.Long value) {
     this.REVERSAL = value;
   }
 
@@ -664,7 +664,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'REVERSALSTATUS' field.
    * @return The value of the 'REVERSALSTATUS' field.
    */
-  public CharSequence getREVERSALSTATUS() {
+  public java.lang.CharSequence getREVERSALSTATUS() {
     return REVERSALSTATUS;
   }
 
@@ -673,7 +673,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'REVERSALSTATUS' field.
    * @param value the value to set.
    */
-  public void setREVERSALSTATUS(CharSequence value) {
+  public void setREVERSALSTATUS(java.lang.CharSequence value) {
     this.REVERSALSTATUS = value;
   }
 
@@ -681,7 +681,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'RRN' field.
    * @return The value of the 'RRN' field.
    */
-  public CharSequence getRRN() {
+  public java.lang.CharSequence getRRN() {
     return RRN;
   }
 
@@ -690,7 +690,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'RRN' field.
    * @param value the value to set.
    */
-  public void setRRN(CharSequence value) {
+  public void setRRN(java.lang.CharSequence value) {
     this.RRN = value;
   }
 
@@ -698,7 +698,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'STAN' field.
    * @return The value of the 'STAN' field.
    */
-  public CharSequence getSTAN() {
+  public java.lang.CharSequence getSTAN() {
     return STAN;
   }
 
@@ -707,7 +707,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'STAN' field.
    * @param value the value to set.
    */
-  public void setSTAN(CharSequence value) {
+  public void setSTAN(java.lang.CharSequence value) {
     this.STAN = value;
   }
 
@@ -715,7 +715,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'TXN_DATE' field.
    * @return The value of the 'TXN_DATE' field.
    */
-  public CharSequence getTXNDATE() {
+  public java.lang.CharSequence getTXNDATE() {
     return TXN_DATE;
   }
 
@@ -724,7 +724,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'TXN_DATE' field.
    * @param value the value to set.
    */
-  public void setTXNDATE(CharSequence value) {
+  public void setTXNDATE(java.lang.CharSequence value) {
     this.TXN_DATE = value;
   }
 
@@ -732,7 +732,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'TXNID' field.
    * @return The value of the 'TXNID' field.
    */
-  public CharSequence getTXNID() {
+  public java.lang.CharSequence getTXNID() {
     return TXNID;
   }
 
@@ -741,7 +741,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'TXNID' field.
    * @param value the value to set.
    */
-  public void setTXNID(CharSequence value) {
+  public void setTXNID(java.lang.CharSequence value) {
     this.TXNID = value;
   }
 
@@ -749,7 +749,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'TYPE' field.
    * @return The value of the 'TYPE' field.
    */
-  public CharSequence getTYPE() {
+  public java.lang.CharSequence getTYPE() {
     return TYPE;
   }
 
@@ -758,7 +758,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'TYPE' field.
    * @param value the value to set.
    */
-  public void setTYPE(CharSequence value) {
+  public void setTYPE(java.lang.CharSequence value) {
     this.TYPE = value;
   }
 
@@ -766,7 +766,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'UPIRC' field.
    * @return The value of the 'UPIRC' field.
    */
-  public CharSequence getUPIRC() {
+  public java.lang.CharSequence getUPIRC() {
     return UPIRC;
   }
 
@@ -775,7 +775,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'UPIRC' field.
    * @param value the value to set.
    */
-  public void setUPIRC(CharSequence value) {
+  public void setUPIRC(java.lang.CharSequence value) {
     this.UPIRC = value;
   }
 
@@ -783,7 +783,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ORGTXNID' field.
    * @return The value of the 'ORGTXNID' field.
    */
-  public CharSequence getORGTXNID() {
+  public java.lang.CharSequence getORGTXNID() {
     return ORGTXNID;
   }
 
@@ -792,7 +792,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ORGTXNID' field.
    * @param value the value to set.
    */
-  public void setORGTXNID(CharSequence value) {
+  public void setORGTXNID(java.lang.CharSequence value) {
     this.ORGTXNID = value;
   }
 
@@ -800,7 +800,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'REMARKS' field.
    * @return The value of the 'REMARKS' field.
    */
-  public CharSequence getREMARKS() {
+  public java.lang.CharSequence getREMARKS() {
     return REMARKS;
   }
 
@@ -809,7 +809,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'REMARKS' field.
    * @param value the value to set.
    */
-  public void setREMARKS(CharSequence value) {
+  public void setREMARKS(java.lang.CharSequence value) {
     this.REMARKS = value;
   }
 
@@ -817,7 +817,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CUSTOMERACCOUNT' field.
    * @return The value of the 'CUSTOMERACCOUNT' field.
    */
-  public CharSequence getCUSTOMERACCOUNT() {
+  public java.lang.CharSequence getCUSTOMERACCOUNT() {
     return CUSTOMERACCOUNT;
   }
 
@@ -826,7 +826,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CUSTOMERACCOUNT' field.
    * @param value the value to set.
    */
-  public void setCUSTOMERACCOUNT(CharSequence value) {
+  public void setCUSTOMERACCOUNT(java.lang.CharSequence value) {
     this.CUSTOMERACCOUNT = value;
   }
 
@@ -834,7 +834,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'NAME' field.
    * @return The value of the 'NAME' field.
    */
-  public CharSequence getNAME() {
+  public java.lang.CharSequence getNAME() {
     return NAME;
   }
 
@@ -843,7 +843,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'NAME' field.
    * @param value the value to set.
    */
-  public void setNAME(CharSequence value) {
+  public void setNAME(java.lang.CharSequence value) {
     this.NAME = value;
   }
 
@@ -851,7 +851,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYEEVPA' field.
    * @return The value of the 'PAYEEVPA' field.
    */
-  public CharSequence getPAYEEVPA() {
+  public java.lang.CharSequence getPAYEEVPA() {
     return PAYEEVPA;
   }
 
@@ -860,7 +860,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYEEVPA' field.
    * @param value the value to set.
    */
-  public void setPAYEEVPA(CharSequence value) {
+  public void setPAYEEVPA(java.lang.CharSequence value) {
     this.PAYEEVPA = value;
   }
 
@@ -868,7 +868,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERVPA' field.
    * @return The value of the 'PAYERVPA' field.
    */
-  public CharSequence getPAYERVPA() {
+  public java.lang.CharSequence getPAYERVPA() {
     return PAYERVPA;
   }
 
@@ -877,7 +877,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERVPA' field.
    * @param value the value to set.
    */
-  public void setPAYERVPA(CharSequence value) {
+  public void setPAYERVPA(java.lang.CharSequence value) {
     this.PAYERVPA = value;
   }
 
@@ -885,7 +885,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'SEQNO' field.
    * @return The value of the 'SEQNO' field.
    */
-  public CharSequence getSEQNO() {
+  public java.lang.CharSequence getSEQNO() {
     return SEQNO;
   }
 
@@ -894,7 +894,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'SEQNO' field.
    * @param value the value to set.
    */
-  public void setSEQNO(CharSequence value) {
+  public void setSEQNO(java.lang.CharSequence value) {
     this.SEQNO = value;
   }
 
@@ -902,7 +902,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'COMMISSIONAMOUNT' field.
    * @return The value of the 'COMMISSIONAMOUNT' field.
    */
-  public CharSequence getCOMMISSIONAMOUNT() {
+  public java.lang.CharSequence getCOMMISSIONAMOUNT() {
     return COMMISSIONAMOUNT;
   }
 
@@ -911,7 +911,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'COMMISSIONAMOUNT' field.
    * @param value the value to set.
    */
-  public void setCOMMISSIONAMOUNT(CharSequence value) {
+  public void setCOMMISSIONAMOUNT(java.lang.CharSequence value) {
     this.COMMISSIONAMOUNT = value;
   }
 
@@ -919,7 +919,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CUSTOMERREFID' field.
    * @return The value of the 'CUSTOMERREFID' field.
    */
-  public CharSequence getCUSTOMERREFID() {
+  public java.lang.CharSequence getCUSTOMERREFID() {
     return CUSTOMERREFID;
   }
 
@@ -928,7 +928,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CUSTOMERREFID' field.
    * @param value the value to set.
    */
-  public void setCUSTOMERREFID(CharSequence value) {
+  public void setCUSTOMERREFID(java.lang.CharSequence value) {
     this.CUSTOMERREFID = value;
   }
 
@@ -936,7 +936,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'TRANTYPE' field.
    * @return The value of the 'TRANTYPE' field.
    */
-  public CharSequence getTRANTYPE() {
+  public java.lang.CharSequence getTRANTYPE() {
     return TRANTYPE;
   }
 
@@ -945,7 +945,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'TRANTYPE' field.
    * @param value the value to set.
    */
-  public void setTRANTYPE(CharSequence value) {
+  public void setTRANTYPE(java.lang.CharSequence value) {
     this.TRANTYPE = value;
   }
 
@@ -953,7 +953,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREDITBANKNAME' field.
    * @return The value of the 'CREDITBANKNAME' field.
    */
-  public CharSequence getCREDITBANKNAME() {
+  public java.lang.CharSequence getCREDITBANKNAME() {
     return CREDITBANKNAME;
   }
 
@@ -962,7 +962,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREDITBANKNAME' field.
    * @param value the value to set.
    */
-  public void setCREDITBANKNAME(CharSequence value) {
+  public void setCREDITBANKNAME(java.lang.CharSequence value) {
     this.CREDITBANKNAME = value;
   }
 
@@ -970,7 +970,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DEBITBANKNAME' field.
    * @return The value of the 'DEBITBANKNAME' field.
    */
-  public CharSequence getDEBITBANKNAME() {
+  public java.lang.CharSequence getDEBITBANKNAME() {
     return DEBITBANKNAME;
   }
 
@@ -979,7 +979,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DEBITBANKNAME' field.
    * @param value the value to set.
    */
-  public void setDEBITBANKNAME(CharSequence value) {
+  public void setDEBITBANKNAME(java.lang.CharSequence value) {
     this.DEBITBANKNAME = value;
   }
 
@@ -987,7 +987,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'OTHERSACCOUNT' field.
    * @return The value of the 'OTHERSACCOUNT' field.
    */
-  public CharSequence getOTHERSACCOUNT() {
+  public java.lang.CharSequence getOTHERSACCOUNT() {
     return OTHERSACCOUNT;
   }
 
@@ -996,7 +996,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'OTHERSACCOUNT' field.
    * @param value the value to set.
    */
-  public void setOTHERSACCOUNT(CharSequence value) {
+  public void setOTHERSACCOUNT(java.lang.CharSequence value) {
     this.OTHERSACCOUNT = value;
   }
 
@@ -1004,7 +1004,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CHANNEL' field.
    * @return The value of the 'CHANNEL' field.
    */
-  public CharSequence getCHANNEL() {
+  public java.lang.CharSequence getCHANNEL() {
     return CHANNEL;
   }
 
@@ -1013,7 +1013,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CHANNEL' field.
    * @param value the value to set.
    */
-  public void setCHANNEL(CharSequence value) {
+  public void setCHANNEL(java.lang.CharSequence value) {
     this.CHANNEL = value;
   }
 
@@ -1021,7 +1021,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'APPID' field.
    * @return The value of the 'APPID' field.
    */
-  public CharSequence getAPPID() {
+  public java.lang.CharSequence getAPPID() {
     return APPID;
   }
 
@@ -1030,7 +1030,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'APPID' field.
    * @param value the value to set.
    */
-  public void setAPPID(CharSequence value) {
+  public void setAPPID(java.lang.CharSequence value) {
     this.APPID = value;
   }
 
@@ -1038,7 +1038,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PREAPPROVED' field.
    * @return The value of the 'PREAPPROVED' field.
    */
-  public CharSequence getPREAPPROVED() {
+  public java.lang.CharSequence getPREAPPROVED() {
     return PREAPPROVED;
   }
 
@@ -1047,7 +1047,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PREAPPROVED' field.
    * @param value the value to set.
    */
-  public void setPREAPPROVED(CharSequence value) {
+  public void setPREAPPROVED(java.lang.CharSequence value) {
     this.PREAPPROVED = value;
   }
 
@@ -1055,7 +1055,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'BENEFICIARYNAME' field.
    * @return The value of the 'BENEFICIARYNAME' field.
    */
-  public CharSequence getBENEFICIARYNAME() {
+  public java.lang.CharSequence getBENEFICIARYNAME() {
     return BENEFICIARYNAME;
   }
 
@@ -1064,7 +1064,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'BENEFICIARYNAME' field.
    * @param value the value to set.
    */
-  public void setBENEFICIARYNAME(CharSequence value) {
+  public void setBENEFICIARYNAME(java.lang.CharSequence value) {
     this.BENEFICIARYNAME = value;
   }
 
@@ -1072,7 +1072,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'OTHERMOBILENO' field.
    * @return The value of the 'OTHERMOBILENO' field.
    */
-  public CharSequence getOTHERMOBILENO() {
+  public java.lang.CharSequence getOTHERMOBILENO() {
     return OTHERMOBILENO;
   }
 
@@ -1081,7 +1081,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'OTHERMOBILENO' field.
    * @param value the value to set.
    */
-  public void setOTHERMOBILENO(CharSequence value) {
+  public void setOTHERMOBILENO(java.lang.CharSequence value) {
     this.OTHERMOBILENO = value;
   }
 
@@ -1089,7 +1089,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'REMITTERNAME' field.
    * @return The value of the 'REMITTERNAME' field.
    */
-  public CharSequence getREMITTERNAME() {
+  public java.lang.CharSequence getREMITTERNAME() {
     return REMITTERNAME;
   }
 
@@ -1098,7 +1098,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'REMITTERNAME' field.
    * @param value the value to set.
    */
-  public void setREMITTERNAME(CharSequence value) {
+  public void setREMITTERNAME(java.lang.CharSequence value) {
     this.REMITTERNAME = value;
   }
 
@@ -1106,7 +1106,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'APPROVALNUM' field.
    * @return The value of the 'APPROVALNUM' field.
    */
-  public CharSequence getAPPROVALNUM() {
+  public java.lang.CharSequence getAPPROVALNUM() {
     return APPROVALNUM;
   }
 
@@ -1115,7 +1115,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'APPROVALNUM' field.
    * @param value the value to set.
    */
-  public void setAPPROVALNUM(CharSequence value) {
+  public void setAPPROVALNUM(java.lang.CharSequence value) {
     this.APPROVALNUM = value;
   }
 
@@ -1123,7 +1123,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'MCCCODE' field.
    * @return The value of the 'MCCCODE' field.
    */
-  public CharSequence getMCCCODE() {
+  public java.lang.CharSequence getMCCCODE() {
     return MCCCODE;
   }
 
@@ -1132,7 +1132,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'MCCCODE' field.
    * @param value the value to set.
    */
-  public void setMCCCODE(CharSequence value) {
+  public void setMCCCODE(java.lang.CharSequence value) {
     this.MCCCODE = value;
   }
 
@@ -1140,7 +1140,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'SERVERIP' field.
    * @return The value of the 'SERVERIP' field.
    */
-  public CharSequence getSERVERIP() {
+  public java.lang.CharSequence getSERVERIP() {
     return SERVERIP;
   }
 
@@ -1149,7 +1149,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'SERVERIP' field.
    * @param value the value to set.
    */
-  public void setSERVERIP(CharSequence value) {
+  public void setSERVERIP(java.lang.CharSequence value) {
     this.SERVERIP = value;
   }
 
@@ -1157,7 +1157,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CBSRESP_DATE' field.
    * @return The value of the 'CBSRESP_DATE' field.
    */
-  public CharSequence getCBSRESPDATE() {
+  public java.lang.CharSequence getCBSRESPDATE() {
     return CBSRESP_DATE;
   }
 
@@ -1166,7 +1166,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CBSRESP_DATE' field.
    * @param value the value to set.
    */
-  public void setCBSRESPDATE(CharSequence value) {
+  public void setCBSRESPDATE(java.lang.CharSequence value) {
     this.CBSRESP_DATE = value;
   }
 
@@ -1174,7 +1174,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'INITMODE' field.
    * @return The value of the 'INITMODE' field.
    */
-  public CharSequence getINITMODE() {
+  public java.lang.CharSequence getINITMODE() {
     return INITMODE;
   }
 
@@ -1183,7 +1183,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'INITMODE' field.
    * @param value the value to set.
    */
-  public void setINITMODE(CharSequence value) {
+  public void setINITMODE(java.lang.CharSequence value) {
     this.INITMODE = value;
   }
 
@@ -1191,7 +1191,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PURPOSECODE' field.
    * @return The value of the 'PURPOSECODE' field.
    */
-  public CharSequence getPURPOSECODE() {
+  public java.lang.CharSequence getPURPOSECODE() {
     return PURPOSECODE;
   }
 
@@ -1200,7 +1200,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PURPOSECODE' field.
    * @param value the value to set.
    */
-  public void setPURPOSECODE(CharSequence value) {
+  public void setPURPOSECODE(java.lang.CharSequence value) {
     this.PURPOSECODE = value;
   }
 
@@ -1208,7 +1208,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREDITACCOUNTTYPE' field.
    * @return The value of the 'CREDITACCOUNTTYPE' field.
    */
-  public CharSequence getCREDITACCOUNTTYPE() {
+  public java.lang.CharSequence getCREDITACCOUNTTYPE() {
     return CREDITACCOUNTTYPE;
   }
 
@@ -1217,7 +1217,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREDITACCOUNTTYPE' field.
    * @param value the value to set.
    */
-  public void setCREDITACCOUNTTYPE(CharSequence value) {
+  public void setCREDITACCOUNTTYPE(java.lang.CharSequence value) {
     this.CREDITACCOUNTTYPE = value;
   }
 
@@ -1225,7 +1225,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREDITIFSC' field.
    * @return The value of the 'CREDITIFSC' field.
    */
-  public CharSequence getCREDITIFSC() {
+  public java.lang.CharSequence getCREDITIFSC() {
     return CREDITIFSC;
   }
 
@@ -1234,7 +1234,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREDITIFSC' field.
    * @param value the value to set.
    */
-  public void setCREDITIFSC(CharSequence value) {
+  public void setCREDITIFSC(java.lang.CharSequence value) {
     this.CREDITIFSC = value;
   }
 
@@ -1242,7 +1242,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DEBITACCOUNTTYPE' field.
    * @return The value of the 'DEBITACCOUNTTYPE' field.
    */
-  public CharSequence getDEBITACCOUNTTYPE() {
+  public java.lang.CharSequence getDEBITACCOUNTTYPE() {
     return DEBITACCOUNTTYPE;
   }
 
@@ -1251,7 +1251,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DEBITACCOUNTTYPE' field.
    * @param value the value to set.
    */
-  public void setDEBITACCOUNTTYPE(CharSequence value) {
+  public void setDEBITACCOUNTTYPE(java.lang.CharSequence value) {
     this.DEBITACCOUNTTYPE = value;
   }
 
@@ -1259,7 +1259,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DEBITIFSC' field.
    * @return The value of the 'DEBITIFSC' field.
    */
-  public CharSequence getDEBITIFSC() {
+  public java.lang.CharSequence getDEBITIFSC() {
     return DEBITIFSC;
   }
 
@@ -1268,7 +1268,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DEBITIFSC' field.
    * @param value the value to set.
    */
-  public void setDEBITIFSC(CharSequence value) {
+  public void setDEBITIFSC(java.lang.CharSequence value) {
     this.DEBITIFSC = value;
   }
 
@@ -1276,7 +1276,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ORDERID' field.
    * @return The value of the 'ORDERID' field.
    */
-  public CharSequence getORDERID() {
+  public java.lang.CharSequence getORDERID() {
     return ORDERID;
   }
 
@@ -1285,7 +1285,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ORDERID' field.
    * @param value the value to set.
    */
-  public void setORDERID(CharSequence value) {
+  public void setORDERID(java.lang.CharSequence value) {
     this.ORDERID = value;
   }
 
@@ -1293,7 +1293,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYEECODE' field.
    * @return The value of the 'PAYEECODE' field.
    */
-  public CharSequence getPAYEECODE() {
+  public java.lang.CharSequence getPAYEECODE() {
     return PAYEECODE;
   }
 
@@ -1302,7 +1302,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYEECODE' field.
    * @param value the value to set.
    */
-  public void setPAYEECODE(CharSequence value) {
+  public void setPAYEECODE(java.lang.CharSequence value) {
     this.PAYEECODE = value;
   }
 
@@ -1310,7 +1310,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERCODE' field.
    * @return The value of the 'PAYERCODE' field.
    */
-  public CharSequence getPAYERCODE() {
+  public java.lang.CharSequence getPAYERCODE() {
     return PAYERCODE;
   }
 
@@ -1319,7 +1319,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERCODE' field.
    * @param value the value to set.
    */
-  public void setPAYERCODE(CharSequence value) {
+  public void setPAYERCODE(java.lang.CharSequence value) {
     this.PAYERCODE = value;
   }
 
@@ -1327,7 +1327,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'SUBTYPE' field.
    * @return The value of the 'SUBTYPE' field.
    */
-  public CharSequence getSUBTYPE() {
+  public java.lang.CharSequence getSUBTYPE() {
     return SUBTYPE;
   }
 
@@ -1336,7 +1336,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'SUBTYPE' field.
    * @param value the value to set.
    */
-  public void setSUBTYPE(CharSequence value) {
+  public void setSUBTYPE(java.lang.CharSequence value) {
     this.SUBTYPE = value;
   }
 
@@ -1344,7 +1344,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'REMITTORMOBILENUMBER' field.
    * @return The value of the 'REMITTORMOBILENUMBER' field.
    */
-  public CharSequence getREMITTORMOBILENUMBER() {
+  public java.lang.CharSequence getREMITTORMOBILENUMBER() {
     return REMITTORMOBILENUMBER;
   }
 
@@ -1353,7 +1353,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'REMITTORMOBILENUMBER' field.
    * @param value the value to set.
    */
-  public void setREMITTORMOBILENUMBER(CharSequence value) {
+  public void setREMITTORMOBILENUMBER(java.lang.CharSequence value) {
     this.REMITTORMOBILENUMBER = value;
   }
 
@@ -1361,7 +1361,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYEEIMEI' field.
    * @return The value of the 'PAYEEIMEI' field.
    */
-  public CharSequence getPAYEEIMEI() {
+  public java.lang.CharSequence getPAYEEIMEI() {
     return PAYEEIMEI;
   }
 
@@ -1370,7 +1370,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYEEIMEI' field.
    * @param value the value to set.
    */
-  public void setPAYEEIMEI(CharSequence value) {
+  public void setPAYEEIMEI(java.lang.CharSequence value) {
     this.PAYEEIMEI = value;
   }
 
@@ -1378,7 +1378,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERIMEI' field.
    * @return The value of the 'PAYERIMEI' field.
    */
-  public CharSequence getPAYERIMEI() {
+  public java.lang.CharSequence getPAYERIMEI() {
     return PAYERIMEI;
   }
 
@@ -1387,7 +1387,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERIMEI' field.
    * @param value the value to set.
    */
-  public void setPAYERIMEI(CharSequence value) {
+  public void setPAYERIMEI(java.lang.CharSequence value) {
     this.PAYERIMEI = value;
   }
 
@@ -1395,7 +1395,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'GMTDATE' field.
    * @return The value of the 'GMTDATE' field.
    */
-  public CharSequence getGMTDATE() {
+  public java.lang.CharSequence getGMTDATE() {
     return GMTDATE;
   }
 
@@ -1404,7 +1404,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'GMTDATE' field.
    * @param value the value to set.
    */
-  public void setGMTDATE(CharSequence value) {
+  public void setGMTDATE(java.lang.CharSequence value) {
     this.GMTDATE = value;
   }
 
@@ -1412,7 +1412,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYEEACCOUNTTYPE' field.
    * @return The value of the 'PAYEEACCOUNTTYPE' field.
    */
-  public CharSequence getPAYEEACCOUNTTYPE() {
+  public java.lang.CharSequence getPAYEEACCOUNTTYPE() {
     return PAYEEACCOUNTTYPE;
   }
 
@@ -1421,7 +1421,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYEEACCOUNTTYPE' field.
    * @param value the value to set.
    */
-  public void setPAYEEACCOUNTTYPE(CharSequence value) {
+  public void setPAYEEACCOUNTTYPE(java.lang.CharSequence value) {
     this.PAYEEACCOUNTTYPE = value;
   }
 
@@ -1429,7 +1429,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERACCOUNTTYPE' field.
    * @return The value of the 'PAYERACCOUNTTYPE' field.
    */
-  public CharSequence getPAYERACCOUNTTYPE() {
+  public java.lang.CharSequence getPAYERACCOUNTTYPE() {
     return PAYERACCOUNTTYPE;
   }
 
@@ -1438,7 +1438,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERACCOUNTTYPE' field.
    * @param value the value to set.
    */
-  public void setPAYERACCOUNTTYPE(CharSequence value) {
+  public void setPAYERACCOUNTTYPE(java.lang.CharSequence value) {
     this.PAYERACCOUNTTYPE = value;
   }
 
@@ -1446,7 +1446,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERCONSENTNAME' field.
    * @return The value of the 'PAYERCONSENTNAME' field.
    */
-  public CharSequence getPAYERCONSENTNAME() {
+  public java.lang.CharSequence getPAYERCONSENTNAME() {
     return PAYERCONSENTNAME;
   }
 
@@ -1455,7 +1455,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERCONSENTNAME' field.
    * @param value the value to set.
    */
-  public void setPAYERCONSENTNAME(CharSequence value) {
+  public void setPAYERCONSENTNAME(java.lang.CharSequence value) {
     this.PAYERCONSENTNAME = value;
   }
 
@@ -1463,7 +1463,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERCONSENTTYPE' field.
    * @return The value of the 'PAYERCONSENTTYPE' field.
    */
-  public CharSequence getPAYERCONSENTTYPE() {
+  public java.lang.CharSequence getPAYERCONSENTTYPE() {
     return PAYERCONSENTTYPE;
   }
 
@@ -1472,7 +1472,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERCONSENTTYPE' field.
    * @param value the value to set.
    */
-  public void setPAYERCONSENTTYPE(CharSequence value) {
+  public void setPAYERCONSENTTYPE(java.lang.CharSequence value) {
     this.PAYERCONSENTTYPE = value;
   }
 
@@ -1480,7 +1480,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'PAYERCONSENTVALUE' field.
    * @return The value of the 'PAYERCONSENTVALUE' field.
    */
-  public CharSequence getPAYERCONSENTVALUE() {
+  public java.lang.CharSequence getPAYERCONSENTVALUE() {
     return PAYERCONSENTVALUE;
   }
 
@@ -1489,7 +1489,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'PAYERCONSENTVALUE' field.
    * @param value the value to set.
    */
-  public void setPAYERCONSENTVALUE(CharSequence value) {
+  public void setPAYERCONSENTVALUE(java.lang.CharSequence value) {
     this.PAYERCONSENTVALUE = value;
   }
 
@@ -1497,7 +1497,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADJCODE' field.
    * @return The value of the 'ADJCODE' field.
    */
-  public CharSequence getADJCODE() {
+  public java.lang.CharSequence getADJCODE() {
     return ADJCODE;
   }
 
@@ -1506,7 +1506,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADJCODE' field.
    * @param value the value to set.
    */
-  public void setADJCODE(CharSequence value) {
+  public void setADJCODE(java.lang.CharSequence value) {
     this.ADJCODE = value;
   }
 
@@ -1514,7 +1514,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADJFLAG' field.
    * @return The value of the 'ADJFLAG' field.
    */
-  public CharSequence getADJFLAG() {
+  public java.lang.CharSequence getADJFLAG() {
     return ADJFLAG;
   }
 
@@ -1523,7 +1523,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADJFLAG' field.
    * @param value the value to set.
    */
-  public void setADJFLAG(CharSequence value) {
+  public void setADJFLAG(java.lang.CharSequence value) {
     this.ADJFLAG = value;
   }
 
@@ -1531,7 +1531,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREATE_DATE' field.
    * @return The value of the 'CREATE_DATE' field.
    */
-  public CharSequence getCREATEDATE() {
+  public java.lang.CharSequence getCREATEDATE() {
     return CREATE_DATE;
   }
 
@@ -1540,7 +1540,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREATE_DATE' field.
    * @param value the value to set.
    */
-  public void setCREATEDATE(CharSequence value) {
+  public void setCREATEDATE(java.lang.CharSequence value) {
     this.CREATE_DATE = value;
   }
 
@@ -1548,7 +1548,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CREDITACCTNARRATION_103' field.
    * @return The value of the 'CREDITACCTNARRATION_103' field.
    */
-  public CharSequence getCREDITACCTNARRATION103() {
+  public java.lang.CharSequence getCREDITACCTNARRATION103() {
     return CREDITACCTNARRATION_103;
   }
 
@@ -1557,7 +1557,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CREDITACCTNARRATION_103' field.
    * @param value the value to set.
    */
-  public void setCREDITACCTNARRATION103(CharSequence value) {
+  public void setCREDITACCTNARRATION103(java.lang.CharSequence value) {
     this.CREDITACCTNARRATION_103 = value;
   }
 
@@ -1565,7 +1565,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DE46' field.
    * @return The value of the 'DE46' field.
    */
-  public CharSequence getDE46() {
+  public java.lang.CharSequence getDE46() {
     return DE46;
   }
 
@@ -1574,7 +1574,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DE46' field.
    * @param value the value to set.
    */
-  public void setDE46(CharSequence value) {
+  public void setDE46(java.lang.CharSequence value) {
     this.DE46 = value;
   }
 
@@ -1582,7 +1582,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'DEBITACCTNARRATION_102' field.
    * @return The value of the 'DEBITACCTNARRATION_102' field.
    */
-  public CharSequence getDEBITACCTNARRATION102() {
+  public java.lang.CharSequence getDEBITACCTNARRATION102() {
     return DEBITACCTNARRATION_102;
   }
 
@@ -1591,7 +1591,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'DEBITACCTNARRATION_102' field.
    * @param value the value to set.
    */
-  public void setDEBITACCTNARRATION102(CharSequence value) {
+  public void setDEBITACCTNARRATION102(java.lang.CharSequence value) {
     this.DEBITACCTNARRATION_102 = value;
   }
 
@@ -1599,7 +1599,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'GST' field.
    * @return The value of the 'GST' field.
    */
-  public CharSequence getGST() {
+  public java.lang.CharSequence getGST() {
     return GST;
   }
 
@@ -1608,7 +1608,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'GST' field.
    * @param value the value to set.
    */
-  public void setGST(CharSequence value) {
+  public void setGST(java.lang.CharSequence value) {
     this.GST = value;
   }
 
@@ -1616,7 +1616,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'LOANNUMBER' field.
    * @return The value of the 'LOANNUMBER' field.
    */
-  public CharSequence getLOANNUMBER() {
+  public java.lang.CharSequence getLOANNUMBER() {
     return LOANNUMBER;
   }
 
@@ -1625,7 +1625,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'LOANNUMBER' field.
    * @param value the value to set.
    */
-  public void setLOANNUMBER(CharSequence value) {
+  public void setLOANNUMBER(java.lang.CharSequence value) {
     this.LOANNUMBER = value;
   }
 
@@ -1633,7 +1633,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'LOCALTIME' field.
    * @return The value of the 'LOCALTIME' field.
    */
-  public CharSequence getLOCALTIME() {
+  public java.lang.CharSequence getLOCALTIME() {
     return LOCALTIME;
   }
 
@@ -1642,7 +1642,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'LOCALTIME' field.
    * @param value the value to set.
    */
-  public void setLOCALTIME(CharSequence value) {
+  public void setLOCALTIME(java.lang.CharSequence value) {
     this.LOCALTIME = value;
   }
 
@@ -1650,7 +1650,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'NARRATION_125' field.
    * @return The value of the 'NARRATION_125' field.
    */
-  public CharSequence getNARRATION125() {
+  public java.lang.CharSequence getNARRATION125() {
     return NARRATION_125;
   }
 
@@ -1659,7 +1659,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'NARRATION_125' field.
    * @param value the value to set.
    */
-  public void setNARRATION125(CharSequence value) {
+  public void setNARRATION125(java.lang.CharSequence value) {
     this.NARRATION_125 = value;
   }
 
@@ -1667,7 +1667,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'P2PTXNCHARGES' field.
    * @return The value of the 'P2PTXNCHARGES' field.
    */
-  public CharSequence getP2PTXNCHARGES() {
+  public java.lang.CharSequence getP2PTXNCHARGES() {
     return P2PTXNCHARGES;
   }
 
@@ -1676,7 +1676,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'P2PTXNCHARGES' field.
    * @param value the value to set.
    */
-  public void setP2PTXNCHARGES(CharSequence value) {
+  public void setP2PTXNCHARGES(java.lang.CharSequence value) {
     this.P2PTXNCHARGES = value;
   }
 
@@ -1684,7 +1684,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'SCHEMECODE' field.
    * @return The value of the 'SCHEMECODE' field.
    */
-  public CharSequence getSCHEMECODE() {
+  public java.lang.CharSequence getSCHEMECODE() {
     return SCHEMECODE;
   }
 
@@ -1693,7 +1693,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'SCHEMECODE' field.
    * @param value the value to set.
    */
-  public void setSCHEMECODE(CharSequence value) {
+  public void setSCHEMECODE(java.lang.CharSequence value) {
     this.SCHEMECODE = value;
   }
 
@@ -1701,7 +1701,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'TXNAMOUNT' field.
    * @return The value of the 'TXNAMOUNT' field.
    */
-  public CharSequence getTXNAMOUNT() {
+  public java.lang.CharSequence getTXNAMOUNT() {
     return TXNAMOUNT;
   }
 
@@ -1710,7 +1710,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'TXNAMOUNT' field.
    * @param value the value to set.
    */
-  public void setTXNAMOUNT(CharSequence value) {
+  public void setTXNAMOUNT(java.lang.CharSequence value) {
     this.TXNAMOUNT = value;
   }
 
@@ -1718,7 +1718,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'BATCH_ID' field.
    * @return The value of the 'BATCH_ID' field.
    */
-  public CharSequence getBATCHID() {
+  public java.lang.CharSequence getBATCHID() {
     return BATCH_ID;
   }
 
@@ -1727,7 +1727,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'BATCH_ID' field.
    * @param value the value to set.
    */
-  public void setBATCHID(CharSequence value) {
+  public void setBATCHID(java.lang.CharSequence value) {
     this.BATCH_ID = value;
   }
 
@@ -1735,7 +1735,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'BASEAMOUNT' field.
    * @return The value of the 'BASEAMOUNT' field.
    */
-  public CharSequence getBASEAMOUNT() {
+  public java.lang.CharSequence getBASEAMOUNT() {
     return BASEAMOUNT;
   }
 
@@ -1744,7 +1744,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'BASEAMOUNT' field.
    * @param value the value to set.
    */
-  public void setBASEAMOUNT(CharSequence value) {
+  public void setBASEAMOUNT(java.lang.CharSequence value) {
     this.BASEAMOUNT = value;
   }
 
@@ -1752,7 +1752,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'BASECURR' field.
    * @return The value of the 'BASECURR' field.
    */
-  public CharSequence getBASECURR() {
+  public java.lang.CharSequence getBASECURR() {
     return BASECURR;
   }
 
@@ -1761,7 +1761,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'BASECURR' field.
    * @param value the value to set.
    */
-  public void setBASECURR(CharSequence value) {
+  public void setBASECURR(java.lang.CharSequence value) {
     this.BASECURR = value;
   }
 
@@ -1769,7 +1769,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CONCODE' field.
    * @return The value of the 'CONCODE' field.
    */
-  public CharSequence getCONCODE() {
+  public java.lang.CharSequence getCONCODE() {
     return CONCODE;
   }
 
@@ -1778,7 +1778,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CONCODE' field.
    * @param value the value to set.
    */
-  public void setCONCODE(CharSequence value) {
+  public void setCONCODE(java.lang.CharSequence value) {
     this.CONCODE = value;
   }
 
@@ -1786,7 +1786,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'FX' field.
    * @return The value of the 'FX' field.
    */
-  public CharSequence getFX() {
+  public java.lang.CharSequence getFX() {
     return FX;
   }
 
@@ -1795,7 +1795,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'FX' field.
    * @param value the value to set.
    */
-  public void setFX(CharSequence value) {
+  public void setFX(java.lang.CharSequence value) {
     this.FX = value;
   }
 
@@ -1803,7 +1803,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'MKUP' field.
    * @return The value of the 'MKUP' field.
    */
-  public CharSequence getMKUP() {
+  public java.lang.CharSequence getMKUP() {
     return MKUP;
   }
 
@@ -1812,7 +1812,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'MKUP' field.
    * @param value the value to set.
    */
-  public void setMKUP(CharSequence value) {
+  public void setMKUP(java.lang.CharSequence value) {
     this.MKUP = value;
   }
 
@@ -1820,7 +1820,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADDITIONAL4' field.
    * @return The value of the 'ADDITIONAL4' field.
    */
-  public CharSequence getADDITIONAL4() {
+  public java.lang.CharSequence getADDITIONAL4() {
     return ADDITIONAL4;
   }
 
@@ -1829,7 +1829,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADDITIONAL4' field.
    * @param value the value to set.
    */
-  public void setADDITIONAL4(CharSequence value) {
+  public void setADDITIONAL4(java.lang.CharSequence value) {
     this.ADDITIONAL4 = value;
   }
 
@@ -1837,7 +1837,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'D12' field.
    * @return The value of the 'D12' field.
    */
-  public CharSequence getD12() {
+  public java.lang.CharSequence getD12() {
     return D12;
   }
 
@@ -1846,7 +1846,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'D12' field.
    * @param value the value to set.
    */
-  public void setD12(CharSequence value) {
+  public void setD12(java.lang.CharSequence value) {
     this.D12 = value;
   }
 
@@ -1854,7 +1854,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADDITIONAL1' field.
    * @return The value of the 'ADDITIONAL1' field.
    */
-  public CharSequence getADDITIONAL1() {
+  public java.lang.CharSequence getADDITIONAL1() {
     return ADDITIONAL1;
   }
 
@@ -1863,7 +1863,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADDITIONAL1' field.
    * @param value the value to set.
    */
-  public void setADDITIONAL1(CharSequence value) {
+  public void setADDITIONAL1(java.lang.CharSequence value) {
     this.ADDITIONAL1 = value;
   }
 
@@ -1871,7 +1871,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADDITIONAL2' field.
    * @return The value of the 'ADDITIONAL2' field.
    */
-  public CharSequence getADDITIONAL2() {
+  public java.lang.CharSequence getADDITIONAL2() {
     return ADDITIONAL2;
   }
 
@@ -1880,7 +1880,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADDITIONAL2' field.
    * @param value the value to set.
    */
-  public void setADDITIONAL2(CharSequence value) {
+  public void setADDITIONAL2(java.lang.CharSequence value) {
     this.ADDITIONAL2 = value;
   }
 
@@ -1888,7 +1888,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADDITIONAL3' field.
    * @return The value of the 'ADDITIONAL3' field.
    */
-  public CharSequence getADDITIONAL3() {
+  public java.lang.CharSequence getADDITIONAL3() {
     return ADDITIONAL3;
   }
 
@@ -1897,7 +1897,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADDITIONAL3' field.
    * @param value the value to set.
    */
-  public void setADDITIONAL3(CharSequence value) {
+  public void setADDITIONAL3(java.lang.CharSequence value) {
     this.ADDITIONAL3 = value;
   }
 
@@ -1905,7 +1905,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'ADDITIONAL5' field.
    * @return The value of the 'ADDITIONAL5' field.
    */
-  public CharSequence getADDITIONAL5() {
+  public java.lang.CharSequence getADDITIONAL5() {
     return ADDITIONAL5;
   }
 
@@ -1914,7 +1914,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'ADDITIONAL5' field.
    * @param value the value to set.
    */
-  public void setADDITIONAL5(CharSequence value) {
+  public void setADDITIONAL5(java.lang.CharSequence value) {
     this.ADDITIONAL5 = value;
   }
 
@@ -1922,7 +1922,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Gets the value of the 'CBS_ROUTING' field.
    * @return The value of the 'CBS_ROUTING' field.
    */
-  public CharSequence getCBSROUTING() {
+  public java.lang.CharSequence getCBSROUTING() {
     return CBS_ROUTING;
   }
 
@@ -1931,7 +1931,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Sets the value of the 'CBS_ROUTING' field.
    * @param value the value to set.
    */
-  public void setCBSROUTING(CharSequence value) {
+  public void setCBSROUTING(java.lang.CharSequence value) {
     this.CBS_ROUTING = value;
   }
 
@@ -1939,8 +1939,8 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * Creates a new CBSTranCol RecordBuilder.
    * @return A new CBSTranCol RecordBuilder
    */
-  public static Builder newBuilder() {
-    return new Builder();
+  public static com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder newBuilder() {
+    return new com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder();
   }
 
   /**
@@ -1948,11 +1948,11 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * @param other The existing builder to copy.
    * @return A new CBSTranCol RecordBuilder
    */
-  public static Builder newBuilder(Builder other) {
+  public static com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder newBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder other) {
     if (other == null) {
-      return new Builder();
+      return new com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder();
     } else {
-      return new Builder(other);
+      return new com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder(other);
     }
   }
 
@@ -1961,11 +1961,11 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
    * @param other The existing instance to copy.
    * @return A new CBSTranCol RecordBuilder
    */
-  public static Builder newBuilder(CBSTranCol other) {
+  public static com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder newBuilder(com.kmbl.eventmanagementservice.Schema.CBSTranCol other) {
     if (other == null) {
-      return new Builder();
+      return new com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder();
     } else {
-      return new Builder(other);
+      return new com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder(other);
     }
   }
 
@@ -1976,89 +1976,89 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<CBSTranCol>
     implements org.apache.avro.data.RecordBuilder<CBSTranCol> {
 
-    private Double ID;
-    private CharSequence AMOUNT;
-    private CharSequence CBSRC;
-    private CharSequence CREDITACCOUNT;
-    private CharSequence CUSTOMERID;
-    private CharSequence DEBITACCOUNT;
-    private CharSequence MSGID;
-    private Long REVERSAL;
-    private CharSequence REVERSALSTATUS;
-    private CharSequence RRN;
-    private CharSequence STAN;
-    private CharSequence TXN_DATE;
-    private CharSequence TXNID;
-    private CharSequence TYPE;
-    private CharSequence UPIRC;
-    private CharSequence ORGTXNID;
-    private CharSequence REMARKS;
-    private CharSequence CUSTOMERACCOUNT;
-    private CharSequence NAME;
-    private CharSequence PAYEEVPA;
-    private CharSequence PAYERVPA;
-    private CharSequence SEQNO;
-    private CharSequence COMMISSIONAMOUNT;
-    private CharSequence CUSTOMERREFID;
-    private CharSequence TRANTYPE;
-    private CharSequence CREDITBANKNAME;
-    private CharSequence DEBITBANKNAME;
-    private CharSequence OTHERSACCOUNT;
-    private CharSequence CHANNEL;
-    private CharSequence APPID;
-    private CharSequence PREAPPROVED;
-    private CharSequence BENEFICIARYNAME;
-    private CharSequence OTHERMOBILENO;
-    private CharSequence REMITTERNAME;
-    private CharSequence APPROVALNUM;
-    private CharSequence MCCCODE;
-    private CharSequence SERVERIP;
-    private CharSequence CBSRESP_DATE;
-    private CharSequence INITMODE;
-    private CharSequence PURPOSECODE;
-    private CharSequence CREDITACCOUNTTYPE;
-    private CharSequence CREDITIFSC;
-    private CharSequence DEBITACCOUNTTYPE;
-    private CharSequence DEBITIFSC;
-    private CharSequence ORDERID;
-    private CharSequence PAYEECODE;
-    private CharSequence PAYERCODE;
-    private CharSequence SUBTYPE;
-    private CharSequence REMITTORMOBILENUMBER;
-    private CharSequence PAYEEIMEI;
-    private CharSequence PAYERIMEI;
-    private CharSequence GMTDATE;
-    private CharSequence PAYEEACCOUNTTYPE;
-    private CharSequence PAYERACCOUNTTYPE;
-    private CharSequence PAYERCONSENTNAME;
-    private CharSequence PAYERCONSENTTYPE;
-    private CharSequence PAYERCONSENTVALUE;
-    private CharSequence ADJCODE;
-    private CharSequence ADJFLAG;
-    private CharSequence CREATE_DATE;
-    private CharSequence CREDITACCTNARRATION_103;
-    private CharSequence DE46;
-    private CharSequence DEBITACCTNARRATION_102;
-    private CharSequence GST;
-    private CharSequence LOANNUMBER;
-    private CharSequence LOCALTIME;
-    private CharSequence NARRATION_125;
-    private CharSequence P2PTXNCHARGES;
-    private CharSequence SCHEMECODE;
-    private CharSequence TXNAMOUNT;
-    private CharSequence BATCH_ID;
-    private CharSequence BASEAMOUNT;
-    private CharSequence BASECURR;
-    private CharSequence CONCODE;
-    private CharSequence FX;
-    private CharSequence MKUP;
-    private CharSequence ADDITIONAL4;
-    private CharSequence D12;
-    private CharSequence ADDITIONAL1;
-    private CharSequence ADDITIONAL2;
-    private CharSequence ADDITIONAL3;
-    private CharSequence ADDITIONAL5;
-    private CharSequence CBS_ROUTING;
+    private java.lang.Double ID;
+    private java.lang.CharSequence AMOUNT;
+    private java.lang.CharSequence CBSRC;
+    private java.lang.CharSequence CREDITACCOUNT;
+    private java.lang.CharSequence CUSTOMERID;
+    private java.lang.CharSequence DEBITACCOUNT;
+    private java.lang.CharSequence MSGID;
+    private java.lang.Long REVERSAL;
+    private java.lang.CharSequence REVERSALSTATUS;
+    private java.lang.CharSequence RRN;
+    private java.lang.CharSequence STAN;
+    private java.lang.CharSequence TXN_DATE;
+    private java.lang.CharSequence TXNID;
+    private java.lang.CharSequence TYPE;
+    private java.lang.CharSequence UPIRC;
+    private java.lang.CharSequence ORGTXNID;
+    private java.lang.CharSequence REMARKS;
+    private java.lang.CharSequence CUSTOMERACCOUNT;
+    private java.lang.CharSequence NAME;
+    private java.lang.CharSequence PAYEEVPA;
+    private java.lang.CharSequence PAYERVPA;
+    private java.lang.CharSequence SEQNO;
+    private java.lang.CharSequence COMMISSIONAMOUNT;
+    private java.lang.CharSequence CUSTOMERREFID;
+    private java.lang.CharSequence TRANTYPE;
+    private java.lang.CharSequence CREDITBANKNAME;
+    private java.lang.CharSequence DEBITBANKNAME;
+    private java.lang.CharSequence OTHERSACCOUNT;
+    private java.lang.CharSequence CHANNEL;
+    private java.lang.CharSequence APPID;
+    private java.lang.CharSequence PREAPPROVED;
+    private java.lang.CharSequence BENEFICIARYNAME;
+    private java.lang.CharSequence OTHERMOBILENO;
+    private java.lang.CharSequence REMITTERNAME;
+    private java.lang.CharSequence APPROVALNUM;
+    private java.lang.CharSequence MCCCODE;
+    private java.lang.CharSequence SERVERIP;
+    private java.lang.CharSequence CBSRESP_DATE;
+    private java.lang.CharSequence INITMODE;
+    private java.lang.CharSequence PURPOSECODE;
+    private java.lang.CharSequence CREDITACCOUNTTYPE;
+    private java.lang.CharSequence CREDITIFSC;
+    private java.lang.CharSequence DEBITACCOUNTTYPE;
+    private java.lang.CharSequence DEBITIFSC;
+    private java.lang.CharSequence ORDERID;
+    private java.lang.CharSequence PAYEECODE;
+    private java.lang.CharSequence PAYERCODE;
+    private java.lang.CharSequence SUBTYPE;
+    private java.lang.CharSequence REMITTORMOBILENUMBER;
+    private java.lang.CharSequence PAYEEIMEI;
+    private java.lang.CharSequence PAYERIMEI;
+    private java.lang.CharSequence GMTDATE;
+    private java.lang.CharSequence PAYEEACCOUNTTYPE;
+    private java.lang.CharSequence PAYERACCOUNTTYPE;
+    private java.lang.CharSequence PAYERCONSENTNAME;
+    private java.lang.CharSequence PAYERCONSENTTYPE;
+    private java.lang.CharSequence PAYERCONSENTVALUE;
+    private java.lang.CharSequence ADJCODE;
+    private java.lang.CharSequence ADJFLAG;
+    private java.lang.CharSequence CREATE_DATE;
+    private java.lang.CharSequence CREDITACCTNARRATION_103;
+    private java.lang.CharSequence DE46;
+    private java.lang.CharSequence DEBITACCTNARRATION_102;
+    private java.lang.CharSequence GST;
+    private java.lang.CharSequence LOANNUMBER;
+    private java.lang.CharSequence LOCALTIME;
+    private java.lang.CharSequence NARRATION_125;
+    private java.lang.CharSequence P2PTXNCHARGES;
+    private java.lang.CharSequence SCHEMECODE;
+    private java.lang.CharSequence TXNAMOUNT;
+    private java.lang.CharSequence BATCH_ID;
+    private java.lang.CharSequence BASEAMOUNT;
+    private java.lang.CharSequence BASECURR;
+    private java.lang.CharSequence CONCODE;
+    private java.lang.CharSequence FX;
+    private java.lang.CharSequence MKUP;
+    private java.lang.CharSequence ADDITIONAL4;
+    private java.lang.CharSequence D12;
+    private java.lang.CharSequence ADDITIONAL1;
+    private java.lang.CharSequence ADDITIONAL2;
+    private java.lang.CharSequence ADDITIONAL3;
+    private java.lang.CharSequence ADDITIONAL5;
+    private java.lang.CharSequence CBS_ROUTING;
 
     /** Creates a new Builder */
     private Builder() {
@@ -2069,7 +2069,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(Builder other) {
+    private Builder(com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.ID)) {
         this.ID = data().deepCopy(fields()[0].schema(), other.ID);
@@ -2409,7 +2409,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
      * Creates a Builder by copying an existing CBSTranCol instance
      * @param other The existing instance to copy.
      */
-    private Builder(CBSTranCol other) {
+    private Builder(com.kmbl.eventmanagementservice.Schema.CBSTranCol other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.ID)) {
         this.ID = data().deepCopy(fields()[0].schema(), other.ID);
@@ -2749,7 +2749,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ID' field.
       * @return The value.
       */
-    public Double getID() {
+    public java.lang.Double getID() {
       return ID;
     }
 
@@ -2759,7 +2759,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ID'.
       * @return This builder.
       */
-    public Builder setID(Double value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setID(java.lang.Double value) {
       validate(fields()[0], value);
       this.ID = value;
       fieldSetFlags()[0] = true;
@@ -2779,7 +2779,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ID' field.
       * @return This builder.
       */
-    public Builder clearID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearID() {
       ID = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -2789,7 +2789,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'AMOUNT' field.
       * @return The value.
       */
-    public CharSequence getAMOUNT() {
+    public java.lang.CharSequence getAMOUNT() {
       return AMOUNT;
     }
 
@@ -2799,7 +2799,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'AMOUNT'.
       * @return This builder.
       */
-    public Builder setAMOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setAMOUNT(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.AMOUNT = value;
       fieldSetFlags()[1] = true;
@@ -2819,7 +2819,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'AMOUNT' field.
       * @return This builder.
       */
-    public Builder clearAMOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearAMOUNT() {
       AMOUNT = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -2829,7 +2829,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CBSRC' field.
       * @return The value.
       */
-    public CharSequence getCBSRC() {
+    public java.lang.CharSequence getCBSRC() {
       return CBSRC;
     }
 
@@ -2839,7 +2839,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CBSRC'.
       * @return This builder.
       */
-    public Builder setCBSRC(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCBSRC(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.CBSRC = value;
       fieldSetFlags()[2] = true;
@@ -2859,7 +2859,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CBSRC' field.
       * @return This builder.
       */
-    public Builder clearCBSRC() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCBSRC() {
       CBSRC = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -2869,7 +2869,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREDITACCOUNT' field.
       * @return The value.
       */
-    public CharSequence getCREDITACCOUNT() {
+    public java.lang.CharSequence getCREDITACCOUNT() {
       return CREDITACCOUNT;
     }
 
@@ -2879,7 +2879,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREDITACCOUNT'.
       * @return This builder.
       */
-    public Builder setCREDITACCOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREDITACCOUNT(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.CREDITACCOUNT = value;
       fieldSetFlags()[3] = true;
@@ -2899,7 +2899,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREDITACCOUNT' field.
       * @return This builder.
       */
-    public Builder clearCREDITACCOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREDITACCOUNT() {
       CREDITACCOUNT = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -2909,7 +2909,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CUSTOMERID' field.
       * @return The value.
       */
-    public CharSequence getCUSTOMERID() {
+    public java.lang.CharSequence getCUSTOMERID() {
       return CUSTOMERID;
     }
 
@@ -2919,7 +2919,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CUSTOMERID'.
       * @return This builder.
       */
-    public Builder setCUSTOMERID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCUSTOMERID(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.CUSTOMERID = value;
       fieldSetFlags()[4] = true;
@@ -2939,7 +2939,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CUSTOMERID' field.
       * @return This builder.
       */
-    public Builder clearCUSTOMERID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCUSTOMERID() {
       CUSTOMERID = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -2949,7 +2949,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DEBITACCOUNT' field.
       * @return The value.
       */
-    public CharSequence getDEBITACCOUNT() {
+    public java.lang.CharSequence getDEBITACCOUNT() {
       return DEBITACCOUNT;
     }
 
@@ -2959,7 +2959,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DEBITACCOUNT'.
       * @return This builder.
       */
-    public Builder setDEBITACCOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDEBITACCOUNT(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.DEBITACCOUNT = value;
       fieldSetFlags()[5] = true;
@@ -2979,7 +2979,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DEBITACCOUNT' field.
       * @return This builder.
       */
-    public Builder clearDEBITACCOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDEBITACCOUNT() {
       DEBITACCOUNT = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -2989,7 +2989,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'MSGID' field.
       * @return The value.
       */
-    public CharSequence getMSGID() {
+    public java.lang.CharSequence getMSGID() {
       return MSGID;
     }
 
@@ -2999,7 +2999,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'MSGID'.
       * @return This builder.
       */
-    public Builder setMSGID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setMSGID(java.lang.CharSequence value) {
       validate(fields()[6], value);
       this.MSGID = value;
       fieldSetFlags()[6] = true;
@@ -3019,7 +3019,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'MSGID' field.
       * @return This builder.
       */
-    public Builder clearMSGID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearMSGID() {
       MSGID = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -3029,7 +3029,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'REVERSAL' field.
       * @return The value.
       */
-    public Long getREVERSAL() {
+    public java.lang.Long getREVERSAL() {
       return REVERSAL;
     }
 
@@ -3039,7 +3039,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'REVERSAL'.
       * @return This builder.
       */
-    public Builder setREVERSAL(Long value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setREVERSAL(java.lang.Long value) {
       validate(fields()[7], value);
       this.REVERSAL = value;
       fieldSetFlags()[7] = true;
@@ -3059,7 +3059,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'REVERSAL' field.
       * @return This builder.
       */
-    public Builder clearREVERSAL() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearREVERSAL() {
       REVERSAL = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -3069,7 +3069,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'REVERSALSTATUS' field.
       * @return The value.
       */
-    public CharSequence getREVERSALSTATUS() {
+    public java.lang.CharSequence getREVERSALSTATUS() {
       return REVERSALSTATUS;
     }
 
@@ -3079,7 +3079,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'REVERSALSTATUS'.
       * @return This builder.
       */
-    public Builder setREVERSALSTATUS(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setREVERSALSTATUS(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.REVERSALSTATUS = value;
       fieldSetFlags()[8] = true;
@@ -3099,7 +3099,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'REVERSALSTATUS' field.
       * @return This builder.
       */
-    public Builder clearREVERSALSTATUS() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearREVERSALSTATUS() {
       REVERSALSTATUS = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -3109,7 +3109,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'RRN' field.
       * @return The value.
       */
-    public CharSequence getRRN() {
+    public java.lang.CharSequence getRRN() {
       return RRN;
     }
 
@@ -3119,7 +3119,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'RRN'.
       * @return This builder.
       */
-    public Builder setRRN(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setRRN(java.lang.CharSequence value) {
       validate(fields()[9], value);
       this.RRN = value;
       fieldSetFlags()[9] = true;
@@ -3139,7 +3139,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'RRN' field.
       * @return This builder.
       */
-    public Builder clearRRN() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearRRN() {
       RRN = null;
       fieldSetFlags()[9] = false;
       return this;
@@ -3149,7 +3149,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'STAN' field.
       * @return The value.
       */
-    public CharSequence getSTAN() {
+    public java.lang.CharSequence getSTAN() {
       return STAN;
     }
 
@@ -3159,7 +3159,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'STAN'.
       * @return This builder.
       */
-    public Builder setSTAN(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setSTAN(java.lang.CharSequence value) {
       validate(fields()[10], value);
       this.STAN = value;
       fieldSetFlags()[10] = true;
@@ -3179,7 +3179,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'STAN' field.
       * @return This builder.
       */
-    public Builder clearSTAN() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearSTAN() {
       STAN = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -3189,7 +3189,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'TXN_DATE' field.
       * @return The value.
       */
-    public CharSequence getTXNDATE() {
+    public java.lang.CharSequence getTXNDATE() {
       return TXN_DATE;
     }
 
@@ -3199,7 +3199,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'TXN_DATE'.
       * @return This builder.
       */
-    public Builder setTXNDATE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setTXNDATE(java.lang.CharSequence value) {
       validate(fields()[11], value);
       this.TXN_DATE = value;
       fieldSetFlags()[11] = true;
@@ -3219,7 +3219,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'TXN_DATE' field.
       * @return This builder.
       */
-    public Builder clearTXNDATE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearTXNDATE() {
       TXN_DATE = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -3229,7 +3229,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'TXNID' field.
       * @return The value.
       */
-    public CharSequence getTXNID() {
+    public java.lang.CharSequence getTXNID() {
       return TXNID;
     }
 
@@ -3239,7 +3239,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'TXNID'.
       * @return This builder.
       */
-    public Builder setTXNID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setTXNID(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.TXNID = value;
       fieldSetFlags()[12] = true;
@@ -3259,7 +3259,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'TXNID' field.
       * @return This builder.
       */
-    public Builder clearTXNID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearTXNID() {
       TXNID = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -3269,7 +3269,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'TYPE' field.
       * @return The value.
       */
-    public CharSequence getTYPE() {
+    public java.lang.CharSequence getTYPE() {
       return TYPE;
     }
 
@@ -3279,7 +3279,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'TYPE'.
       * @return This builder.
       */
-    public Builder setTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setTYPE(java.lang.CharSequence value) {
       validate(fields()[13], value);
       this.TYPE = value;
       fieldSetFlags()[13] = true;
@@ -3299,7 +3299,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'TYPE' field.
       * @return This builder.
       */
-    public Builder clearTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearTYPE() {
       TYPE = null;
       fieldSetFlags()[13] = false;
       return this;
@@ -3309,7 +3309,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'UPIRC' field.
       * @return The value.
       */
-    public CharSequence getUPIRC() {
+    public java.lang.CharSequence getUPIRC() {
       return UPIRC;
     }
 
@@ -3319,7 +3319,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'UPIRC'.
       * @return This builder.
       */
-    public Builder setUPIRC(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setUPIRC(java.lang.CharSequence value) {
       validate(fields()[14], value);
       this.UPIRC = value;
       fieldSetFlags()[14] = true;
@@ -3339,7 +3339,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'UPIRC' field.
       * @return This builder.
       */
-    public Builder clearUPIRC() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearUPIRC() {
       UPIRC = null;
       fieldSetFlags()[14] = false;
       return this;
@@ -3349,7 +3349,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ORGTXNID' field.
       * @return The value.
       */
-    public CharSequence getORGTXNID() {
+    public java.lang.CharSequence getORGTXNID() {
       return ORGTXNID;
     }
 
@@ -3359,7 +3359,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ORGTXNID'.
       * @return This builder.
       */
-    public Builder setORGTXNID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setORGTXNID(java.lang.CharSequence value) {
       validate(fields()[15], value);
       this.ORGTXNID = value;
       fieldSetFlags()[15] = true;
@@ -3379,7 +3379,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ORGTXNID' field.
       * @return This builder.
       */
-    public Builder clearORGTXNID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearORGTXNID() {
       ORGTXNID = null;
       fieldSetFlags()[15] = false;
       return this;
@@ -3389,7 +3389,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'REMARKS' field.
       * @return The value.
       */
-    public CharSequence getREMARKS() {
+    public java.lang.CharSequence getREMARKS() {
       return REMARKS;
     }
 
@@ -3399,7 +3399,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'REMARKS'.
       * @return This builder.
       */
-    public Builder setREMARKS(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setREMARKS(java.lang.CharSequence value) {
       validate(fields()[16], value);
       this.REMARKS = value;
       fieldSetFlags()[16] = true;
@@ -3419,7 +3419,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'REMARKS' field.
       * @return This builder.
       */
-    public Builder clearREMARKS() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearREMARKS() {
       REMARKS = null;
       fieldSetFlags()[16] = false;
       return this;
@@ -3429,7 +3429,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CUSTOMERACCOUNT' field.
       * @return The value.
       */
-    public CharSequence getCUSTOMERACCOUNT() {
+    public java.lang.CharSequence getCUSTOMERACCOUNT() {
       return CUSTOMERACCOUNT;
     }
 
@@ -3439,7 +3439,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CUSTOMERACCOUNT'.
       * @return This builder.
       */
-    public Builder setCUSTOMERACCOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCUSTOMERACCOUNT(java.lang.CharSequence value) {
       validate(fields()[17], value);
       this.CUSTOMERACCOUNT = value;
       fieldSetFlags()[17] = true;
@@ -3459,7 +3459,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CUSTOMERACCOUNT' field.
       * @return This builder.
       */
-    public Builder clearCUSTOMERACCOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCUSTOMERACCOUNT() {
       CUSTOMERACCOUNT = null;
       fieldSetFlags()[17] = false;
       return this;
@@ -3469,7 +3469,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'NAME' field.
       * @return The value.
       */
-    public CharSequence getNAME() {
+    public java.lang.CharSequence getNAME() {
       return NAME;
     }
 
@@ -3479,7 +3479,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'NAME'.
       * @return This builder.
       */
-    public Builder setNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setNAME(java.lang.CharSequence value) {
       validate(fields()[18], value);
       this.NAME = value;
       fieldSetFlags()[18] = true;
@@ -3499,7 +3499,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'NAME' field.
       * @return This builder.
       */
-    public Builder clearNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearNAME() {
       NAME = null;
       fieldSetFlags()[18] = false;
       return this;
@@ -3509,7 +3509,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYEEVPA' field.
       * @return The value.
       */
-    public CharSequence getPAYEEVPA() {
+    public java.lang.CharSequence getPAYEEVPA() {
       return PAYEEVPA;
     }
 
@@ -3519,7 +3519,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYEEVPA'.
       * @return This builder.
       */
-    public Builder setPAYEEVPA(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYEEVPA(java.lang.CharSequence value) {
       validate(fields()[19], value);
       this.PAYEEVPA = value;
       fieldSetFlags()[19] = true;
@@ -3539,7 +3539,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYEEVPA' field.
       * @return This builder.
       */
-    public Builder clearPAYEEVPA() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYEEVPA() {
       PAYEEVPA = null;
       fieldSetFlags()[19] = false;
       return this;
@@ -3549,7 +3549,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERVPA' field.
       * @return The value.
       */
-    public CharSequence getPAYERVPA() {
+    public java.lang.CharSequence getPAYERVPA() {
       return PAYERVPA;
     }
 
@@ -3559,7 +3559,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERVPA'.
       * @return This builder.
       */
-    public Builder setPAYERVPA(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERVPA(java.lang.CharSequence value) {
       validate(fields()[20], value);
       this.PAYERVPA = value;
       fieldSetFlags()[20] = true;
@@ -3579,7 +3579,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERVPA' field.
       * @return This builder.
       */
-    public Builder clearPAYERVPA() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERVPA() {
       PAYERVPA = null;
       fieldSetFlags()[20] = false;
       return this;
@@ -3589,7 +3589,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'SEQNO' field.
       * @return The value.
       */
-    public CharSequence getSEQNO() {
+    public java.lang.CharSequence getSEQNO() {
       return SEQNO;
     }
 
@@ -3599,7 +3599,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'SEQNO'.
       * @return This builder.
       */
-    public Builder setSEQNO(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setSEQNO(java.lang.CharSequence value) {
       validate(fields()[21], value);
       this.SEQNO = value;
       fieldSetFlags()[21] = true;
@@ -3619,7 +3619,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'SEQNO' field.
       * @return This builder.
       */
-    public Builder clearSEQNO() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearSEQNO() {
       SEQNO = null;
       fieldSetFlags()[21] = false;
       return this;
@@ -3629,7 +3629,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'COMMISSIONAMOUNT' field.
       * @return The value.
       */
-    public CharSequence getCOMMISSIONAMOUNT() {
+    public java.lang.CharSequence getCOMMISSIONAMOUNT() {
       return COMMISSIONAMOUNT;
     }
 
@@ -3639,7 +3639,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'COMMISSIONAMOUNT'.
       * @return This builder.
       */
-    public Builder setCOMMISSIONAMOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCOMMISSIONAMOUNT(java.lang.CharSequence value) {
       validate(fields()[22], value);
       this.COMMISSIONAMOUNT = value;
       fieldSetFlags()[22] = true;
@@ -3659,7 +3659,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'COMMISSIONAMOUNT' field.
       * @return This builder.
       */
-    public Builder clearCOMMISSIONAMOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCOMMISSIONAMOUNT() {
       COMMISSIONAMOUNT = null;
       fieldSetFlags()[22] = false;
       return this;
@@ -3669,7 +3669,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CUSTOMERREFID' field.
       * @return The value.
       */
-    public CharSequence getCUSTOMERREFID() {
+    public java.lang.CharSequence getCUSTOMERREFID() {
       return CUSTOMERREFID;
     }
 
@@ -3679,7 +3679,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CUSTOMERREFID'.
       * @return This builder.
       */
-    public Builder setCUSTOMERREFID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCUSTOMERREFID(java.lang.CharSequence value) {
       validate(fields()[23], value);
       this.CUSTOMERREFID = value;
       fieldSetFlags()[23] = true;
@@ -3699,7 +3699,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CUSTOMERREFID' field.
       * @return This builder.
       */
-    public Builder clearCUSTOMERREFID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCUSTOMERREFID() {
       CUSTOMERREFID = null;
       fieldSetFlags()[23] = false;
       return this;
@@ -3709,7 +3709,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'TRANTYPE' field.
       * @return The value.
       */
-    public CharSequence getTRANTYPE() {
+    public java.lang.CharSequence getTRANTYPE() {
       return TRANTYPE;
     }
 
@@ -3719,7 +3719,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'TRANTYPE'.
       * @return This builder.
       */
-    public Builder setTRANTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setTRANTYPE(java.lang.CharSequence value) {
       validate(fields()[24], value);
       this.TRANTYPE = value;
       fieldSetFlags()[24] = true;
@@ -3739,7 +3739,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'TRANTYPE' field.
       * @return This builder.
       */
-    public Builder clearTRANTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearTRANTYPE() {
       TRANTYPE = null;
       fieldSetFlags()[24] = false;
       return this;
@@ -3749,7 +3749,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREDITBANKNAME' field.
       * @return The value.
       */
-    public CharSequence getCREDITBANKNAME() {
+    public java.lang.CharSequence getCREDITBANKNAME() {
       return CREDITBANKNAME;
     }
 
@@ -3759,7 +3759,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREDITBANKNAME'.
       * @return This builder.
       */
-    public Builder setCREDITBANKNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREDITBANKNAME(java.lang.CharSequence value) {
       validate(fields()[25], value);
       this.CREDITBANKNAME = value;
       fieldSetFlags()[25] = true;
@@ -3779,7 +3779,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREDITBANKNAME' field.
       * @return This builder.
       */
-    public Builder clearCREDITBANKNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREDITBANKNAME() {
       CREDITBANKNAME = null;
       fieldSetFlags()[25] = false;
       return this;
@@ -3789,7 +3789,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DEBITBANKNAME' field.
       * @return The value.
       */
-    public CharSequence getDEBITBANKNAME() {
+    public java.lang.CharSequence getDEBITBANKNAME() {
       return DEBITBANKNAME;
     }
 
@@ -3799,7 +3799,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DEBITBANKNAME'.
       * @return This builder.
       */
-    public Builder setDEBITBANKNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDEBITBANKNAME(java.lang.CharSequence value) {
       validate(fields()[26], value);
       this.DEBITBANKNAME = value;
       fieldSetFlags()[26] = true;
@@ -3819,7 +3819,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DEBITBANKNAME' field.
       * @return This builder.
       */
-    public Builder clearDEBITBANKNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDEBITBANKNAME() {
       DEBITBANKNAME = null;
       fieldSetFlags()[26] = false;
       return this;
@@ -3829,7 +3829,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'OTHERSACCOUNT' field.
       * @return The value.
       */
-    public CharSequence getOTHERSACCOUNT() {
+    public java.lang.CharSequence getOTHERSACCOUNT() {
       return OTHERSACCOUNT;
     }
 
@@ -3839,7 +3839,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'OTHERSACCOUNT'.
       * @return This builder.
       */
-    public Builder setOTHERSACCOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setOTHERSACCOUNT(java.lang.CharSequence value) {
       validate(fields()[27], value);
       this.OTHERSACCOUNT = value;
       fieldSetFlags()[27] = true;
@@ -3859,7 +3859,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'OTHERSACCOUNT' field.
       * @return This builder.
       */
-    public Builder clearOTHERSACCOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearOTHERSACCOUNT() {
       OTHERSACCOUNT = null;
       fieldSetFlags()[27] = false;
       return this;
@@ -3869,7 +3869,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CHANNEL' field.
       * @return The value.
       */
-    public CharSequence getCHANNEL() {
+    public java.lang.CharSequence getCHANNEL() {
       return CHANNEL;
     }
 
@@ -3879,7 +3879,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CHANNEL'.
       * @return This builder.
       */
-    public Builder setCHANNEL(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCHANNEL(java.lang.CharSequence value) {
       validate(fields()[28], value);
       this.CHANNEL = value;
       fieldSetFlags()[28] = true;
@@ -3899,7 +3899,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CHANNEL' field.
       * @return This builder.
       */
-    public Builder clearCHANNEL() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCHANNEL() {
       CHANNEL = null;
       fieldSetFlags()[28] = false;
       return this;
@@ -3909,7 +3909,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'APPID' field.
       * @return The value.
       */
-    public CharSequence getAPPID() {
+    public java.lang.CharSequence getAPPID() {
       return APPID;
     }
 
@@ -3919,7 +3919,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'APPID'.
       * @return This builder.
       */
-    public Builder setAPPID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setAPPID(java.lang.CharSequence value) {
       validate(fields()[29], value);
       this.APPID = value;
       fieldSetFlags()[29] = true;
@@ -3939,7 +3939,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'APPID' field.
       * @return This builder.
       */
-    public Builder clearAPPID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearAPPID() {
       APPID = null;
       fieldSetFlags()[29] = false;
       return this;
@@ -3949,7 +3949,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PREAPPROVED' field.
       * @return The value.
       */
-    public CharSequence getPREAPPROVED() {
+    public java.lang.CharSequence getPREAPPROVED() {
       return PREAPPROVED;
     }
 
@@ -3959,7 +3959,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PREAPPROVED'.
       * @return This builder.
       */
-    public Builder setPREAPPROVED(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPREAPPROVED(java.lang.CharSequence value) {
       validate(fields()[30], value);
       this.PREAPPROVED = value;
       fieldSetFlags()[30] = true;
@@ -3979,7 +3979,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PREAPPROVED' field.
       * @return This builder.
       */
-    public Builder clearPREAPPROVED() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPREAPPROVED() {
       PREAPPROVED = null;
       fieldSetFlags()[30] = false;
       return this;
@@ -3989,7 +3989,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'BENEFICIARYNAME' field.
       * @return The value.
       */
-    public CharSequence getBENEFICIARYNAME() {
+    public java.lang.CharSequence getBENEFICIARYNAME() {
       return BENEFICIARYNAME;
     }
 
@@ -3999,7 +3999,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'BENEFICIARYNAME'.
       * @return This builder.
       */
-    public Builder setBENEFICIARYNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setBENEFICIARYNAME(java.lang.CharSequence value) {
       validate(fields()[31], value);
       this.BENEFICIARYNAME = value;
       fieldSetFlags()[31] = true;
@@ -4019,7 +4019,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'BENEFICIARYNAME' field.
       * @return This builder.
       */
-    public Builder clearBENEFICIARYNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearBENEFICIARYNAME() {
       BENEFICIARYNAME = null;
       fieldSetFlags()[31] = false;
       return this;
@@ -4029,7 +4029,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'OTHERMOBILENO' field.
       * @return The value.
       */
-    public CharSequence getOTHERMOBILENO() {
+    public java.lang.CharSequence getOTHERMOBILENO() {
       return OTHERMOBILENO;
     }
 
@@ -4039,7 +4039,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'OTHERMOBILENO'.
       * @return This builder.
       */
-    public Builder setOTHERMOBILENO(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setOTHERMOBILENO(java.lang.CharSequence value) {
       validate(fields()[32], value);
       this.OTHERMOBILENO = value;
       fieldSetFlags()[32] = true;
@@ -4059,7 +4059,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'OTHERMOBILENO' field.
       * @return This builder.
       */
-    public Builder clearOTHERMOBILENO() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearOTHERMOBILENO() {
       OTHERMOBILENO = null;
       fieldSetFlags()[32] = false;
       return this;
@@ -4069,7 +4069,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'REMITTERNAME' field.
       * @return The value.
       */
-    public CharSequence getREMITTERNAME() {
+    public java.lang.CharSequence getREMITTERNAME() {
       return REMITTERNAME;
     }
 
@@ -4079,7 +4079,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'REMITTERNAME'.
       * @return This builder.
       */
-    public Builder setREMITTERNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setREMITTERNAME(java.lang.CharSequence value) {
       validate(fields()[33], value);
       this.REMITTERNAME = value;
       fieldSetFlags()[33] = true;
@@ -4099,7 +4099,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'REMITTERNAME' field.
       * @return This builder.
       */
-    public Builder clearREMITTERNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearREMITTERNAME() {
       REMITTERNAME = null;
       fieldSetFlags()[33] = false;
       return this;
@@ -4109,7 +4109,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'APPROVALNUM' field.
       * @return The value.
       */
-    public CharSequence getAPPROVALNUM() {
+    public java.lang.CharSequence getAPPROVALNUM() {
       return APPROVALNUM;
     }
 
@@ -4119,7 +4119,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'APPROVALNUM'.
       * @return This builder.
       */
-    public Builder setAPPROVALNUM(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setAPPROVALNUM(java.lang.CharSequence value) {
       validate(fields()[34], value);
       this.APPROVALNUM = value;
       fieldSetFlags()[34] = true;
@@ -4139,7 +4139,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'APPROVALNUM' field.
       * @return This builder.
       */
-    public Builder clearAPPROVALNUM() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearAPPROVALNUM() {
       APPROVALNUM = null;
       fieldSetFlags()[34] = false;
       return this;
@@ -4149,7 +4149,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'MCCCODE' field.
       * @return The value.
       */
-    public CharSequence getMCCCODE() {
+    public java.lang.CharSequence getMCCCODE() {
       return MCCCODE;
     }
 
@@ -4159,7 +4159,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'MCCCODE'.
       * @return This builder.
       */
-    public Builder setMCCCODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setMCCCODE(java.lang.CharSequence value) {
       validate(fields()[35], value);
       this.MCCCODE = value;
       fieldSetFlags()[35] = true;
@@ -4179,7 +4179,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'MCCCODE' field.
       * @return This builder.
       */
-    public Builder clearMCCCODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearMCCCODE() {
       MCCCODE = null;
       fieldSetFlags()[35] = false;
       return this;
@@ -4189,7 +4189,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'SERVERIP' field.
       * @return The value.
       */
-    public CharSequence getSERVERIP() {
+    public java.lang.CharSequence getSERVERIP() {
       return SERVERIP;
     }
 
@@ -4199,7 +4199,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'SERVERIP'.
       * @return This builder.
       */
-    public Builder setSERVERIP(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setSERVERIP(java.lang.CharSequence value) {
       validate(fields()[36], value);
       this.SERVERIP = value;
       fieldSetFlags()[36] = true;
@@ -4219,7 +4219,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'SERVERIP' field.
       * @return This builder.
       */
-    public Builder clearSERVERIP() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearSERVERIP() {
       SERVERIP = null;
       fieldSetFlags()[36] = false;
       return this;
@@ -4229,7 +4229,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CBSRESP_DATE' field.
       * @return The value.
       */
-    public CharSequence getCBSRESPDATE() {
+    public java.lang.CharSequence getCBSRESPDATE() {
       return CBSRESP_DATE;
     }
 
@@ -4239,7 +4239,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CBSRESP_DATE'.
       * @return This builder.
       */
-    public Builder setCBSRESPDATE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCBSRESPDATE(java.lang.CharSequence value) {
       validate(fields()[37], value);
       this.CBSRESP_DATE = value;
       fieldSetFlags()[37] = true;
@@ -4259,7 +4259,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CBSRESP_DATE' field.
       * @return This builder.
       */
-    public Builder clearCBSRESPDATE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCBSRESPDATE() {
       CBSRESP_DATE = null;
       fieldSetFlags()[37] = false;
       return this;
@@ -4269,7 +4269,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'INITMODE' field.
       * @return The value.
       */
-    public CharSequence getINITMODE() {
+    public java.lang.CharSequence getINITMODE() {
       return INITMODE;
     }
 
@@ -4279,7 +4279,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'INITMODE'.
       * @return This builder.
       */
-    public Builder setINITMODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setINITMODE(java.lang.CharSequence value) {
       validate(fields()[38], value);
       this.INITMODE = value;
       fieldSetFlags()[38] = true;
@@ -4299,7 +4299,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'INITMODE' field.
       * @return This builder.
       */
-    public Builder clearINITMODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearINITMODE() {
       INITMODE = null;
       fieldSetFlags()[38] = false;
       return this;
@@ -4309,7 +4309,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PURPOSECODE' field.
       * @return The value.
       */
-    public CharSequence getPURPOSECODE() {
+    public java.lang.CharSequence getPURPOSECODE() {
       return PURPOSECODE;
     }
 
@@ -4319,7 +4319,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PURPOSECODE'.
       * @return This builder.
       */
-    public Builder setPURPOSECODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPURPOSECODE(java.lang.CharSequence value) {
       validate(fields()[39], value);
       this.PURPOSECODE = value;
       fieldSetFlags()[39] = true;
@@ -4339,7 +4339,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PURPOSECODE' field.
       * @return This builder.
       */
-    public Builder clearPURPOSECODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPURPOSECODE() {
       PURPOSECODE = null;
       fieldSetFlags()[39] = false;
       return this;
@@ -4349,7 +4349,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREDITACCOUNTTYPE' field.
       * @return The value.
       */
-    public CharSequence getCREDITACCOUNTTYPE() {
+    public java.lang.CharSequence getCREDITACCOUNTTYPE() {
       return CREDITACCOUNTTYPE;
     }
 
@@ -4359,7 +4359,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREDITACCOUNTTYPE'.
       * @return This builder.
       */
-    public Builder setCREDITACCOUNTTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREDITACCOUNTTYPE(java.lang.CharSequence value) {
       validate(fields()[40], value);
       this.CREDITACCOUNTTYPE = value;
       fieldSetFlags()[40] = true;
@@ -4379,7 +4379,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREDITACCOUNTTYPE' field.
       * @return This builder.
       */
-    public Builder clearCREDITACCOUNTTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREDITACCOUNTTYPE() {
       CREDITACCOUNTTYPE = null;
       fieldSetFlags()[40] = false;
       return this;
@@ -4389,7 +4389,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREDITIFSC' field.
       * @return The value.
       */
-    public CharSequence getCREDITIFSC() {
+    public java.lang.CharSequence getCREDITIFSC() {
       return CREDITIFSC;
     }
 
@@ -4399,7 +4399,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREDITIFSC'.
       * @return This builder.
       */
-    public Builder setCREDITIFSC(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREDITIFSC(java.lang.CharSequence value) {
       validate(fields()[41], value);
       this.CREDITIFSC = value;
       fieldSetFlags()[41] = true;
@@ -4419,7 +4419,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREDITIFSC' field.
       * @return This builder.
       */
-    public Builder clearCREDITIFSC() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREDITIFSC() {
       CREDITIFSC = null;
       fieldSetFlags()[41] = false;
       return this;
@@ -4429,7 +4429,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DEBITACCOUNTTYPE' field.
       * @return The value.
       */
-    public CharSequence getDEBITACCOUNTTYPE() {
+    public java.lang.CharSequence getDEBITACCOUNTTYPE() {
       return DEBITACCOUNTTYPE;
     }
 
@@ -4439,7 +4439,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DEBITACCOUNTTYPE'.
       * @return This builder.
       */
-    public Builder setDEBITACCOUNTTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDEBITACCOUNTTYPE(java.lang.CharSequence value) {
       validate(fields()[42], value);
       this.DEBITACCOUNTTYPE = value;
       fieldSetFlags()[42] = true;
@@ -4459,7 +4459,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DEBITACCOUNTTYPE' field.
       * @return This builder.
       */
-    public Builder clearDEBITACCOUNTTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDEBITACCOUNTTYPE() {
       DEBITACCOUNTTYPE = null;
       fieldSetFlags()[42] = false;
       return this;
@@ -4469,7 +4469,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DEBITIFSC' field.
       * @return The value.
       */
-    public CharSequence getDEBITIFSC() {
+    public java.lang.CharSequence getDEBITIFSC() {
       return DEBITIFSC;
     }
 
@@ -4479,7 +4479,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DEBITIFSC'.
       * @return This builder.
       */
-    public Builder setDEBITIFSC(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDEBITIFSC(java.lang.CharSequence value) {
       validate(fields()[43], value);
       this.DEBITIFSC = value;
       fieldSetFlags()[43] = true;
@@ -4499,7 +4499,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DEBITIFSC' field.
       * @return This builder.
       */
-    public Builder clearDEBITIFSC() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDEBITIFSC() {
       DEBITIFSC = null;
       fieldSetFlags()[43] = false;
       return this;
@@ -4509,7 +4509,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ORDERID' field.
       * @return The value.
       */
-    public CharSequence getORDERID() {
+    public java.lang.CharSequence getORDERID() {
       return ORDERID;
     }
 
@@ -4519,7 +4519,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ORDERID'.
       * @return This builder.
       */
-    public Builder setORDERID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setORDERID(java.lang.CharSequence value) {
       validate(fields()[44], value);
       this.ORDERID = value;
       fieldSetFlags()[44] = true;
@@ -4539,7 +4539,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ORDERID' field.
       * @return This builder.
       */
-    public Builder clearORDERID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearORDERID() {
       ORDERID = null;
       fieldSetFlags()[44] = false;
       return this;
@@ -4549,7 +4549,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYEECODE' field.
       * @return The value.
       */
-    public CharSequence getPAYEECODE() {
+    public java.lang.CharSequence getPAYEECODE() {
       return PAYEECODE;
     }
 
@@ -4559,7 +4559,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYEECODE'.
       * @return This builder.
       */
-    public Builder setPAYEECODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYEECODE(java.lang.CharSequence value) {
       validate(fields()[45], value);
       this.PAYEECODE = value;
       fieldSetFlags()[45] = true;
@@ -4579,7 +4579,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYEECODE' field.
       * @return This builder.
       */
-    public Builder clearPAYEECODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYEECODE() {
       PAYEECODE = null;
       fieldSetFlags()[45] = false;
       return this;
@@ -4589,7 +4589,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERCODE' field.
       * @return The value.
       */
-    public CharSequence getPAYERCODE() {
+    public java.lang.CharSequence getPAYERCODE() {
       return PAYERCODE;
     }
 
@@ -4599,7 +4599,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERCODE'.
       * @return This builder.
       */
-    public Builder setPAYERCODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERCODE(java.lang.CharSequence value) {
       validate(fields()[46], value);
       this.PAYERCODE = value;
       fieldSetFlags()[46] = true;
@@ -4619,7 +4619,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERCODE' field.
       * @return This builder.
       */
-    public Builder clearPAYERCODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERCODE() {
       PAYERCODE = null;
       fieldSetFlags()[46] = false;
       return this;
@@ -4629,7 +4629,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'SUBTYPE' field.
       * @return The value.
       */
-    public CharSequence getSUBTYPE() {
+    public java.lang.CharSequence getSUBTYPE() {
       return SUBTYPE;
     }
 
@@ -4639,7 +4639,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'SUBTYPE'.
       * @return This builder.
       */
-    public Builder setSUBTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setSUBTYPE(java.lang.CharSequence value) {
       validate(fields()[47], value);
       this.SUBTYPE = value;
       fieldSetFlags()[47] = true;
@@ -4659,7 +4659,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'SUBTYPE' field.
       * @return This builder.
       */
-    public Builder clearSUBTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearSUBTYPE() {
       SUBTYPE = null;
       fieldSetFlags()[47] = false;
       return this;
@@ -4669,7 +4669,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'REMITTORMOBILENUMBER' field.
       * @return The value.
       */
-    public CharSequence getREMITTORMOBILENUMBER() {
+    public java.lang.CharSequence getREMITTORMOBILENUMBER() {
       return REMITTORMOBILENUMBER;
     }
 
@@ -4679,7 +4679,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'REMITTORMOBILENUMBER'.
       * @return This builder.
       */
-    public Builder setREMITTORMOBILENUMBER(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setREMITTORMOBILENUMBER(java.lang.CharSequence value) {
       validate(fields()[48], value);
       this.REMITTORMOBILENUMBER = value;
       fieldSetFlags()[48] = true;
@@ -4699,7 +4699,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'REMITTORMOBILENUMBER' field.
       * @return This builder.
       */
-    public Builder clearREMITTORMOBILENUMBER() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearREMITTORMOBILENUMBER() {
       REMITTORMOBILENUMBER = null;
       fieldSetFlags()[48] = false;
       return this;
@@ -4709,7 +4709,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYEEIMEI' field.
       * @return The value.
       */
-    public CharSequence getPAYEEIMEI() {
+    public java.lang.CharSequence getPAYEEIMEI() {
       return PAYEEIMEI;
     }
 
@@ -4719,7 +4719,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYEEIMEI'.
       * @return This builder.
       */
-    public Builder setPAYEEIMEI(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYEEIMEI(java.lang.CharSequence value) {
       validate(fields()[49], value);
       this.PAYEEIMEI = value;
       fieldSetFlags()[49] = true;
@@ -4739,7 +4739,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYEEIMEI' field.
       * @return This builder.
       */
-    public Builder clearPAYEEIMEI() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYEEIMEI() {
       PAYEEIMEI = null;
       fieldSetFlags()[49] = false;
       return this;
@@ -4749,7 +4749,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERIMEI' field.
       * @return The value.
       */
-    public CharSequence getPAYERIMEI() {
+    public java.lang.CharSequence getPAYERIMEI() {
       return PAYERIMEI;
     }
 
@@ -4759,7 +4759,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERIMEI'.
       * @return This builder.
       */
-    public Builder setPAYERIMEI(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERIMEI(java.lang.CharSequence value) {
       validate(fields()[50], value);
       this.PAYERIMEI = value;
       fieldSetFlags()[50] = true;
@@ -4779,7 +4779,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERIMEI' field.
       * @return This builder.
       */
-    public Builder clearPAYERIMEI() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERIMEI() {
       PAYERIMEI = null;
       fieldSetFlags()[50] = false;
       return this;
@@ -4789,7 +4789,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'GMTDATE' field.
       * @return The value.
       */
-    public CharSequence getGMTDATE() {
+    public java.lang.CharSequence getGMTDATE() {
       return GMTDATE;
     }
 
@@ -4799,7 +4799,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'GMTDATE'.
       * @return This builder.
       */
-    public Builder setGMTDATE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setGMTDATE(java.lang.CharSequence value) {
       validate(fields()[51], value);
       this.GMTDATE = value;
       fieldSetFlags()[51] = true;
@@ -4819,7 +4819,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'GMTDATE' field.
       * @return This builder.
       */
-    public Builder clearGMTDATE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearGMTDATE() {
       GMTDATE = null;
       fieldSetFlags()[51] = false;
       return this;
@@ -4829,7 +4829,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYEEACCOUNTTYPE' field.
       * @return The value.
       */
-    public CharSequence getPAYEEACCOUNTTYPE() {
+    public java.lang.CharSequence getPAYEEACCOUNTTYPE() {
       return PAYEEACCOUNTTYPE;
     }
 
@@ -4839,7 +4839,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYEEACCOUNTTYPE'.
       * @return This builder.
       */
-    public Builder setPAYEEACCOUNTTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYEEACCOUNTTYPE(java.lang.CharSequence value) {
       validate(fields()[52], value);
       this.PAYEEACCOUNTTYPE = value;
       fieldSetFlags()[52] = true;
@@ -4859,7 +4859,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYEEACCOUNTTYPE' field.
       * @return This builder.
       */
-    public Builder clearPAYEEACCOUNTTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYEEACCOUNTTYPE() {
       PAYEEACCOUNTTYPE = null;
       fieldSetFlags()[52] = false;
       return this;
@@ -4869,7 +4869,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERACCOUNTTYPE' field.
       * @return The value.
       */
-    public CharSequence getPAYERACCOUNTTYPE() {
+    public java.lang.CharSequence getPAYERACCOUNTTYPE() {
       return PAYERACCOUNTTYPE;
     }
 
@@ -4879,7 +4879,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERACCOUNTTYPE'.
       * @return This builder.
       */
-    public Builder setPAYERACCOUNTTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERACCOUNTTYPE(java.lang.CharSequence value) {
       validate(fields()[53], value);
       this.PAYERACCOUNTTYPE = value;
       fieldSetFlags()[53] = true;
@@ -4899,7 +4899,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERACCOUNTTYPE' field.
       * @return This builder.
       */
-    public Builder clearPAYERACCOUNTTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERACCOUNTTYPE() {
       PAYERACCOUNTTYPE = null;
       fieldSetFlags()[53] = false;
       return this;
@@ -4909,7 +4909,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERCONSENTNAME' field.
       * @return The value.
       */
-    public CharSequence getPAYERCONSENTNAME() {
+    public java.lang.CharSequence getPAYERCONSENTNAME() {
       return PAYERCONSENTNAME;
     }
 
@@ -4919,7 +4919,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERCONSENTNAME'.
       * @return This builder.
       */
-    public Builder setPAYERCONSENTNAME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERCONSENTNAME(java.lang.CharSequence value) {
       validate(fields()[54], value);
       this.PAYERCONSENTNAME = value;
       fieldSetFlags()[54] = true;
@@ -4939,7 +4939,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERCONSENTNAME' field.
       * @return This builder.
       */
-    public Builder clearPAYERCONSENTNAME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERCONSENTNAME() {
       PAYERCONSENTNAME = null;
       fieldSetFlags()[54] = false;
       return this;
@@ -4949,7 +4949,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERCONSENTTYPE' field.
       * @return The value.
       */
-    public CharSequence getPAYERCONSENTTYPE() {
+    public java.lang.CharSequence getPAYERCONSENTTYPE() {
       return PAYERCONSENTTYPE;
     }
 
@@ -4959,7 +4959,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERCONSENTTYPE'.
       * @return This builder.
       */
-    public Builder setPAYERCONSENTTYPE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERCONSENTTYPE(java.lang.CharSequence value) {
       validate(fields()[55], value);
       this.PAYERCONSENTTYPE = value;
       fieldSetFlags()[55] = true;
@@ -4979,7 +4979,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERCONSENTTYPE' field.
       * @return This builder.
       */
-    public Builder clearPAYERCONSENTTYPE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERCONSENTTYPE() {
       PAYERCONSENTTYPE = null;
       fieldSetFlags()[55] = false;
       return this;
@@ -4989,7 +4989,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'PAYERCONSENTVALUE' field.
       * @return The value.
       */
-    public CharSequence getPAYERCONSENTVALUE() {
+    public java.lang.CharSequence getPAYERCONSENTVALUE() {
       return PAYERCONSENTVALUE;
     }
 
@@ -4999,7 +4999,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'PAYERCONSENTVALUE'.
       * @return This builder.
       */
-    public Builder setPAYERCONSENTVALUE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setPAYERCONSENTVALUE(java.lang.CharSequence value) {
       validate(fields()[56], value);
       this.PAYERCONSENTVALUE = value;
       fieldSetFlags()[56] = true;
@@ -5019,7 +5019,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'PAYERCONSENTVALUE' field.
       * @return This builder.
       */
-    public Builder clearPAYERCONSENTVALUE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearPAYERCONSENTVALUE() {
       PAYERCONSENTVALUE = null;
       fieldSetFlags()[56] = false;
       return this;
@@ -5029,7 +5029,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADJCODE' field.
       * @return The value.
       */
-    public CharSequence getADJCODE() {
+    public java.lang.CharSequence getADJCODE() {
       return ADJCODE;
     }
 
@@ -5039,7 +5039,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADJCODE'.
       * @return This builder.
       */
-    public Builder setADJCODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADJCODE(java.lang.CharSequence value) {
       validate(fields()[57], value);
       this.ADJCODE = value;
       fieldSetFlags()[57] = true;
@@ -5059,7 +5059,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADJCODE' field.
       * @return This builder.
       */
-    public Builder clearADJCODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADJCODE() {
       ADJCODE = null;
       fieldSetFlags()[57] = false;
       return this;
@@ -5069,7 +5069,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADJFLAG' field.
       * @return The value.
       */
-    public CharSequence getADJFLAG() {
+    public java.lang.CharSequence getADJFLAG() {
       return ADJFLAG;
     }
 
@@ -5079,7 +5079,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADJFLAG'.
       * @return This builder.
       */
-    public Builder setADJFLAG(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADJFLAG(java.lang.CharSequence value) {
       validate(fields()[58], value);
       this.ADJFLAG = value;
       fieldSetFlags()[58] = true;
@@ -5099,7 +5099,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADJFLAG' field.
       * @return This builder.
       */
-    public Builder clearADJFLAG() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADJFLAG() {
       ADJFLAG = null;
       fieldSetFlags()[58] = false;
       return this;
@@ -5109,7 +5109,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREATE_DATE' field.
       * @return The value.
       */
-    public CharSequence getCREATEDATE() {
+    public java.lang.CharSequence getCREATEDATE() {
       return CREATE_DATE;
     }
 
@@ -5119,7 +5119,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREATE_DATE'.
       * @return This builder.
       */
-    public Builder setCREATEDATE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREATEDATE(java.lang.CharSequence value) {
       validate(fields()[59], value);
       this.CREATE_DATE = value;
       fieldSetFlags()[59] = true;
@@ -5139,7 +5139,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREATE_DATE' field.
       * @return This builder.
       */
-    public Builder clearCREATEDATE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREATEDATE() {
       CREATE_DATE = null;
       fieldSetFlags()[59] = false;
       return this;
@@ -5149,7 +5149,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CREDITACCTNARRATION_103' field.
       * @return The value.
       */
-    public CharSequence getCREDITACCTNARRATION103() {
+    public java.lang.CharSequence getCREDITACCTNARRATION103() {
       return CREDITACCTNARRATION_103;
     }
 
@@ -5159,7 +5159,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CREDITACCTNARRATION_103'.
       * @return This builder.
       */
-    public Builder setCREDITACCTNARRATION103(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCREDITACCTNARRATION103(java.lang.CharSequence value) {
       validate(fields()[60], value);
       this.CREDITACCTNARRATION_103 = value;
       fieldSetFlags()[60] = true;
@@ -5179,7 +5179,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CREDITACCTNARRATION_103' field.
       * @return This builder.
       */
-    public Builder clearCREDITACCTNARRATION103() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCREDITACCTNARRATION103() {
       CREDITACCTNARRATION_103 = null;
       fieldSetFlags()[60] = false;
       return this;
@@ -5189,7 +5189,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DE46' field.
       * @return The value.
       */
-    public CharSequence getDE46() {
+    public java.lang.CharSequence getDE46() {
       return DE46;
     }
 
@@ -5199,7 +5199,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DE46'.
       * @return This builder.
       */
-    public Builder setDE46(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDE46(java.lang.CharSequence value) {
       validate(fields()[61], value);
       this.DE46 = value;
       fieldSetFlags()[61] = true;
@@ -5219,7 +5219,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DE46' field.
       * @return This builder.
       */
-    public Builder clearDE46() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDE46() {
       DE46 = null;
       fieldSetFlags()[61] = false;
       return this;
@@ -5229,7 +5229,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'DEBITACCTNARRATION_102' field.
       * @return The value.
       */
-    public CharSequence getDEBITACCTNARRATION102() {
+    public java.lang.CharSequence getDEBITACCTNARRATION102() {
       return DEBITACCTNARRATION_102;
     }
 
@@ -5239,7 +5239,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'DEBITACCTNARRATION_102'.
       * @return This builder.
       */
-    public Builder setDEBITACCTNARRATION102(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setDEBITACCTNARRATION102(java.lang.CharSequence value) {
       validate(fields()[62], value);
       this.DEBITACCTNARRATION_102 = value;
       fieldSetFlags()[62] = true;
@@ -5259,7 +5259,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'DEBITACCTNARRATION_102' field.
       * @return This builder.
       */
-    public Builder clearDEBITACCTNARRATION102() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearDEBITACCTNARRATION102() {
       DEBITACCTNARRATION_102 = null;
       fieldSetFlags()[62] = false;
       return this;
@@ -5269,7 +5269,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'GST' field.
       * @return The value.
       */
-    public CharSequence getGST() {
+    public java.lang.CharSequence getGST() {
       return GST;
     }
 
@@ -5279,7 +5279,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'GST'.
       * @return This builder.
       */
-    public Builder setGST(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setGST(java.lang.CharSequence value) {
       validate(fields()[63], value);
       this.GST = value;
       fieldSetFlags()[63] = true;
@@ -5299,7 +5299,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'GST' field.
       * @return This builder.
       */
-    public Builder clearGST() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearGST() {
       GST = null;
       fieldSetFlags()[63] = false;
       return this;
@@ -5309,7 +5309,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'LOANNUMBER' field.
       * @return The value.
       */
-    public CharSequence getLOANNUMBER() {
+    public java.lang.CharSequence getLOANNUMBER() {
       return LOANNUMBER;
     }
 
@@ -5319,7 +5319,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'LOANNUMBER'.
       * @return This builder.
       */
-    public Builder setLOANNUMBER(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setLOANNUMBER(java.lang.CharSequence value) {
       validate(fields()[64], value);
       this.LOANNUMBER = value;
       fieldSetFlags()[64] = true;
@@ -5339,7 +5339,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'LOANNUMBER' field.
       * @return This builder.
       */
-    public Builder clearLOANNUMBER() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearLOANNUMBER() {
       LOANNUMBER = null;
       fieldSetFlags()[64] = false;
       return this;
@@ -5349,7 +5349,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'LOCALTIME' field.
       * @return The value.
       */
-    public CharSequence getLOCALTIME() {
+    public java.lang.CharSequence getLOCALTIME() {
       return LOCALTIME;
     }
 
@@ -5359,7 +5359,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'LOCALTIME'.
       * @return This builder.
       */
-    public Builder setLOCALTIME(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setLOCALTIME(java.lang.CharSequence value) {
       validate(fields()[65], value);
       this.LOCALTIME = value;
       fieldSetFlags()[65] = true;
@@ -5379,7 +5379,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'LOCALTIME' field.
       * @return This builder.
       */
-    public Builder clearLOCALTIME() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearLOCALTIME() {
       LOCALTIME = null;
       fieldSetFlags()[65] = false;
       return this;
@@ -5389,7 +5389,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'NARRATION_125' field.
       * @return The value.
       */
-    public CharSequence getNARRATION125() {
+    public java.lang.CharSequence getNARRATION125() {
       return NARRATION_125;
     }
 
@@ -5399,7 +5399,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'NARRATION_125'.
       * @return This builder.
       */
-    public Builder setNARRATION125(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setNARRATION125(java.lang.CharSequence value) {
       validate(fields()[66], value);
       this.NARRATION_125 = value;
       fieldSetFlags()[66] = true;
@@ -5419,7 +5419,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'NARRATION_125' field.
       * @return This builder.
       */
-    public Builder clearNARRATION125() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearNARRATION125() {
       NARRATION_125 = null;
       fieldSetFlags()[66] = false;
       return this;
@@ -5429,7 +5429,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'P2PTXNCHARGES' field.
       * @return The value.
       */
-    public CharSequence getP2PTXNCHARGES() {
+    public java.lang.CharSequence getP2PTXNCHARGES() {
       return P2PTXNCHARGES;
     }
 
@@ -5439,7 +5439,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'P2PTXNCHARGES'.
       * @return This builder.
       */
-    public Builder setP2PTXNCHARGES(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setP2PTXNCHARGES(java.lang.CharSequence value) {
       validate(fields()[67], value);
       this.P2PTXNCHARGES = value;
       fieldSetFlags()[67] = true;
@@ -5459,7 +5459,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'P2PTXNCHARGES' field.
       * @return This builder.
       */
-    public Builder clearP2PTXNCHARGES() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearP2PTXNCHARGES() {
       P2PTXNCHARGES = null;
       fieldSetFlags()[67] = false;
       return this;
@@ -5469,7 +5469,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'SCHEMECODE' field.
       * @return The value.
       */
-    public CharSequence getSCHEMECODE() {
+    public java.lang.CharSequence getSCHEMECODE() {
       return SCHEMECODE;
     }
 
@@ -5479,7 +5479,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'SCHEMECODE'.
       * @return This builder.
       */
-    public Builder setSCHEMECODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setSCHEMECODE(java.lang.CharSequence value) {
       validate(fields()[68], value);
       this.SCHEMECODE = value;
       fieldSetFlags()[68] = true;
@@ -5499,7 +5499,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'SCHEMECODE' field.
       * @return This builder.
       */
-    public Builder clearSCHEMECODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearSCHEMECODE() {
       SCHEMECODE = null;
       fieldSetFlags()[68] = false;
       return this;
@@ -5509,7 +5509,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'TXNAMOUNT' field.
       * @return The value.
       */
-    public CharSequence getTXNAMOUNT() {
+    public java.lang.CharSequence getTXNAMOUNT() {
       return TXNAMOUNT;
     }
 
@@ -5519,7 +5519,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'TXNAMOUNT'.
       * @return This builder.
       */
-    public Builder setTXNAMOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setTXNAMOUNT(java.lang.CharSequence value) {
       validate(fields()[69], value);
       this.TXNAMOUNT = value;
       fieldSetFlags()[69] = true;
@@ -5539,7 +5539,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'TXNAMOUNT' field.
       * @return This builder.
       */
-    public Builder clearTXNAMOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearTXNAMOUNT() {
       TXNAMOUNT = null;
       fieldSetFlags()[69] = false;
       return this;
@@ -5549,7 +5549,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'BATCH_ID' field.
       * @return The value.
       */
-    public CharSequence getBATCHID() {
+    public java.lang.CharSequence getBATCHID() {
       return BATCH_ID;
     }
 
@@ -5559,7 +5559,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'BATCH_ID'.
       * @return This builder.
       */
-    public Builder setBATCHID(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setBATCHID(java.lang.CharSequence value) {
       validate(fields()[70], value);
       this.BATCH_ID = value;
       fieldSetFlags()[70] = true;
@@ -5579,7 +5579,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'BATCH_ID' field.
       * @return This builder.
       */
-    public Builder clearBATCHID() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearBATCHID() {
       BATCH_ID = null;
       fieldSetFlags()[70] = false;
       return this;
@@ -5589,7 +5589,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'BASEAMOUNT' field.
       * @return The value.
       */
-    public CharSequence getBASEAMOUNT() {
+    public java.lang.CharSequence getBASEAMOUNT() {
       return BASEAMOUNT;
     }
 
@@ -5599,7 +5599,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'BASEAMOUNT'.
       * @return This builder.
       */
-    public Builder setBASEAMOUNT(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setBASEAMOUNT(java.lang.CharSequence value) {
       validate(fields()[71], value);
       this.BASEAMOUNT = value;
       fieldSetFlags()[71] = true;
@@ -5619,7 +5619,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'BASEAMOUNT' field.
       * @return This builder.
       */
-    public Builder clearBASEAMOUNT() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearBASEAMOUNT() {
       BASEAMOUNT = null;
       fieldSetFlags()[71] = false;
       return this;
@@ -5629,7 +5629,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'BASECURR' field.
       * @return The value.
       */
-    public CharSequence getBASECURR() {
+    public java.lang.CharSequence getBASECURR() {
       return BASECURR;
     }
 
@@ -5639,7 +5639,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'BASECURR'.
       * @return This builder.
       */
-    public Builder setBASECURR(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setBASECURR(java.lang.CharSequence value) {
       validate(fields()[72], value);
       this.BASECURR = value;
       fieldSetFlags()[72] = true;
@@ -5659,7 +5659,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'BASECURR' field.
       * @return This builder.
       */
-    public Builder clearBASECURR() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearBASECURR() {
       BASECURR = null;
       fieldSetFlags()[72] = false;
       return this;
@@ -5669,7 +5669,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CONCODE' field.
       * @return The value.
       */
-    public CharSequence getCONCODE() {
+    public java.lang.CharSequence getCONCODE() {
       return CONCODE;
     }
 
@@ -5679,7 +5679,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CONCODE'.
       * @return This builder.
       */
-    public Builder setCONCODE(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCONCODE(java.lang.CharSequence value) {
       validate(fields()[73], value);
       this.CONCODE = value;
       fieldSetFlags()[73] = true;
@@ -5699,7 +5699,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CONCODE' field.
       * @return This builder.
       */
-    public Builder clearCONCODE() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCONCODE() {
       CONCODE = null;
       fieldSetFlags()[73] = false;
       return this;
@@ -5709,7 +5709,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'FX' field.
       * @return The value.
       */
-    public CharSequence getFX() {
+    public java.lang.CharSequence getFX() {
       return FX;
     }
 
@@ -5719,7 +5719,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'FX'.
       * @return This builder.
       */
-    public Builder setFX(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setFX(java.lang.CharSequence value) {
       validate(fields()[74], value);
       this.FX = value;
       fieldSetFlags()[74] = true;
@@ -5739,7 +5739,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'FX' field.
       * @return This builder.
       */
-    public Builder clearFX() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearFX() {
       FX = null;
       fieldSetFlags()[74] = false;
       return this;
@@ -5749,7 +5749,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'MKUP' field.
       * @return The value.
       */
-    public CharSequence getMKUP() {
+    public java.lang.CharSequence getMKUP() {
       return MKUP;
     }
 
@@ -5759,7 +5759,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'MKUP'.
       * @return This builder.
       */
-    public Builder setMKUP(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setMKUP(java.lang.CharSequence value) {
       validate(fields()[75], value);
       this.MKUP = value;
       fieldSetFlags()[75] = true;
@@ -5779,7 +5779,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'MKUP' field.
       * @return This builder.
       */
-    public Builder clearMKUP() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearMKUP() {
       MKUP = null;
       fieldSetFlags()[75] = false;
       return this;
@@ -5789,7 +5789,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADDITIONAL4' field.
       * @return The value.
       */
-    public CharSequence getADDITIONAL4() {
+    public java.lang.CharSequence getADDITIONAL4() {
       return ADDITIONAL4;
     }
 
@@ -5799,7 +5799,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADDITIONAL4'.
       * @return This builder.
       */
-    public Builder setADDITIONAL4(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADDITIONAL4(java.lang.CharSequence value) {
       validate(fields()[76], value);
       this.ADDITIONAL4 = value;
       fieldSetFlags()[76] = true;
@@ -5819,7 +5819,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADDITIONAL4' field.
       * @return This builder.
       */
-    public Builder clearADDITIONAL4() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADDITIONAL4() {
       ADDITIONAL4 = null;
       fieldSetFlags()[76] = false;
       return this;
@@ -5829,7 +5829,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'D12' field.
       * @return The value.
       */
-    public CharSequence getD12() {
+    public java.lang.CharSequence getD12() {
       return D12;
     }
 
@@ -5839,7 +5839,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'D12'.
       * @return This builder.
       */
-    public Builder setD12(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setD12(java.lang.CharSequence value) {
       validate(fields()[77], value);
       this.D12 = value;
       fieldSetFlags()[77] = true;
@@ -5859,7 +5859,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'D12' field.
       * @return This builder.
       */
-    public Builder clearD12() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearD12() {
       D12 = null;
       fieldSetFlags()[77] = false;
       return this;
@@ -5869,7 +5869,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADDITIONAL1' field.
       * @return The value.
       */
-    public CharSequence getADDITIONAL1() {
+    public java.lang.CharSequence getADDITIONAL1() {
       return ADDITIONAL1;
     }
 
@@ -5879,7 +5879,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADDITIONAL1'.
       * @return This builder.
       */
-    public Builder setADDITIONAL1(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADDITIONAL1(java.lang.CharSequence value) {
       validate(fields()[78], value);
       this.ADDITIONAL1 = value;
       fieldSetFlags()[78] = true;
@@ -5899,7 +5899,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADDITIONAL1' field.
       * @return This builder.
       */
-    public Builder clearADDITIONAL1() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADDITIONAL1() {
       ADDITIONAL1 = null;
       fieldSetFlags()[78] = false;
       return this;
@@ -5909,7 +5909,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADDITIONAL2' field.
       * @return The value.
       */
-    public CharSequence getADDITIONAL2() {
+    public java.lang.CharSequence getADDITIONAL2() {
       return ADDITIONAL2;
     }
 
@@ -5919,7 +5919,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADDITIONAL2'.
       * @return This builder.
       */
-    public Builder setADDITIONAL2(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADDITIONAL2(java.lang.CharSequence value) {
       validate(fields()[79], value);
       this.ADDITIONAL2 = value;
       fieldSetFlags()[79] = true;
@@ -5939,7 +5939,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADDITIONAL2' field.
       * @return This builder.
       */
-    public Builder clearADDITIONAL2() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADDITIONAL2() {
       ADDITIONAL2 = null;
       fieldSetFlags()[79] = false;
       return this;
@@ -5949,7 +5949,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADDITIONAL3' field.
       * @return The value.
       */
-    public CharSequence getADDITIONAL3() {
+    public java.lang.CharSequence getADDITIONAL3() {
       return ADDITIONAL3;
     }
 
@@ -5959,7 +5959,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADDITIONAL3'.
       * @return This builder.
       */
-    public Builder setADDITIONAL3(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADDITIONAL3(java.lang.CharSequence value) {
       validate(fields()[80], value);
       this.ADDITIONAL3 = value;
       fieldSetFlags()[80] = true;
@@ -5979,7 +5979,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADDITIONAL3' field.
       * @return This builder.
       */
-    public Builder clearADDITIONAL3() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADDITIONAL3() {
       ADDITIONAL3 = null;
       fieldSetFlags()[80] = false;
       return this;
@@ -5989,7 +5989,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'ADDITIONAL5' field.
       * @return The value.
       */
-    public CharSequence getADDITIONAL5() {
+    public java.lang.CharSequence getADDITIONAL5() {
       return ADDITIONAL5;
     }
 
@@ -5999,7 +5999,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'ADDITIONAL5'.
       * @return This builder.
       */
-    public Builder setADDITIONAL5(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setADDITIONAL5(java.lang.CharSequence value) {
       validate(fields()[81], value);
       this.ADDITIONAL5 = value;
       fieldSetFlags()[81] = true;
@@ -6019,7 +6019,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'ADDITIONAL5' field.
       * @return This builder.
       */
-    public Builder clearADDITIONAL5() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearADDITIONAL5() {
       ADDITIONAL5 = null;
       fieldSetFlags()[81] = false;
       return this;
@@ -6029,7 +6029,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Gets the value of the 'CBS_ROUTING' field.
       * @return The value.
       */
-    public CharSequence getCBSROUTING() {
+    public java.lang.CharSequence getCBSROUTING() {
       return CBS_ROUTING;
     }
 
@@ -6039,7 +6039,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'CBS_ROUTING'.
       * @return This builder.
       */
-    public Builder setCBSROUTING(CharSequence value) {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder setCBSROUTING(java.lang.CharSequence value) {
       validate(fields()[82], value);
       this.CBS_ROUTING = value;
       fieldSetFlags()[82] = true;
@@ -6059,7 +6059,7 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
       * Clears the value of the 'CBS_ROUTING' field.
       * @return This builder.
       */
-    public Builder clearCBSROUTING() {
+    public com.kmbl.eventmanagementservice.Schema.CBSTranCol.Builder clearCBSROUTING() {
       CBS_ROUTING = null;
       fieldSetFlags()[82] = false;
       return this;
@@ -6070,93 +6070,93 @@ public class CBSTranCol extends org.apache.avro.specific.SpecificRecordBase impl
     public CBSTranCol build() {
       try {
         CBSTranCol record = new CBSTranCol();
-        record.ID = fieldSetFlags()[0] ? this.ID : (Double) defaultValue(fields()[0]);
-        record.AMOUNT = fieldSetFlags()[1] ? this.AMOUNT : (CharSequence) defaultValue(fields()[1]);
-        record.CBSRC = fieldSetFlags()[2] ? this.CBSRC : (CharSequence) defaultValue(fields()[2]);
-        record.CREDITACCOUNT = fieldSetFlags()[3] ? this.CREDITACCOUNT : (CharSequence) defaultValue(fields()[3]);
-        record.CUSTOMERID = fieldSetFlags()[4] ? this.CUSTOMERID : (CharSequence) defaultValue(fields()[4]);
-        record.DEBITACCOUNT = fieldSetFlags()[5] ? this.DEBITACCOUNT : (CharSequence) defaultValue(fields()[5]);
-        record.MSGID = fieldSetFlags()[6] ? this.MSGID : (CharSequence) defaultValue(fields()[6]);
-        record.REVERSAL = fieldSetFlags()[7] ? this.REVERSAL : (Long) defaultValue(fields()[7]);
-        record.REVERSALSTATUS = fieldSetFlags()[8] ? this.REVERSALSTATUS : (CharSequence) defaultValue(fields()[8]);
-        record.RRN = fieldSetFlags()[9] ? this.RRN : (CharSequence) defaultValue(fields()[9]);
-        record.STAN = fieldSetFlags()[10] ? this.STAN : (CharSequence) defaultValue(fields()[10]);
-        record.TXN_DATE = fieldSetFlags()[11] ? this.TXN_DATE : (CharSequence) defaultValue(fields()[11]);
-        record.TXNID = fieldSetFlags()[12] ? this.TXNID : (CharSequence) defaultValue(fields()[12]);
-        record.TYPE = fieldSetFlags()[13] ? this.TYPE : (CharSequence) defaultValue(fields()[13]);
-        record.UPIRC = fieldSetFlags()[14] ? this.UPIRC : (CharSequence) defaultValue(fields()[14]);
-        record.ORGTXNID = fieldSetFlags()[15] ? this.ORGTXNID : (CharSequence) defaultValue(fields()[15]);
-        record.REMARKS = fieldSetFlags()[16] ? this.REMARKS : (CharSequence) defaultValue(fields()[16]);
-        record.CUSTOMERACCOUNT = fieldSetFlags()[17] ? this.CUSTOMERACCOUNT : (CharSequence) defaultValue(fields()[17]);
-        record.NAME = fieldSetFlags()[18] ? this.NAME : (CharSequence) defaultValue(fields()[18]);
-        record.PAYEEVPA = fieldSetFlags()[19] ? this.PAYEEVPA : (CharSequence) defaultValue(fields()[19]);
-        record.PAYERVPA = fieldSetFlags()[20] ? this.PAYERVPA : (CharSequence) defaultValue(fields()[20]);
-        record.SEQNO = fieldSetFlags()[21] ? this.SEQNO : (CharSequence) defaultValue(fields()[21]);
-        record.COMMISSIONAMOUNT = fieldSetFlags()[22] ? this.COMMISSIONAMOUNT : (CharSequence) defaultValue(fields()[22]);
-        record.CUSTOMERREFID = fieldSetFlags()[23] ? this.CUSTOMERREFID : (CharSequence) defaultValue(fields()[23]);
-        record.TRANTYPE = fieldSetFlags()[24] ? this.TRANTYPE : (CharSequence) defaultValue(fields()[24]);
-        record.CREDITBANKNAME = fieldSetFlags()[25] ? this.CREDITBANKNAME : (CharSequence) defaultValue(fields()[25]);
-        record.DEBITBANKNAME = fieldSetFlags()[26] ? this.DEBITBANKNAME : (CharSequence) defaultValue(fields()[26]);
-        record.OTHERSACCOUNT = fieldSetFlags()[27] ? this.OTHERSACCOUNT : (CharSequence) defaultValue(fields()[27]);
-        record.CHANNEL = fieldSetFlags()[28] ? this.CHANNEL : (CharSequence) defaultValue(fields()[28]);
-        record.APPID = fieldSetFlags()[29] ? this.APPID : (CharSequence) defaultValue(fields()[29]);
-        record.PREAPPROVED = fieldSetFlags()[30] ? this.PREAPPROVED : (CharSequence) defaultValue(fields()[30]);
-        record.BENEFICIARYNAME = fieldSetFlags()[31] ? this.BENEFICIARYNAME : (CharSequence) defaultValue(fields()[31]);
-        record.OTHERMOBILENO = fieldSetFlags()[32] ? this.OTHERMOBILENO : (CharSequence) defaultValue(fields()[32]);
-        record.REMITTERNAME = fieldSetFlags()[33] ? this.REMITTERNAME : (CharSequence) defaultValue(fields()[33]);
-        record.APPROVALNUM = fieldSetFlags()[34] ? this.APPROVALNUM : (CharSequence) defaultValue(fields()[34]);
-        record.MCCCODE = fieldSetFlags()[35] ? this.MCCCODE : (CharSequence) defaultValue(fields()[35]);
-        record.SERVERIP = fieldSetFlags()[36] ? this.SERVERIP : (CharSequence) defaultValue(fields()[36]);
-        record.CBSRESP_DATE = fieldSetFlags()[37] ? this.CBSRESP_DATE : (CharSequence) defaultValue(fields()[37]);
-        record.INITMODE = fieldSetFlags()[38] ? this.INITMODE : (CharSequence) defaultValue(fields()[38]);
-        record.PURPOSECODE = fieldSetFlags()[39] ? this.PURPOSECODE : (CharSequence) defaultValue(fields()[39]);
-        record.CREDITACCOUNTTYPE = fieldSetFlags()[40] ? this.CREDITACCOUNTTYPE : (CharSequence) defaultValue(fields()[40]);
-        record.CREDITIFSC = fieldSetFlags()[41] ? this.CREDITIFSC : (CharSequence) defaultValue(fields()[41]);
-        record.DEBITACCOUNTTYPE = fieldSetFlags()[42] ? this.DEBITACCOUNTTYPE : (CharSequence) defaultValue(fields()[42]);
-        record.DEBITIFSC = fieldSetFlags()[43] ? this.DEBITIFSC : (CharSequence) defaultValue(fields()[43]);
-        record.ORDERID = fieldSetFlags()[44] ? this.ORDERID : (CharSequence) defaultValue(fields()[44]);
-        record.PAYEECODE = fieldSetFlags()[45] ? this.PAYEECODE : (CharSequence) defaultValue(fields()[45]);
-        record.PAYERCODE = fieldSetFlags()[46] ? this.PAYERCODE : (CharSequence) defaultValue(fields()[46]);
-        record.SUBTYPE = fieldSetFlags()[47] ? this.SUBTYPE : (CharSequence) defaultValue(fields()[47]);
-        record.REMITTORMOBILENUMBER = fieldSetFlags()[48] ? this.REMITTORMOBILENUMBER : (CharSequence) defaultValue(fields()[48]);
-        record.PAYEEIMEI = fieldSetFlags()[49] ? this.PAYEEIMEI : (CharSequence) defaultValue(fields()[49]);
-        record.PAYERIMEI = fieldSetFlags()[50] ? this.PAYERIMEI : (CharSequence) defaultValue(fields()[50]);
-        record.GMTDATE = fieldSetFlags()[51] ? this.GMTDATE : (CharSequence) defaultValue(fields()[51]);
-        record.PAYEEACCOUNTTYPE = fieldSetFlags()[52] ? this.PAYEEACCOUNTTYPE : (CharSequence) defaultValue(fields()[52]);
-        record.PAYERACCOUNTTYPE = fieldSetFlags()[53] ? this.PAYERACCOUNTTYPE : (CharSequence) defaultValue(fields()[53]);
-        record.PAYERCONSENTNAME = fieldSetFlags()[54] ? this.PAYERCONSENTNAME : (CharSequence) defaultValue(fields()[54]);
-        record.PAYERCONSENTTYPE = fieldSetFlags()[55] ? this.PAYERCONSENTTYPE : (CharSequence) defaultValue(fields()[55]);
-        record.PAYERCONSENTVALUE = fieldSetFlags()[56] ? this.PAYERCONSENTVALUE : (CharSequence) defaultValue(fields()[56]);
-        record.ADJCODE = fieldSetFlags()[57] ? this.ADJCODE : (CharSequence) defaultValue(fields()[57]);
-        record.ADJFLAG = fieldSetFlags()[58] ? this.ADJFLAG : (CharSequence) defaultValue(fields()[58]);
-        record.CREATE_DATE = fieldSetFlags()[59] ? this.CREATE_DATE : (CharSequence) defaultValue(fields()[59]);
-        record.CREDITACCTNARRATION_103 = fieldSetFlags()[60] ? this.CREDITACCTNARRATION_103 : (CharSequence) defaultValue(fields()[60]);
-        record.DE46 = fieldSetFlags()[61] ? this.DE46 : (CharSequence) defaultValue(fields()[61]);
-        record.DEBITACCTNARRATION_102 = fieldSetFlags()[62] ? this.DEBITACCTNARRATION_102 : (CharSequence) defaultValue(fields()[62]);
-        record.GST = fieldSetFlags()[63] ? this.GST : (CharSequence) defaultValue(fields()[63]);
-        record.LOANNUMBER = fieldSetFlags()[64] ? this.LOANNUMBER : (CharSequence) defaultValue(fields()[64]);
-        record.LOCALTIME = fieldSetFlags()[65] ? this.LOCALTIME : (CharSequence) defaultValue(fields()[65]);
-        record.NARRATION_125 = fieldSetFlags()[66] ? this.NARRATION_125 : (CharSequence) defaultValue(fields()[66]);
-        record.P2PTXNCHARGES = fieldSetFlags()[67] ? this.P2PTXNCHARGES : (CharSequence) defaultValue(fields()[67]);
-        record.SCHEMECODE = fieldSetFlags()[68] ? this.SCHEMECODE : (CharSequence) defaultValue(fields()[68]);
-        record.TXNAMOUNT = fieldSetFlags()[69] ? this.TXNAMOUNT : (CharSequence) defaultValue(fields()[69]);
-        record.BATCH_ID = fieldSetFlags()[70] ? this.BATCH_ID : (CharSequence) defaultValue(fields()[70]);
-        record.BASEAMOUNT = fieldSetFlags()[71] ? this.BASEAMOUNT : (CharSequence) defaultValue(fields()[71]);
-        record.BASECURR = fieldSetFlags()[72] ? this.BASECURR : (CharSequence) defaultValue(fields()[72]);
-        record.CONCODE = fieldSetFlags()[73] ? this.CONCODE : (CharSequence) defaultValue(fields()[73]);
-        record.FX = fieldSetFlags()[74] ? this.FX : (CharSequence) defaultValue(fields()[74]);
-        record.MKUP = fieldSetFlags()[75] ? this.MKUP : (CharSequence) defaultValue(fields()[75]);
-        record.ADDITIONAL4 = fieldSetFlags()[76] ? this.ADDITIONAL4 : (CharSequence) defaultValue(fields()[76]);
-        record.D12 = fieldSetFlags()[77] ? this.D12 : (CharSequence) defaultValue(fields()[77]);
-        record.ADDITIONAL1 = fieldSetFlags()[78] ? this.ADDITIONAL1 : (CharSequence) defaultValue(fields()[78]);
-        record.ADDITIONAL2 = fieldSetFlags()[79] ? this.ADDITIONAL2 : (CharSequence) defaultValue(fields()[79]);
-        record.ADDITIONAL3 = fieldSetFlags()[80] ? this.ADDITIONAL3 : (CharSequence) defaultValue(fields()[80]);
-        record.ADDITIONAL5 = fieldSetFlags()[81] ? this.ADDITIONAL5 : (CharSequence) defaultValue(fields()[81]);
-        record.CBS_ROUTING = fieldSetFlags()[82] ? this.CBS_ROUTING : (CharSequence) defaultValue(fields()[82]);
+        record.ID = fieldSetFlags()[0] ? this.ID : (java.lang.Double) defaultValue(fields()[0]);
+        record.AMOUNT = fieldSetFlags()[1] ? this.AMOUNT : (java.lang.CharSequence) defaultValue(fields()[1]);
+        record.CBSRC = fieldSetFlags()[2] ? this.CBSRC : (java.lang.CharSequence) defaultValue(fields()[2]);
+        record.CREDITACCOUNT = fieldSetFlags()[3] ? this.CREDITACCOUNT : (java.lang.CharSequence) defaultValue(fields()[3]);
+        record.CUSTOMERID = fieldSetFlags()[4] ? this.CUSTOMERID : (java.lang.CharSequence) defaultValue(fields()[4]);
+        record.DEBITACCOUNT = fieldSetFlags()[5] ? this.DEBITACCOUNT : (java.lang.CharSequence) defaultValue(fields()[5]);
+        record.MSGID = fieldSetFlags()[6] ? this.MSGID : (java.lang.CharSequence) defaultValue(fields()[6]);
+        record.REVERSAL = fieldSetFlags()[7] ? this.REVERSAL : (java.lang.Long) defaultValue(fields()[7]);
+        record.REVERSALSTATUS = fieldSetFlags()[8] ? this.REVERSALSTATUS : (java.lang.CharSequence) defaultValue(fields()[8]);
+        record.RRN = fieldSetFlags()[9] ? this.RRN : (java.lang.CharSequence) defaultValue(fields()[9]);
+        record.STAN = fieldSetFlags()[10] ? this.STAN : (java.lang.CharSequence) defaultValue(fields()[10]);
+        record.TXN_DATE = fieldSetFlags()[11] ? this.TXN_DATE : (java.lang.CharSequence) defaultValue(fields()[11]);
+        record.TXNID = fieldSetFlags()[12] ? this.TXNID : (java.lang.CharSequence) defaultValue(fields()[12]);
+        record.TYPE = fieldSetFlags()[13] ? this.TYPE : (java.lang.CharSequence) defaultValue(fields()[13]);
+        record.UPIRC = fieldSetFlags()[14] ? this.UPIRC : (java.lang.CharSequence) defaultValue(fields()[14]);
+        record.ORGTXNID = fieldSetFlags()[15] ? this.ORGTXNID : (java.lang.CharSequence) defaultValue(fields()[15]);
+        record.REMARKS = fieldSetFlags()[16] ? this.REMARKS : (java.lang.CharSequence) defaultValue(fields()[16]);
+        record.CUSTOMERACCOUNT = fieldSetFlags()[17] ? this.CUSTOMERACCOUNT : (java.lang.CharSequence) defaultValue(fields()[17]);
+        record.NAME = fieldSetFlags()[18] ? this.NAME : (java.lang.CharSequence) defaultValue(fields()[18]);
+        record.PAYEEVPA = fieldSetFlags()[19] ? this.PAYEEVPA : (java.lang.CharSequence) defaultValue(fields()[19]);
+        record.PAYERVPA = fieldSetFlags()[20] ? this.PAYERVPA : (java.lang.CharSequence) defaultValue(fields()[20]);
+        record.SEQNO = fieldSetFlags()[21] ? this.SEQNO : (java.lang.CharSequence) defaultValue(fields()[21]);
+        record.COMMISSIONAMOUNT = fieldSetFlags()[22] ? this.COMMISSIONAMOUNT : (java.lang.CharSequence) defaultValue(fields()[22]);
+        record.CUSTOMERREFID = fieldSetFlags()[23] ? this.CUSTOMERREFID : (java.lang.CharSequence) defaultValue(fields()[23]);
+        record.TRANTYPE = fieldSetFlags()[24] ? this.TRANTYPE : (java.lang.CharSequence) defaultValue(fields()[24]);
+        record.CREDITBANKNAME = fieldSetFlags()[25] ? this.CREDITBANKNAME : (java.lang.CharSequence) defaultValue(fields()[25]);
+        record.DEBITBANKNAME = fieldSetFlags()[26] ? this.DEBITBANKNAME : (java.lang.CharSequence) defaultValue(fields()[26]);
+        record.OTHERSACCOUNT = fieldSetFlags()[27] ? this.OTHERSACCOUNT : (java.lang.CharSequence) defaultValue(fields()[27]);
+        record.CHANNEL = fieldSetFlags()[28] ? this.CHANNEL : (java.lang.CharSequence) defaultValue(fields()[28]);
+        record.APPID = fieldSetFlags()[29] ? this.APPID : (java.lang.CharSequence) defaultValue(fields()[29]);
+        record.PREAPPROVED = fieldSetFlags()[30] ? this.PREAPPROVED : (java.lang.CharSequence) defaultValue(fields()[30]);
+        record.BENEFICIARYNAME = fieldSetFlags()[31] ? this.BENEFICIARYNAME : (java.lang.CharSequence) defaultValue(fields()[31]);
+        record.OTHERMOBILENO = fieldSetFlags()[32] ? this.OTHERMOBILENO : (java.lang.CharSequence) defaultValue(fields()[32]);
+        record.REMITTERNAME = fieldSetFlags()[33] ? this.REMITTERNAME : (java.lang.CharSequence) defaultValue(fields()[33]);
+        record.APPROVALNUM = fieldSetFlags()[34] ? this.APPROVALNUM : (java.lang.CharSequence) defaultValue(fields()[34]);
+        record.MCCCODE = fieldSetFlags()[35] ? this.MCCCODE : (java.lang.CharSequence) defaultValue(fields()[35]);
+        record.SERVERIP = fieldSetFlags()[36] ? this.SERVERIP : (java.lang.CharSequence) defaultValue(fields()[36]);
+        record.CBSRESP_DATE = fieldSetFlags()[37] ? this.CBSRESP_DATE : (java.lang.CharSequence) defaultValue(fields()[37]);
+        record.INITMODE = fieldSetFlags()[38] ? this.INITMODE : (java.lang.CharSequence) defaultValue(fields()[38]);
+        record.PURPOSECODE = fieldSetFlags()[39] ? this.PURPOSECODE : (java.lang.CharSequence) defaultValue(fields()[39]);
+        record.CREDITACCOUNTTYPE = fieldSetFlags()[40] ? this.CREDITACCOUNTTYPE : (java.lang.CharSequence) defaultValue(fields()[40]);
+        record.CREDITIFSC = fieldSetFlags()[41] ? this.CREDITIFSC : (java.lang.CharSequence) defaultValue(fields()[41]);
+        record.DEBITACCOUNTTYPE = fieldSetFlags()[42] ? this.DEBITACCOUNTTYPE : (java.lang.CharSequence) defaultValue(fields()[42]);
+        record.DEBITIFSC = fieldSetFlags()[43] ? this.DEBITIFSC : (java.lang.CharSequence) defaultValue(fields()[43]);
+        record.ORDERID = fieldSetFlags()[44] ? this.ORDERID : (java.lang.CharSequence) defaultValue(fields()[44]);
+        record.PAYEECODE = fieldSetFlags()[45] ? this.PAYEECODE : (java.lang.CharSequence) defaultValue(fields()[45]);
+        record.PAYERCODE = fieldSetFlags()[46] ? this.PAYERCODE : (java.lang.CharSequence) defaultValue(fields()[46]);
+        record.SUBTYPE = fieldSetFlags()[47] ? this.SUBTYPE : (java.lang.CharSequence) defaultValue(fields()[47]);
+        record.REMITTORMOBILENUMBER = fieldSetFlags()[48] ? this.REMITTORMOBILENUMBER : (java.lang.CharSequence) defaultValue(fields()[48]);
+        record.PAYEEIMEI = fieldSetFlags()[49] ? this.PAYEEIMEI : (java.lang.CharSequence) defaultValue(fields()[49]);
+        record.PAYERIMEI = fieldSetFlags()[50] ? this.PAYERIMEI : (java.lang.CharSequence) defaultValue(fields()[50]);
+        record.GMTDATE = fieldSetFlags()[51] ? this.GMTDATE : (java.lang.CharSequence) defaultValue(fields()[51]);
+        record.PAYEEACCOUNTTYPE = fieldSetFlags()[52] ? this.PAYEEACCOUNTTYPE : (java.lang.CharSequence) defaultValue(fields()[52]);
+        record.PAYERACCOUNTTYPE = fieldSetFlags()[53] ? this.PAYERACCOUNTTYPE : (java.lang.CharSequence) defaultValue(fields()[53]);
+        record.PAYERCONSENTNAME = fieldSetFlags()[54] ? this.PAYERCONSENTNAME : (java.lang.CharSequence) defaultValue(fields()[54]);
+        record.PAYERCONSENTTYPE = fieldSetFlags()[55] ? this.PAYERCONSENTTYPE : (java.lang.CharSequence) defaultValue(fields()[55]);
+        record.PAYERCONSENTVALUE = fieldSetFlags()[56] ? this.PAYERCONSENTVALUE : (java.lang.CharSequence) defaultValue(fields()[56]);
+        record.ADJCODE = fieldSetFlags()[57] ? this.ADJCODE : (java.lang.CharSequence) defaultValue(fields()[57]);
+        record.ADJFLAG = fieldSetFlags()[58] ? this.ADJFLAG : (java.lang.CharSequence) defaultValue(fields()[58]);
+        record.CREATE_DATE = fieldSetFlags()[59] ? this.CREATE_DATE : (java.lang.CharSequence) defaultValue(fields()[59]);
+        record.CREDITACCTNARRATION_103 = fieldSetFlags()[60] ? this.CREDITACCTNARRATION_103 : (java.lang.CharSequence) defaultValue(fields()[60]);
+        record.DE46 = fieldSetFlags()[61] ? this.DE46 : (java.lang.CharSequence) defaultValue(fields()[61]);
+        record.DEBITACCTNARRATION_102 = fieldSetFlags()[62] ? this.DEBITACCTNARRATION_102 : (java.lang.CharSequence) defaultValue(fields()[62]);
+        record.GST = fieldSetFlags()[63] ? this.GST : (java.lang.CharSequence) defaultValue(fields()[63]);
+        record.LOANNUMBER = fieldSetFlags()[64] ? this.LOANNUMBER : (java.lang.CharSequence) defaultValue(fields()[64]);
+        record.LOCALTIME = fieldSetFlags()[65] ? this.LOCALTIME : (java.lang.CharSequence) defaultValue(fields()[65]);
+        record.NARRATION_125 = fieldSetFlags()[66] ? this.NARRATION_125 : (java.lang.CharSequence) defaultValue(fields()[66]);
+        record.P2PTXNCHARGES = fieldSetFlags()[67] ? this.P2PTXNCHARGES : (java.lang.CharSequence) defaultValue(fields()[67]);
+        record.SCHEMECODE = fieldSetFlags()[68] ? this.SCHEMECODE : (java.lang.CharSequence) defaultValue(fields()[68]);
+        record.TXNAMOUNT = fieldSetFlags()[69] ? this.TXNAMOUNT : (java.lang.CharSequence) defaultValue(fields()[69]);
+        record.BATCH_ID = fieldSetFlags()[70] ? this.BATCH_ID : (java.lang.CharSequence) defaultValue(fields()[70]);
+        record.BASEAMOUNT = fieldSetFlags()[71] ? this.BASEAMOUNT : (java.lang.CharSequence) defaultValue(fields()[71]);
+        record.BASECURR = fieldSetFlags()[72] ? this.BASECURR : (java.lang.CharSequence) defaultValue(fields()[72]);
+        record.CONCODE = fieldSetFlags()[73] ? this.CONCODE : (java.lang.CharSequence) defaultValue(fields()[73]);
+        record.FX = fieldSetFlags()[74] ? this.FX : (java.lang.CharSequence) defaultValue(fields()[74]);
+        record.MKUP = fieldSetFlags()[75] ? this.MKUP : (java.lang.CharSequence) defaultValue(fields()[75]);
+        record.ADDITIONAL4 = fieldSetFlags()[76] ? this.ADDITIONAL4 : (java.lang.CharSequence) defaultValue(fields()[76]);
+        record.D12 = fieldSetFlags()[77] ? this.D12 : (java.lang.CharSequence) defaultValue(fields()[77]);
+        record.ADDITIONAL1 = fieldSetFlags()[78] ? this.ADDITIONAL1 : (java.lang.CharSequence) defaultValue(fields()[78]);
+        record.ADDITIONAL2 = fieldSetFlags()[79] ? this.ADDITIONAL2 : (java.lang.CharSequence) defaultValue(fields()[79]);
+        record.ADDITIONAL3 = fieldSetFlags()[80] ? this.ADDITIONAL3 : (java.lang.CharSequence) defaultValue(fields()[80]);
+        record.ADDITIONAL5 = fieldSetFlags()[81] ? this.ADDITIONAL5 : (java.lang.CharSequence) defaultValue(fields()[81]);
+        record.CBS_ROUTING = fieldSetFlags()[82] ? this.CBS_ROUTING : (java.lang.CharSequence) defaultValue(fields()[82]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
-      } catch (Exception e) {
+      } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }
