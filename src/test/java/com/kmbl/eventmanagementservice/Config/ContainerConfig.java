@@ -8,9 +8,6 @@ import static org.testcontainers.containers.localstack.LocalStackContainer.Servi
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
 import com.redis.testcontainers.RedisContainer;
 import lombok.extern.slf4j.Slf4j;
-import org.jpos.iso.ISOUtil;
-import org.jpos.q2.Q2;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
