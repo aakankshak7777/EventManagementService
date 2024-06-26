@@ -3,9 +3,9 @@ package com.kmbl.eventmanagementservice.testUtils;
 
 import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 
-import com.kmbl.eventmanagementservice.service.streams.consumers.MessageConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumers.ConsumerConfiguration;
 import com.kmbl.eventmanagementservice.service.streams.consumers.DlqPublisher;
+import com.kmbl.eventmanagementservice.service.streams.consumers.MessageConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumers.ReactiveKafkaConsumer;
 import com.kmbl.eventmanagementservice.utils.AvroSerializerUtil;
 import io.micrometer.core.instrument.logging.LoggingMeterRegistry;
