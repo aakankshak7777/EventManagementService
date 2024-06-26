@@ -4,11 +4,19 @@ package com.kmbl.eventmanagementservice.unittest.service.streams;
 
 import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
 import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
+import static com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils.randCollectCallbackEvent;
+import static com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils.randCredit;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
 
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
+import com.kmbl.eventmanagementservice.enums.EventName;
+import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.CollectorCallbackEventService;
 import com.kmbl.eventmanagementservice.service.streams.consumers.CBSTranLogConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumerservice.ConsumerService;
+import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializers;
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
 import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;
@@ -18,6 +26,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
@@ -30,6 +39,8 @@ public class KafkaTests
     private CBSTranLogConsumer cbsTranLogConsumer;
     private long currEpoch;
     private ConsumerService consumerService;
+
+    private CollectorCallbackEventService svc;
 
     @BeforeAll
     public static void setUpBeforeClass() {
@@ -63,10 +74,17 @@ public class KafkaTests
         try (var kafkaConsumer =
                      kafkaTestUtils.newConsumer(bootstrapServers, topic, groupId, cbsTranLogConsumer, CBSTransactionLogsDeserializers.class)) {
             kafkaTestUtils.publishMessages(bootstrapServers, topic, gamEvent);
-            Thread.sleep(100000);
+            Thread.sleep(10000);
 
         }
     }
+
+//    @Test
+//    public void TranLogPublisherToKafka_InsertEvent_PublishEventToATopic() throws InterruptedException {
+//        var collectCallbackEvent = randCollectCallbackEvent(EventName.COLLECT_CALLBACK_API).;
+//        when(kpublisher.offer(collectCallbackEvent)).thenReturn(true);
+//        assertThat(svc.queueUp(collectCallbackEvent)).isTrue();
+//    }
 
 
 }

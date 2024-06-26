@@ -11,6 +11,7 @@ import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.service.dtos.Currency;
 import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;
 import java.math.BigDecimal;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Random;
 import org.apache.commons.lang3.RandomUtils;
@@ -96,6 +97,6 @@ public class DataGen {
         if (str == null || str.isBlank() || str.isEmpty()) {
             return 0L;
         }
-        return Long.parseLong(str);
+        return Instant.parse(str).toEpochMilli();
     }
 }
