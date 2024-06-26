@@ -2,7 +2,7 @@
 
 
  import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
- import com.kmbl.eventmanagementservice.service.streams.CBSTranLogConsumer;
+ import com.kmbl.eventmanagementservice.service.streams.consumers.CBSTranLogConsumer;
   import com.kmbl.eventmanagementservice.service.streams.consumers.ConsumerConfiguration;
  import com.kmbl.eventmanagementservice.service.streams.consumers.DlqPublisher;
  import com.kmbl.eventmanagementservice.service.streams.consumers.ReactiveKafkaConsumer;

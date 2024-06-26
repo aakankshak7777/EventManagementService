@@ -7,8 +7,8 @@ import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
-import com.kmbl.eventmanagementservice.service.streams.CBSTranLogConsumer;
-import com.kmbl.eventmanagementservice.service.streams.ConsumerService;
+import com.kmbl.eventmanagementservice.service.streams.consumers.CBSTranLogConsumer;
+import com.kmbl.eventmanagementservice.service.streams.consumerservice.ConsumerService;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializers;
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
 import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;

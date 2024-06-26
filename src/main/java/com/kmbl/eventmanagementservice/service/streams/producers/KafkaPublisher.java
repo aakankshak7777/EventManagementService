@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.producers;
+package com.kmbl.eventmanagementservice.service.streams.producers;
 
 import static com.kmbl.eventmanagementservice.utils.ThreadUtils.newThreadFactory;
 
@@ -9,7 +9,6 @@ import com.kmbl.eventmanagementservice.utils.ThreadUtils;
 import com.kmbl.eventmanagementservice.utils.mdc.KafkaMdc;
 import com.kmbl.eventmanagementservice.utils.mdc.MdcPublisher;
 import java.io.Closeable;
-import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
@@ -28,7 +27,6 @@ import org.apache.commons.io.IOUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
-import org.redisson.api.RedissonClient;
 
 
 /**

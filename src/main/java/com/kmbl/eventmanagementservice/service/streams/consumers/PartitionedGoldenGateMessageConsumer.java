@@ -1,6 +1,5 @@
 package com.kmbl.eventmanagementservice.service.streams.consumers;
 
-import com.kmbl.eventmanagementservice.service.streams.MessageConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import javax.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.producers;
+package com.kmbl.eventmanagementservice.service.streams.producers;
 
 
 import com.kmbl.eventmanagementservice.utils.MessagePartitioner;

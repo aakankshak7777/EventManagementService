@@ -1,6 +1,5 @@
 package com.kmbl.eventmanagementservice.service.streams.consumers;
 
-import com.kmbl.eventmanagementservice.service.streams.MessageConsumer;
 import io.micrometer.core.instrument.MeterRegistry;
 import java.io.File;
 import java.time.Instant;

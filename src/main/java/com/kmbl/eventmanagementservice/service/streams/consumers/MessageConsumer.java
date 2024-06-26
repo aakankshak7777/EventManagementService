@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.service.streams;
+package com.kmbl.eventmanagementservice.service.streams.consumers;
 
 import javax.annotation.Nullable;
 import reactor.kafka.receiver.ReceiverRecord;

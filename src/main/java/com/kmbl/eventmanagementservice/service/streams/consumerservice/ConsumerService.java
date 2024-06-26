@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.service.streams;
+package com.kmbl.eventmanagementservice.service.streams.consumerservice;
 
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import lombok.extern.slf4j.Slf4j;
