@@ -11,6 +11,7 @@ public class CollectCallbackPublisherCallback implements KafkaPublisher.CommitCa
 
     @Override
     public void handle(KafkaPublisher.MessageBox<CollectCallbackEvent> message, RecordMetadata metadata, Exception exception) {
+        System.out.println(message.getMessage());
         log.info(
                 "Received callback. Trace Epochs: {}, {}, {}, {}",
                 message.getEpochs(),
