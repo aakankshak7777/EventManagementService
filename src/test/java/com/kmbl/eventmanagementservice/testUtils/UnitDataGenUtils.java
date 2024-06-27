@@ -9,6 +9,7 @@ import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
 import com.kmbl.eventmanagementservice.model.CollectCallback;
+import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.dtos.Currency;
 import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
@@ -56,6 +57,38 @@ public class UnitDataGenUtils {
                 .payerAccountIFSC(randStr(11))
                 .creationTime(System.currentTimeMillis())
                 .eventStatus(EventStatus.PENDING)
+                .createdBy(eventName)
+                .build();
+    }
+
+    public static CollectCallbackEvent randCollectCallbackEvent(EventName eventName) {
+        return CollectCallbackEvent.builder()
+                .transactionId(randTransactionId())
+                .aggregatorCode(randStr(6))
+                .merchantCode(randStr(6))
+                .status(PaymentStatus.SUCCESS.toString())
+                .statusCode(randStr(6))
+                .description(randStr(10))
+                .remarks(randStr(10))
+                .transactionReferenceNumber(randStr(12))
+                .rrn(randStr(7))
+                .amount(randAmount().toString())
+                .type(randStr(5))
+                .payerVpa(randStr(10))
+                .payeeVpa(randStr(10))
+                .refUrl(randStr(20))
+                .refId(randStr(8))
+                .initMode(randStr(5))
+                .transactionTimestamp(randInstant().toEpochMilli())
+                .checksum(randStr(5))
+                .accType(randStr(4))
+                .cardType(randStr(4))
+                .bin(randStr(6))
+                .payerMobileNumber(randStr(10))
+                .payerAccountNumber(randStr(12))
+                .payerAccountName(randStr(12))
+                .payerAccountIFSC(randStr(11))
+                .creationTime(System.currentTimeMillis())
                 .createdBy(eventName)
                 .build();
     }

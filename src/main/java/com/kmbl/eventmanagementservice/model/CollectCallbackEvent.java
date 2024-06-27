@@ -1,8 +1,10 @@
 package com.kmbl.eventmanagementservice.model;
 
 import com.kmbl.eventmanagementservice.enums.EventName;
+import com.kmbl.eventmanagementservice.service.PartitionedEvent;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
+import lombok.Data;
 import lombok.With;
 
 @Builder(toBuilder = true)
@@ -34,4 +36,15 @@ public record CollectCallbackEvent(
         String payerAccountName,
         String payerAccountIFSC,
         Long creationTime,
-        EventName createdBy) {}
+        EventName createdBy) implements PartitionedEvent {
+
+    @Override
+    public String uniqueId() {
+        return transactionId;
+    }
+
+    @Override
+    public String partitionKey() {
+        return transactionId;
+    }
+}

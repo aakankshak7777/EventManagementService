@@ -32,8 +32,6 @@ public class KafkaProducerFactory<T> {
 
     private final Class<? extends Serializer> serializerClass;
 
-    private final MeterRegistry meterRegistry;
-
     public KafkaProducer<String, T> newProducer(int producerId) {
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
@@ -79,7 +77,6 @@ public class KafkaProducerFactory<T> {
         log.info("Kafka Publisher properties: {}", props);
         var producer = new KafkaProducer<String, T>(props);
         var kmetrics = new KafkaClientMetrics(producer);
-        kmetrics.bindTo(meterRegistry);
         return producer;
     }
 

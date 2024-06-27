@@ -53,6 +53,7 @@ public class ContainerConfig {
         // We create the topics right after the container spins to avoid weird stuff
         // happening with consumer and topics.
         kafka.waitingFor(new DockerHealthcheckWaitStrategy());
+        System.setProperty("rts-transactions.kafka.consumer.bootstrap-servers", kafka.getBootstrapServers());
         System.out.println("Kafka container up. Creating topics if needed.");
 
         System.out.println("[CONFIG] Kafka Bootstrap Servers: " + kafka.getBootstrapServers());
