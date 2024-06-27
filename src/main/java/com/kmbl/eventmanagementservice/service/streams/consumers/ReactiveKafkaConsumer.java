@@ -33,7 +33,6 @@ public class ReactiveKafkaConsumer<T> extends Thread implements AutoCloseable {
 
     private final ConsumerConfiguration<T> config;
     private final KafkaReceiver<String, T> receiver;
-    private final MeterRegistry meterRegistry;
     private Disposable flux;
     private final boolean enableLagLog;
 
@@ -44,7 +43,6 @@ public class ReactiveKafkaConsumer<T> extends Thread implements AutoCloseable {
     public ReactiveKafkaConsumer(ConsumerConfiguration<T> config, MeterRegistry meterRegistry, boolean enableLagLog) {
         this.config = config;
         this.enableLagLog = enableLagLog;
-        this.meterRegistry = meterRegistry;
         Properties props = getKafkaConsumerProperties(config);
         var commitIntervalMillis = config.getDeferredCommitConfig().getCommitIntervalMillis();
 
@@ -65,8 +63,6 @@ public class ReactiveKafkaConsumer<T> extends Thread implements AutoCloseable {
         @Override
         public <K, V> Consumer<K, V> createConsumer(ReceiverOptions<K, V> config) {
             var consumer = super.createConsumer(config);
-            var kmetrics = new KafkaClientMetrics(consumer);
-            kmetrics.bindTo(meterRegistry);
             return consumer;
         }
     }
@@ -133,7 +129,7 @@ public class ReactiveKafkaConsumer<T> extends Thread implements AutoCloseable {
                 config.getInMemoryPartitions(),
                 Schedulers.DEFAULT_BOUNDED_ELASTIC_QUEUESIZE,
                 config.getProcessorThreadPoolName());
-        return Micrometer.timedScheduler(scheduler, meterRegistry, config.getTopic() + "-consumers-scheduler-");
+        return scheduler;
     }
 
     @SuppressWarnings("PMD.AvoidCatchingGenericException")

@@ -3,9 +3,9 @@ package com.kmbl.eventmanagementservice.service.streams.serializers;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import java.util.List;
 
-public class CBSTransactionLogsDeserializers extends AvroDeserializer<CBSTransactionLogs> {
+public class CBSTransactionLogsDeserializer extends AvroDeserializer<CBSTransactionLogs> {
 
-    public CBSTransactionLogsDeserializers() {
+    public CBSTransactionLogsDeserializer() {
         super(
                 List.of(
                         CBSTransactionLogs.getClassSchema()),

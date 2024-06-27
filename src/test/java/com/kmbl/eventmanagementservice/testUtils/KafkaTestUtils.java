@@ -21,7 +21,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 @Slf4j
 public class KafkaTestUtils<T> {
 
-    ReactiveKafkaConsumer<T> newConsumer(
+    public ReactiveKafkaConsumer<T> newConsumer(
             String bootstrapServers,
             String topic,
             String groupId,

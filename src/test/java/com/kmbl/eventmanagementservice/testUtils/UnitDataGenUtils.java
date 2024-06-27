@@ -77,7 +77,7 @@ public class UnitDataGenUtils {
     private  static EpochProvider epochProvider;
 
 
-    public static CBSTransactionLogs getCBSInsertDataEvent() {
+    public static CBSTransactionLogs getInsertDataEvent() {
         CBSTranCol before = null;
         CBSTranCol after = randCBSTranLogColumns();
         var event = new  CBSTransactionLogs();
