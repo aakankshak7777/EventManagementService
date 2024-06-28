@@ -1,5 +1,7 @@
 package com.kmbl.eventmanagementservice.unittest.service.streams.serializers;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import com.kmbl.eventmanagementservice.service.streams.serializers.AvroDeserializer;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializer;
@@ -7,8 +9,6 @@ import lombok.SneakyThrows;
 import org.apache.commons.codec.binary.Hex;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class AvroDeserializerTest {
     private AvroDeserializer<CBSTransactionLogs> cbsTransactionLogsAvroDeserializer;

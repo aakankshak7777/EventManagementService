@@ -1,7 +1,17 @@
 package com.kmbl.eventmanagementservice.unittest.service.streams.consumers;
 
+import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
+import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.awaitility.Awaitility.await;
+import static org.mockito.Mockito.lenient;
+
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
+import com.kmbl.eventmanagementservice.dao.CBSTranLogGGDao;
+import com.kmbl.eventmanagementservice.dao.DdbCBSTranLogGGDao;
+import com.kmbl.eventmanagementservice.service.CBSTranLogGGService;
+import com.kmbl.eventmanagementservice.service.event.CBSTranLogGGEventService;
 import com.kmbl.eventmanagementservice.service.streams.consumers.CBSTranLogConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumers.DlqPublisher;
 import com.kmbl.eventmanagementservice.service.streams.consumers.MessageConsumer;
@@ -12,6 +22,11 @@ import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;
 import com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils;
 import com.kmbl.eventmanagementservice.unittest.DynamoDbSetupBase;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Properties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -25,16 +40,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import reactor.kafka.receiver.ReceiverRecord;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Properties;
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.awaitility.Awaitility.await;
-import static org.mockito.Mockito.lenient;
 
 
 @Slf4j
@@ -49,6 +54,7 @@ public class DlqPublisherTest extends DynamoDbSetupBase {
     private ConsumerService svc;
     private long currEpoch;
     private final Duration MAX_WAIT_DURATION = Duration.ofSeconds(100);
+    private CBSTranLogGGDao dao;
 
     @Mock
     private EpochProvider epochProvider;
@@ -61,7 +67,7 @@ public class DlqPublisherTest extends DynamoDbSetupBase {
 
     @BeforeEach
     public void setUp() {
-        svc = new ConsumerService();
+        svc = new ConsumerService(new CBSTranLogGGService(dao),new CBSTranLogGGEventService());
         this.topic = randStr("test-", 32);
         this.dlqTopic = randStr("test-", 32);
         this.groupId = randStr("test-", 32);
@@ -71,6 +77,7 @@ public class DlqPublisherTest extends DynamoDbSetupBase {
         KafkaAdminUtils.createTopic(bootstrapServers, this.dlqTopic);
         currEpoch = randEpoch();
         lenient().when(epochProvider.currentEpoch()).thenReturn(currEpoch);
+        dao = new DdbCBSTranLogGGDao(ddb);
     }
 
     @AfterEach

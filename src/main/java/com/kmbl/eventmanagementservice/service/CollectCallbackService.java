@@ -5,6 +5,7 @@ import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.exceptions.CollectCallbackExistsException;
 import com.kmbl.eventmanagementservice.model.CollectCallback;
 import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.event.CollectorCallbackEventService;
 import com.kmbl.eventmanagementservice.service.requests.CreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
 import javax.annotation.concurrent.ThreadSafe;
@@ -21,8 +22,9 @@ public class CollectCallbackService {
     @Autowired
     private CollectorCallbackEventService collectorCallbackEventService;
 
-    public CollectCallbackService(CollectCallbackDao dao) {
+    public CollectCallbackService(CollectCallbackDao dao, CollectorCallbackEventService collectorCallbackEventService) {
         this.dao = dao;
+        this.collectorCallbackEventService = collectorCallbackEventService;
         this.epochProvider = new EpochProvider();
     }
 

@@ -1,9 +1,12 @@
 package com.kmbl.eventmanagementservice.controller;
 
 import com.kmbl.eventmanagementservice.enums.CollectCallbackStatus;
+import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.responses.ApiCreateCollectCallbackResponse;
+import com.kmbl.eventmanagementservice.service.CBSTranLogGGService;
 import com.kmbl.eventmanagementservice.service.CollectCallbackService;
+import com.kmbl.eventmanagementservice.service.requests.CBSTranLogGGRequest;
 import com.kmbl.eventmanagementservice.service.requests.CreateCollectCallbackRequest;
 import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
@@ -23,9 +26,11 @@ public class CollectCallbackController {
     public static final String EP_COLLECT_CALLBACK = "/collect-callback/{id}";
 
     private final CollectCallbackService collectCallbackService;
+    private final CBSTranLogGGService cbsTranLogGGService;
 
-    public CollectCallbackController( CollectCallbackService collectCallbackService) {
+    public CollectCallbackController( CollectCallbackService collectCallbackService, CBSTranLogGGService cbsTranLogGGService) {
         this.collectCallbackService = collectCallbackService;
+        this.cbsTranLogGGService = cbsTranLogGGService;
     }
 
     @PostMapping(EP_CREATE_COLLECT_CALLBACK)
@@ -48,5 +53,17 @@ public class CollectCallbackController {
         } catch (Exception e) {
             throw e;
         }
+    }
+
+    @PostMapping("/fun")
+    @ResponseStatus(HttpStatus.CREATED)
+    @SuppressWarnings("PMD.AvoidCatchingGenericException")
+    public void fun() {
+        var req = CBSTranLogGGRequest.builder()
+                .transactionId("123")
+                .type("321")
+                .eventName(EventName.GG_CBS_TRAN_LOG)
+                .build();
+        cbsTranLogGGService.create(req);
     }
 }

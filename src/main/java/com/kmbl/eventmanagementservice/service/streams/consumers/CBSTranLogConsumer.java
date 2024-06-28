@@ -12,8 +12,7 @@
     public CBSTranLogConsumer(ConsumerService svc) {
 
         super(CBSTransactionLogs::getBefore, CBSTransactionLogs::getAfter, CBSTranCol::getTXNID, m -> {
-            if (svc.printMessage(m.value())) {
-            }
+            svc.sendMessage(m.value());
         });
     }
  }

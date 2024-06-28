@@ -5,7 +5,6 @@ import static com.kmbl.eventmanagementservice.utils.PartitionUtils.inMemoryParti
 import com.kmbl.eventmanagementservice.utils.mdc.KafkaMdc;
 import com.kmbl.eventmanagementservice.utils.mdc.MdcPublisher;
 import io.micrometer.core.instrument.MeterRegistry;
-import io.micrometer.core.instrument.binder.kafka.KafkaClientMetrics;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
@@ -19,7 +18,6 @@ import org.apache.kafka.common.config.SaslConfigs;
 import org.apache.kafka.common.config.SslConfigs;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import reactor.core.Disposable;
-import reactor.core.observability.micrometer.Micrometer;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 import reactor.kafka.receiver.KafkaReceiver;

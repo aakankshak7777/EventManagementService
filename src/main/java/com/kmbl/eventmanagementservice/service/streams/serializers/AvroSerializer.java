@@ -1,14 +1,13 @@
 package com.kmbl.eventmanagementservice.service.streams.serializers;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import org.apache.avro.io.BinaryEncoder;
 import org.apache.avro.io.DatumWriter;
 import org.apache.avro.io.EncoderFactory;
 import org.apache.avro.specific.SpecificDatumWriter;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Serializer;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 
 public class AvroSerializer<T extends org.apache.avro.specific.SpecificRecordBase> implements Serializer<T> {
 

@@ -1,20 +1,15 @@
 package com.kmbl.eventmanagementservice.config;
 
-import com.kmbl.eventmanagementservice.model.CollectCallback;
 import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
-import com.kmbl.eventmanagementservice.service.streams.producers.CollectCallbackPublisherCallback;
+import com.kmbl.eventmanagementservice.service.streams.callbacks.CollectCallbackPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CollectCallbackEventSerializer;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
-import io.micrometer.core.instrument.MeterRegistry;
-import org.redisson.api.RedissonClient;
+import java.io.File;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-
-import java.io.File;
-import java.time.Duration;
 
 @Component
 public class CollectCallbackEventPublisherConfig  {

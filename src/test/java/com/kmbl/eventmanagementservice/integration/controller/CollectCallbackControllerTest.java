@@ -9,14 +9,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kmbl.eventmanagementservice.Config.ConfigForTests;
 import com.kmbl.eventmanagementservice.Config.SetupConfig;
 import com.kmbl.eventmanagementservice.EventManagementServiceApplication;
-import com.kmbl.eventmanagementservice.dao.CollectCallbackDao;
 import com.kmbl.eventmanagementservice.enums.CollectCallbackStatus;
 import com.kmbl.eventmanagementservice.integration.IntegrationTestBase;
 import com.kmbl.eventmanagementservice.integration.testutils.DataGen;
 import com.kmbl.eventmanagementservice.integration.testutils.MockMvcUtils;
 import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.responses.ApiCreateCollectCallbackResponse;
-import com.kmbl.eventmanagementservice.service.CollectCallbackService;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
 import java.time.Instant;
 import org.junit.jupiter.api.BeforeEach;
@@ -43,17 +41,6 @@ class CollectCallbackControllerTest extends IntegrationTestBase {
 
     @MockBean
     private EpochProvider epochProvider;
-
-    @Autowired
-    private CollectCallbackService svc;
-
-    @Autowired
-    private CollectCallbackDao collectCallbackDao;
-
-    @Autowired
-    public void setAccountSummaryDao(CollectCallbackDao collectCallbackDao) {
-        this.collectCallbackDao = collectCallbackDao;
-    }
 
     private MockMvc mvc;
 

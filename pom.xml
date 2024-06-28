@@ -1246,7 +1246,6 @@
         <version>${maven.site.plugin.version}</version>
       </plugin>
 
-
       <!-- Spring boot maven plugin - Expose build info in actuator -->
       <plugin>
         <groupId>org.springframework.boot</groupId>
@@ -1278,7 +1277,6 @@
         <artifactId>gatling-maven-plugin</artifactId>
         <version>4.7.0</version>
       </plugin>
-
 
       <plugin>
         <groupId>org.apache.avro</groupId>

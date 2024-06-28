@@ -2,7 +2,6 @@ package com.kmbl.eventmanagementservice.service.streams.producers;
 
 
 import com.kmbl.eventmanagementservice.utils.MessagePartitioner;
-import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.binder.kafka.KafkaClientMetrics;
 import java.io.File;
 import java.net.InetAddress;

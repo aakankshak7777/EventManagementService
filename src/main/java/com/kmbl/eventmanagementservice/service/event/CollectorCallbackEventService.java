@@ -1,12 +1,10 @@
-package com.kmbl.eventmanagementservice.service;
+package com.kmbl.eventmanagementservice.service.event;
 
 import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
-import lombok.RequiredArgsConstructor;
+import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.concurrent.ThreadSafe;
 
 @Slf4j
 @ThreadSafe

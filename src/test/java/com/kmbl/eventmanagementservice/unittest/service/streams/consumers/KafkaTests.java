@@ -7,12 +7,17 @@ import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
+import com.kmbl.eventmanagementservice.dao.CBSTranLogGGDao;
+import com.kmbl.eventmanagementservice.dao.DdbCBSTranLogGGDao;
+import com.kmbl.eventmanagementservice.service.CBSTranLogGGService;
+import com.kmbl.eventmanagementservice.service.event.CBSTranLogGGEventService;
 import com.kmbl.eventmanagementservice.service.streams.consumers.CBSTranLogConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumerservice.ConsumerService;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTransactionLogsDeserializer;
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
 import com.kmbl.eventmanagementservice.testUtils.KafkaTestUtils;
 import com.kmbl.eventmanagementservice.testUtils.UnitDataGenUtils;
+import com.kmbl.eventmanagementservice.unittest.DynamoDbSetupBase;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +26,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class KafkaTests
+public class KafkaTests extends DynamoDbSetupBase
 {
     private static final ContainerConfig containerConfig = new ContainerConfig();
     private static String bootstrapServers;
@@ -30,6 +35,7 @@ public class KafkaTests
     private CBSTranLogConsumer cbsTranLogConsumer;
     private long currEpoch;
     private ConsumerService consumerService;
+    private CBSTranLogGGDao dao;
 
     @BeforeAll
     public static void setUpBeforeClass() {
@@ -45,6 +51,7 @@ public class KafkaTests
         System.out.printf("Creating topic: %s\n", topic);
         KafkaAdminUtils.createTopic(bootstrapServers, this.topic);
         currEpoch = randEpoch();
+        dao = new DdbCBSTranLogGGDao(ddb);
     }
 
     @AfterEach
@@ -55,7 +62,7 @@ public class KafkaTests
 
     @Test
     public void CbsTranLogConsumerToDDB_insertEvent_insertedEventDataInDDB() throws InterruptedException {
-          consumerService = new ConsumerService();
+          consumerService = new ConsumerService(new CBSTranLogGGService(dao),new CBSTranLogGGEventService());
         this.cbsTranLogConsumer = new CBSTranLogConsumer(consumerService);
         // form data for publishing and expected data in DDB.
         var gamEvent = UnitDataGenUtils.getInsertDataEvent();
@@ -64,7 +71,7 @@ public class KafkaTests
                      kafkaTestUtils.newConsumer(bootstrapServers, topic, groupId, cbsTranLogConsumer,
                              CBSTransactionLogsDeserializer.class)) {
             kafkaTestUtils.publishMessages(bootstrapServers, topic, gamEvent);
-            Thread.sleep(100000);
+            Thread.sleep(1000);
 
         }
     }

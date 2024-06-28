@@ -4,7 +4,6 @@ import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
-import lombok.Data;
 import lombok.With;
 
 @Builder(toBuilder = true)
