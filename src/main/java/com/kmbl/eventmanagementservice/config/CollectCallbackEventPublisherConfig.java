@@ -1,7 +1,8 @@
 package com.kmbl.eventmanagementservice.config;
 
 import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
-import com.kmbl.eventmanagementservice.service.streams.callbacks.CollectCallbackPublisherCallback;
+import com.kmbl.eventmanagementservice.service.UpdateDeliveryService;
+import com.kmbl.eventmanagementservice.service.streams.callbacks.CollectEventPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CollectCallbackEventSerializer;
@@ -31,13 +32,13 @@ public class CollectCallbackEventPublisherConfig  {
     private String securityProtocol;
 
     @Bean
-    public CollectCallbackPublisherCallback callback() {
-        return new CollectCallbackPublisherCallback();
+    public CollectEventPublisherCallback callback(UpdateDeliveryService UpdateDeliveryService) {
+        return new CollectEventPublisherCallback(UpdateDeliveryService);
     }
 
     @Bean
     public KafkaPublisher<CollectCallbackEvent> transactionsKafkaPublisher(
-            CollectCallbackPublisherCallback callback, EpochProvider epochProvider) {
+            CollectEventPublisherCallback callback, EpochProvider epochProvider) {
         var producerFactory = new KafkaProducerFactory<CollectCallbackEvent>(
                 transactionsKafkaTopicName,
                 collectCallbackEventsKafkaBootstrapServers,

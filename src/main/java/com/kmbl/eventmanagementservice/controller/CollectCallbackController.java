@@ -7,11 +7,10 @@ import com.kmbl.eventmanagementservice.responses.ApiCreateCollectCallbackRespons
 import com.kmbl.eventmanagementservice.service.CBSTranLogGGService;
 import com.kmbl.eventmanagementservice.service.CollectCallbackService;
 import com.kmbl.eventmanagementservice.service.requests.CBSTranLogGGRequest;
-import com.kmbl.eventmanagementservice.service.requests.CreateCollectCallbackRequest;
-import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -20,38 +19,42 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @ConditionalOnProperty(prefix = "app", name = "server-enabled", havingValue = "true", matchIfMissing = true)
 @RestController
-@Timed(percentiles = {0.0, 0.75, 0.9, 0.95, 0.99, 1.0})
 public class CollectCallbackController {
     public static final String EP_CREATE_COLLECT_CALLBACK = "/collect-callback";
     public static final String EP_COLLECT_CALLBACK = "/collect-callback/{id}";
 
     private final CollectCallbackService collectCallbackService;
-    private final CBSTranLogGGService cbsTranLogGGService;
+    private final CBSTranLogGGService cbsTranlogService;
 
     public CollectCallbackController( CollectCallbackService collectCallbackService, CBSTranLogGGService cbsTranLogGGService) {
         this.collectCallbackService = collectCallbackService;
-        this.cbsTranLogGGService = cbsTranLogGGService;
+        this. cbsTranlogService = cbsTranLogGGService;
+
     }
 
     @PostMapping(EP_CREATE_COLLECT_CALLBACK)
-    @ResponseStatus(HttpStatus.CREATED)
+
     @SuppressWarnings("PMD.AvoidCatchingGenericException")
-    public ApiCreateCollectCallbackResponse createCollectCallback(
+    public ResponseEntity<ApiCreateCollectCallbackResponse> processCollectCallbackEvent(
             @RequestBody ApiCreateCollectCallbackRequest request) {
         try  {
-            log.info("CreateTransactionRequest: {}", request);
+            log.info("Collect Callback request Received: {}", request);
+            //ToDo write code for validations.
             // validate(request);
-            var createTransactionRequest = CreateCollectCallbackRequest.from(request);
-            var collectCallback = collectCallbackService.create(createTransactionRequest);
-
+            var CollectCallbackRequest = com.kmbl.eventmanagementservice.service.requests.CollectCallbackRequest.from(request);
+            collectCallbackService.processCallbackEvent(CollectCallbackRequest);
             var response = ApiCreateCollectCallbackResponse.builder()
                     .collectCallbackStatus(CollectCallbackStatus.SUCCESS_CREATED_NOW)
-                    .collectCallback(collectCallback)
+                    .message("Event is created successfully.")
                     .build();
             log.info("CreateCollectCallbackResponse: {}", response);
-            return response;
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
         } catch (Exception e) {
-            throw e;
+            var response = ApiCreateCollectCallbackResponse.builder()
+                    .collectCallbackStatus(CollectCallbackStatus.FAILURE)
+                    .message(e.getMessage())
+                    .build();
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
     }
 
@@ -64,6 +67,6 @@ public class CollectCallbackController {
                 .type("321")
                 .eventName(EventName.GG_CBS_TRAN_LOG)
                 .build();
-        cbsTranLogGGService.create(req);
+        cbsTranlogService.create(req);
     }
 }

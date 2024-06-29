@@ -15,7 +15,7 @@ import lombok.With;
 
 @Builder(toBuilder = true)
 @With
-public record CreateCollectCallbackRequest(
+public record CollectCallbackRequest(
         String transactionId,
         String aggregatorCode,
         String merchantCode,
@@ -42,7 +42,7 @@ public record CreateCollectCallbackRequest(
         String payerAccountName,
         String payerAccountIfsc) {
 
-    public CollectCallback toCollectCallback(long currentTime, EventName eventName) {
+    public CollectCallback toCollectCallbackRequest( EventName eventName, EventStatus eventStatus) {
         BigDecimal amount = new BigDecimal(amount());
         TransactionAmount trm= new TransactionAmount(amount, Currency.INR);
         return CollectCallback.builder()
@@ -71,13 +71,12 @@ public record CreateCollectCallbackRequest(
                 .payerAccountNumber(payerAccountNumber())
                 .payerAccountName(payerAccountName())
                 .payerAccountIFSC(payerAccountIfsc())
-                .eventStatus(EventStatus.DELIVERED)
-                .creationTime(currentTime)
+                .eventStatus(eventStatus)
                 .createdBy(eventName)
                 .build();
     }
 
-    public CollectCallbackEvent toCollectCallbackEvent(long currentTime, EventName eventName) {
+    public CollectCallbackEvent toCollectCallbackEvent(EventName eventName) {
         return CollectCallbackEvent.builder()
                 .transactionId(transactionId())
                 .aggregatorCode(aggregatorCode())
@@ -104,13 +103,12 @@ public record CreateCollectCallbackRequest(
                 .payerAccountNumber(payerAccountNumber())
                 .payerAccountName(payerAccountName())
                 .payerAccountIFSC(payerAccountIfsc())
-                .creationTime(currentTime)
                 .createdBy(eventName)
                 .build();
     }
 
-    public static CreateCollectCallbackRequest from(ApiCreateCollectCallbackRequest apiRequest) {
-        return CreateCollectCallbackRequest.builder()
+    public static CollectCallbackRequest from(ApiCreateCollectCallbackRequest apiRequest) {
+        return CollectCallbackRequest.builder()
                 .transactionId(apiRequest.transactionid())
                 .aggregatorCode(apiRequest.aggregatorcode())
                 .merchantCode(apiRequest.merchantcode())

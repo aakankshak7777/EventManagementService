@@ -11,7 +11,6 @@ import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
 import software.amazon.awssdk.enhanced.dynamodb.model.PageIterable;
-import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 import software.amazon.awssdk.services.dynamodb.model.ConditionalCheckFailedException;
 
 public class DdbCollectCallbackDao implements CollectCallbackDao {
@@ -39,11 +38,15 @@ public class DdbCollectCallbackDao implements CollectCallbackDao {
     }
 
     @Override
-    public List<CollectCallback> getByTransactionId(String transactionId) {
-        var res =
-                table.query(r -> r.queryConditional(QueryConditional.keyEqualTo(k -> k.partitionValue(transactionId))));
-        return convertIntoList(res);
+    public void update(CollectCallback collectCallback) {
+        try {
+            var dbCollectCallback = DbCollectCallback.from(collectCallback);
+            table.updateItem(dbCollectCallback);
+        } catch (ConditionalCheckFailedException e) {
+            throw new CollectCallbackExistsException(collectCallback.transactionId(), e);
+        }
     }
+
 
     @Override
     public Optional<CollectCallback> getByTransactionIdAndType(String transactionId, String type) {

@@ -35,6 +35,5 @@ public record CollectCallback(
         String payerAccountNumber,
         String payerAccountName,
         String payerAccountIFSC,
-        Long creationTime,
         EventStatus eventStatus,
         EventName createdBy) {}

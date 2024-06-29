@@ -51,7 +51,7 @@ public class DbCBSTranLogGG {
 
     @DynamoDbConvertedBy(InstantConverter.class)
     @DynamoDbAttribute(ATTR_UPDATED_TIME)
-    private Instant getUpdatedTime() {
+    public Instant getUpdatedTime() {
         return this.updatedTime;
     }
 

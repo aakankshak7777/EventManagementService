@@ -1,16 +1,16 @@
 package com.kmbl.eventmanagementservice.dao.models;
 
+import com.kmbl.eventmanagementservice.dao.dynamodb.converter.InstantConverter;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.model.CollectCallback;
+import java.time.Instant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSortKey;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.UpdateBehavior;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
 
 @DynamoDbBean
 @Data
@@ -23,6 +23,8 @@ public class DbCollectCallback {
     public static final String ATTR_TRANSACTION_ID = "transactionId";
     public static final String ATTR_TYPE = "type";
     public static final String ATTR_VERSION = "version";
+    public static final String ATTR_CREATEDAT = "createdAt";
+    public static final String ATTR_UPDATEDAT = "updatedAt";
 
     private String transactionId;
     private String aggregatorCode;
@@ -49,7 +51,8 @@ public class DbCollectCallback {
     private String payerAccountNumber;
     private String payerAccountName;
     private String payerAccountIFSC;
-    private Long creationTime;
+    private Instant createdAt;
+    private Instant updatedAt;
     private EventStatus eventStatus;
     private EventName createdBy;
 
@@ -59,20 +62,32 @@ public class DbCollectCallback {
         return transactionId;
     }
 
-    public void setTransactionId(String transactionId) {
-        this.transactionId = transactionId;
-    }
-
     @DynamoDbSortKey
     @DynamoDbAttribute(ATTR_TYPE)
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    @DynamoDbAttribute(ATTR_CREATEDAT)
+    @DynamoDbConvertedBy(InstantConverter.class)
+    @DynamoDbUpdateBehavior(UpdateBehavior.WRITE_IF_NOT_EXISTS)
+    public Instant getCreatedAt() {
+        return this.createdAt == null ? Instant.now() : this.createdAt;
+    }
+//
+////    public void setCreatedAt(Long createdAt) {
+////        this.createdAt = this.createdAt == null ? Instant.now() : this.createdAt;
+////    }
+    @DynamoDbAttribute(ATTR_UPDATEDAT)
+    @DynamoDbConvertedBy(InstantConverter.class)
+    @DynamoDbUpdateBehavior(UpdateBehavior.WRITE_ALWAYS)
+    public Instant getUpdatedAt() {
+        return Instant.now();
     }
 
+//    public void setUpdatedAt(Long updatedAt) {
+//        this.updatedAt = this.updatedAt == null ? Instant.now() : this.updatedAt;
+//    }
     /**
      * Convert this object to a Transaction DTO.
      */
@@ -105,7 +120,6 @@ public class DbCollectCallback {
                 .payerAccountIFSC(payerAccountIFSC)
                 .createdBy(createdBy)
                 .eventStatus(eventStatus)
-                .creationTime(creationTime)
                 .build();
     }
 
@@ -140,7 +154,6 @@ public class DbCollectCallback {
         callback.setPayerAccountName(collectCallback.payerAccountName());
         callback.setPayerAccountIFSC(collectCallback.payerAccountIFSC());
         callback.setEventStatus(collectCallback.eventStatus());
-        callback.setCreationTime(collectCallback.creationTime());
         callback.setCreatedBy(collectCallback.createdBy());
         return callback;
     }

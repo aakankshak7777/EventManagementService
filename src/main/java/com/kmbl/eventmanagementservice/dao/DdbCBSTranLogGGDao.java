@@ -12,7 +12,6 @@ import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
 import software.amazon.awssdk.enhanced.dynamodb.model.PageIterable;
-import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 import software.amazon.awssdk.services.dynamodb.model.ConditionalCheckFailedException;
 
 public class DdbCBSTranLogGGDao implements CBSTranLogGGDao {
@@ -38,14 +37,6 @@ public void create(CBSTranLogGG cbsTranLogGG) {
         throw new CollectCallbackExistsException(cbsTranLogGG.transactionId(), e);
     }
 }
-
-@Override
-public List<CBSTranLogGG> getByTransactionId(String transactionId) {
-    var res =
-            table.query(r -> r.queryConditional(QueryConditional.keyEqualTo(k -> k.partitionValue(transactionId))));
-    return convertIntoList(res);
-}
-
 @Override
 public Optional<CBSTranLogGG> getByTransactionIdAndType(String transactionId, String type) {
     try  {

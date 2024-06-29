@@ -55,7 +55,6 @@ public class UnitDataGenUtils {
                 .payerAccountNumber(randStr(12))
                 .payerAccountName(randStr(12))
                 .payerAccountIFSC(randStr(11))
-                .creationTime(System.currentTimeMillis())
                 .eventStatus(EventStatus.PENDING)
                 .createdBy(eventName)
                 .build();
@@ -88,7 +87,6 @@ public class UnitDataGenUtils {
                 .payerAccountNumber(randStr(12))
                 .payerAccountName(randStr(12))
                 .payerAccountIFSC(randStr(11))
-                .creationTime(System.currentTimeMillis())
                 .createdBy(eventName)
                 .build();
     }
