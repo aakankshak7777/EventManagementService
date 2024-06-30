@@ -74,10 +74,7 @@ public class DbCollectCallback {
     public Instant getCreatedAt() {
         return this.createdAt == null ? Instant.now() : this.createdAt;
     }
-//
-////    public void setCreatedAt(Long createdAt) {
-////        this.createdAt = this.createdAt == null ? Instant.now() : this.createdAt;
-////    }
+
     @DynamoDbAttribute(ATTR_UPDATEDAT)
     @DynamoDbConvertedBy(InstantConverter.class)
     @DynamoDbUpdateBehavior(UpdateBehavior.WRITE_ALWAYS)
@@ -85,12 +82,6 @@ public class DbCollectCallback {
         return Instant.now();
     }
 
-//    public void setUpdatedAt(Long updatedAt) {
-//        this.updatedAt = this.updatedAt == null ? Instant.now() : this.updatedAt;
-//    }
-    /**
-     * Convert this object to a Transaction DTO.
-     */
     public CollectCallback to() {
         return CollectCallback.builder()
                 .transactionId(transactionId)

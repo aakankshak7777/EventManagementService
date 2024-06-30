@@ -62,6 +62,8 @@ public class ContainerConfig {
 
         createAndSetTopic(
                 kafka.getBootstrapServers(), "rts-transactions.kafka.consumer.topic", "cbs-tranlog-dlq-");
+        createAndSetTopic(
+                kafka.getBootstrapServers(), "rts-transactions.kafka.consumer.topic1", "cbs-tranlog-dlq1-");
 
             return kafka;
 

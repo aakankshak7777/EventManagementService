@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class UpdateDeliveryService
+public class UpdateCallbackDeliveryService
 {
 
     private final CollectCallbackDao dao;
 
-    public UpdateDeliveryService(CollectCallbackDao dao) {
+    public UpdateCallbackDeliveryService(CollectCallbackDao dao) {
         this.dao = dao;
     }
 

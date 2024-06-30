@@ -1,7 +1,7 @@
 package com.kmbl.eventmanagementservice.config;
 
 import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
-import com.kmbl.eventmanagementservice.service.UpdateDeliveryService;
+import com.kmbl.eventmanagementservice.service.UpdateCallbackDeliveryService;
 import com.kmbl.eventmanagementservice.service.streams.callbacks.CollectEventPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
@@ -13,13 +13,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CollectCallbackEventPublisherConfig  {
+public class CallbackEventPublisherConfig {
 
     @Value("${rts-transactions.kafka.consumer.bootstrap-servers}")
-    private String collectCallbackEventsKafkaBootstrapServers;
+    private String callbackEventKafkaBootstrapServers;
 
     @Value("${rts-transactions.kafka.consumer.topic}")
-    private String transactionsKafkaTopicName;
+    private String callbackEventKafkaTopicName;
 
     private int kafkaPublishersCount = 5;
 
@@ -32,16 +32,16 @@ public class CollectCallbackEventPublisherConfig  {
     private String securityProtocol;
 
     @Bean
-    public CollectEventPublisherCallback callback(UpdateDeliveryService UpdateDeliveryService) {
-        return new CollectEventPublisherCallback(UpdateDeliveryService);
+    public CollectEventPublisherCallback collectEventPublisherCallbackBean(UpdateCallbackDeliveryService UpdateCallbackDeliveryService) {
+        return new CollectEventPublisherCallback(UpdateCallbackDeliveryService);
     }
 
     @Bean
-    public KafkaPublisher<CollectCallbackEvent> transactionsKafkaPublisher(
+    public KafkaPublisher<CollectCallbackEvent> callbackEventKafkaPublisher(
             CollectEventPublisherCallback callback, EpochProvider epochProvider) {
         var producerFactory = new KafkaProducerFactory<CollectCallbackEvent>(
-                transactionsKafkaTopicName,
-                collectCallbackEventsKafkaBootstrapServers,
+                callbackEventKafkaTopicName,
+                callbackEventKafkaBootstrapServers,
                 kafkaSslTrustStoreLocation,
                 securityProtocol,
                 CollectCallbackEventSerializer.class);

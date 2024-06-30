@@ -9,7 +9,7 @@ import lombok.With;
 
 @Builder(toBuilder = true)
 @With
-public record CBSTranLogGG(
+public record CBSTranLog(
         @NotNull String transactionId,
         @NotNull String type,
         CBSTranLogData metaData,

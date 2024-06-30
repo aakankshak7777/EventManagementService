@@ -1,12 +1,14 @@
 package com.kmbl.eventmanagementservice.model;
 
+import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
 import lombok.Builder;
 import lombok.With;
 
 @With
 @Builder(toBuilder = true)
-public record CBSTranLogGGEvent(
+public record CBSTranLogEvent(
         Double id,
         String amount,
         String cbsrc,
@@ -92,8 +94,8 @@ public record CBSTranLogGGEvent(
         String cbsRouting
 ) implements PartitionedEvent {
 
-    public static CBSTranLogGGEvent from(CBSTranLogData cbsTranLogData) {
-        return CBSTranLogGGEvent.builder()
+    public static CBSTranLogEvent from(CBSTranLogData cbsTranLogData) {
+        return CBSTranLogEvent.builder()
                 .id(cbsTranLogData.id())
                 .amount(cbsTranLogData.amount())
                 .cbsrc(cbsTranLogData.cbsrc())
@@ -180,6 +182,98 @@ public record CBSTranLogGGEvent(
                 .build();
     }
 
+    public CBSTranLog toCBSTranLog(EventStatus eventStatus) {
+        return CBSTranLog.builder()
+                .transactionId(txnId)
+                .type(type)
+                .metaData(CBSTranLogData.builder()
+                        .id(id)
+                        .amount(amount)
+                        .cbsrc(cbsrc)
+                        .creditAccount(creditAccount)
+                        .customerId(customerId)
+                        .debitAccount(debitAccount)
+                        .msgId(msgId)
+                        .reversal(reversal)
+                        .reversalStatus(reversalStatus)
+                        .rrn(rrn)
+                        .stan(stan)
+                        .txnDate(txnDate)
+                        .txnId(txnId)
+                        .type(type)
+                        .upirc(upirc)
+                        .orgTxnId(orgTxnId)
+                        .remarks(remarks)
+                        .customerAccount(customerAccount)
+                        .name(name)
+                        .payeeVpa(payeeVpa)
+                        .payerVpa(payerVpa)
+                        .seqNo(seqNo)
+                        .commissionAmount(commissionAmount)
+                        .customerRefId(customerRefId)
+                        .tranType(tranType)
+                        .creditBankName(creditBankName)
+                        .debitBankName(debitBankName)
+                        .othersAccount(othersAccount)
+                        .channel(channel)
+                        .appId(appId)
+                        .preApproved(preApproved)
+                        .beneficiaryName(beneficiaryName)
+                        .otherMobileNo(otherMobileNo)
+                        .remitterName(remitterName)
+                        .approvalNum(approvalNum)
+                        .mccCode(mccCode)
+                        .serverIp(serverIp)
+                        .cbsRespDate(cbsRespDate)
+                        .initMode(initMode)
+                        .purposeCode(purposeCode)
+                        .creditAccountType(creditAccountType)
+                        .creditIfsc(creditIfsc)
+                        .debitAccountType(debitAccountType)
+                        .debitIfsc(debitIfsc)
+                        .orderId(orderId)
+                        .payeeCode(payeeCode)
+                        .payerCode(payerCode)
+                        .subType(subType)
+                        .remittorMobileNumber(remittorMobileNumber)
+                        .payeeImei(payeeImei)
+                        .payerImei(payerImei)
+                        .gmtDate(gmtDate)
+                        .payeeAccountType(payeeAccountType)
+                        .payerAccountType(payerAccountType)
+                        .payerConsentName(payerConsentName)
+                        .payerConsentType(payerConsentType)
+                        .payerConsentValue(payerConsentValue)
+                        .adjCode(adjCode)
+                        .adjFlag(adjFlag)
+                        .createDate(createDate)
+                        .creditAcctNarration103(creditAcctNarration103)
+                        .de46(de46)
+                        .debitAcctNarration102(debitAcctNarration102)
+                        .gst(gst)
+                        .loanNumber(loanNumber)
+                        .localTime(localTime)
+                        .narration125(narration125)
+                        .p2pTxnCharges(p2pTxnCharges)
+                        .schemeCode(schemeCode)
+                        .txnAmount(txnAmount)
+                        .batchId(batchId)
+                        .baseAmount(baseAmount)
+                        .baseCurr(baseCurr)
+                        .conCode(conCode)
+                        .fx(fx)
+                        .mkup(mkup)
+                        .additional4(additional4)
+                        .d12(d12)
+                        .additional1(additional1)
+                        .additional2(additional2)
+                        .additional3(additional3)
+                        .additional5(additional5)
+                        .cbsRouting(cbsRouting)
+                        .build())
+                .eventStatus(eventStatus)
+                .build();
+    }
 
     @Override
     public String uniqueId() {
@@ -190,4 +284,5 @@ public record CBSTranLogGGEvent(
     public String partitionKey() {
         return txnId;
     }
+
 }

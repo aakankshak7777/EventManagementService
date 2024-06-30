@@ -1,7 +1,7 @@
 package com.kmbl.eventmanagementservice.config;
 
-import com.kmbl.eventmanagementservice.dao.CBSTranLogGGDao;
-import com.kmbl.eventmanagementservice.dao.DdbCBSTranLogGGDao;
+import com.kmbl.eventmanagementservice.dao.CBSTranLogDao;
+import com.kmbl.eventmanagementservice.dao.DdbCBSTranLogDao;
 import com.kmbl.eventmanagementservice.dao.DdbCollectCallbackDao;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
 import java.net.URI;
@@ -63,7 +63,7 @@ public class DynamoDbConfig {
     }
 
     @Bean
-    public CBSTranLogGGDao cbsTranlogGGDao(DynamoDbEnhancedClient ddb) {
-        return new DdbCBSTranLogGGDao(ddb);
+    public CBSTranLogDao cbsTranLogDao(DynamoDbEnhancedClient ddb) {
+        return new DdbCBSTranLogDao(ddb);
     }
 }
