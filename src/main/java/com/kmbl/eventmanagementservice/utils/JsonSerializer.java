@@ -9,7 +9,6 @@ import org.apache.kafka.common.serialization.Serializer;
 public class JsonSerializer<T> implements Serializer<T> {
 
     private static final ObjectMapper mapper = new ObjectMapper().registerModule(new JavaTimeModule());
-
     @Override
     public byte[] serialize(String topic, T data) {
 
