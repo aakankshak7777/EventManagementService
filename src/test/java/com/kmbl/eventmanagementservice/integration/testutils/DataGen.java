@@ -6,7 +6,7 @@ import static java.time.temporal.ChronoUnit.DAYS;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
-import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
+import com.kmbl.eventmanagementservice.model.requests.ApiCreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import com.kmbl.eventmanagementservice.service.dtos.Currency;
 import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;

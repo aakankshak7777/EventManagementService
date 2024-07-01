@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.requests;
+package com.kmbl.eventmanagementservice.model.requests;
 
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
 import lombok.Builder;

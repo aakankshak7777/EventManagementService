@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.responses;
+package com.kmbl.eventmanagementservice.model.responses;
 
 import com.kmbl.eventmanagementservice.enums.CollectCallbackStatus;
 import lombok.Builder;

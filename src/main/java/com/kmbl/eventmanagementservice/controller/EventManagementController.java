@@ -2,8 +2,8 @@ package com.kmbl.eventmanagementservice.controller;
 
 import com.kmbl.eventmanagementservice.enums.CollectCallbackStatus;
 import com.kmbl.eventmanagementservice.enums.EventName;
-import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
-import com.kmbl.eventmanagementservice.responses.ApiCreateCollectCallbackResponse;
+import com.kmbl.eventmanagementservice.model.requests.ApiCreateCollectCallbackRequest;
+import com.kmbl.eventmanagementservice.model.responses.ApiCreateCollectCallbackResponse;
 import com.kmbl.eventmanagementservice.service.CBSTranLogService;
 import com.kmbl.eventmanagementservice.service.CollectCallbackService;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData;
