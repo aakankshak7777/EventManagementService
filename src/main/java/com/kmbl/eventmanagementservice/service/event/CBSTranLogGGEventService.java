@@ -1,9 +1,8 @@
 package com.kmbl.eventmanagementservice.service.event;
 
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
-import javax.annotation.concurrent.ThreadSafe;
-
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
+import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

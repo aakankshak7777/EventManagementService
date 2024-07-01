@@ -1,8 +1,7 @@
-package com.kmbl.eventmanagementservice.model;
+package com.kmbl.eventmanagementservice.service.dtos;
 
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
-import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
 import lombok.Builder;
 import lombok.With;
 

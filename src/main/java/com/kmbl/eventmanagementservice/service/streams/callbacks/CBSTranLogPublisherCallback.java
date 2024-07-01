@@ -1,13 +1,13 @@
 package com.kmbl.eventmanagementservice.service.streams.callbacks;
 
+import static net.logstash.logback.argument.StructuredArguments.kv;
+
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.UpdateCBSTranLogDeliveryService;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;
-
-import static net.logstash.logback.argument.StructuredArguments.kv;
 
 @Slf4j
 public class CBSTranLogPublisherCallback implements KafkaPublisher.CommitCallback<CBSTranLogEvent> {

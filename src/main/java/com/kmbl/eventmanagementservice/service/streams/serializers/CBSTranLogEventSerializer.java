@@ -1,13 +1,11 @@
 package com.kmbl.eventmanagementservice.service.streams.serializers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
+import java.io.IOException;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.header.Headers;
 import org.apache.kafka.common.serialization.Serializer;
-
-import java.io.IOException;
 
 public class CBSTranLogEventSerializer implements Serializer<CBSTranLogEvent> {
 

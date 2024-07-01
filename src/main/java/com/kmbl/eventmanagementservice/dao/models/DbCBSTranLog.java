@@ -3,7 +3,6 @@ package com.kmbl.eventmanagementservice.dao.models;
 import com.kmbl.eventmanagementservice.dao.dynamodb.converter.InstantConverter;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CBSTranLogData;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
 import java.time.Instant;
 import lombok.AllArgsConstructor;

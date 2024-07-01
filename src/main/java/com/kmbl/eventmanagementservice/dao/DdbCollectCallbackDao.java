@@ -3,7 +3,7 @@ package com.kmbl.eventmanagementservice.dao;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kmbl.eventmanagementservice.dao.models.DbCollectCallback;
 import com.kmbl.eventmanagementservice.exceptions.CollectCallbackExistsException;
-import com.kmbl.eventmanagementservice.model.CollectCallback;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

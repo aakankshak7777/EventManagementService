@@ -1,6 +1,6 @@
 package com.kmbl.eventmanagementservice.service.event;
 
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;

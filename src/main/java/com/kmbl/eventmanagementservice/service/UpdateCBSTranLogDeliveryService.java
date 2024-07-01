@@ -2,7 +2,7 @@ package com.kmbl.eventmanagementservice.service;
 
 import com.kmbl.eventmanagementservice.dao.CBSTranLogDao;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

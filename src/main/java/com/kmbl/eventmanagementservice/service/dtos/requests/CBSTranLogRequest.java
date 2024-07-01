@@ -1,10 +1,10 @@
-package com.kmbl.eventmanagementservice.service.requests;
+package com.kmbl.eventmanagementservice.service.dtos.requests;
 
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CBSTranLogData;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.With;

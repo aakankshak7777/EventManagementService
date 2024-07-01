@@ -1,7 +1,7 @@
 package com.kmbl.eventmanagementservice.config;
 
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.UpdateCallbackDeliveryService;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.streams.callbacks.CollectEventPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;

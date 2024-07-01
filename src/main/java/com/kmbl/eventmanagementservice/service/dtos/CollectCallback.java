@@ -1,8 +1,7 @@
-package com.kmbl.eventmanagementservice.model;
+package com.kmbl.eventmanagementservice.service.dtos;
 
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.With;

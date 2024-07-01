@@ -5,10 +5,7 @@ import com.kmbl.eventmanagementservice.dao.models.DbCBSTranLog;
 import com.kmbl.eventmanagementservice.exceptions.CBSTranLogExistsException;
 import com.kmbl.eventmanagementservice.exceptions.CollectCallbackExistsException;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
-import com.kmbl.eventmanagementservice.utils.EpochProvider;
-
 import java.util.Optional;
-
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;

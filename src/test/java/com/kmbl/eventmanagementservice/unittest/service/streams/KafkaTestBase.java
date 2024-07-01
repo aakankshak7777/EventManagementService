@@ -4,13 +4,13 @@ import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randInstant;
 import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toSet;
+
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
 import com.kmbl.eventmanagementservice.testUtils.KafkaAdminUtils;
+import com.kmbl.eventmanagementservice.utils.JsonDeserializer;
 import java.time.Instant;
 import java.util.*;
-
-import com.kmbl.eventmanagementservice.utils.JsonDeserializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

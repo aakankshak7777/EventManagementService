@@ -1,22 +1,20 @@
 package com.kmbl.eventmanagementservice.service;
 
+import static com.kmbl.eventmanagementservice.utils.ThreadUtils.newThreadFactory;
+
 import com.kmbl.eventmanagementservice.dao.CBSTranLogDao;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.exceptions.CBSTranLogExistsException;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
+import com.kmbl.eventmanagementservice.service.dtos.requests.CBSTranLogRequest;
 import com.kmbl.eventmanagementservice.service.event.CBSTranLogGGEventService;
-import com.kmbl.eventmanagementservice.service.requests.CBSTranLogRequest;
-
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import static com.kmbl.eventmanagementservice.utils.ThreadUtils.newThreadFactory;
 
 @Slf4j
 @ThreadSafe

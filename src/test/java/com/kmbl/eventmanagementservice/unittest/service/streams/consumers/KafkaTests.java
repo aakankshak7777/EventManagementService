@@ -1,6 +1,9 @@
 package com.kmbl.eventmanagementservice.unittest.service.streams.consumers;
 
 
+import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
+import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
+
 import com.kmbl.eventmanagementservice.Config.ContainerConfig;
 import com.kmbl.eventmanagementservice.dao.CBSTranLogDao;
 import com.kmbl.eventmanagementservice.dao.DdbCBSTranLogDao;
@@ -13,9 +16,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randEpoch;
-import static com.kmbl.eventmanagementservice.testUtils.RandUtils.randStr;
 
 @ExtendWith(MockitoExtension.class)
 public class KafkaTests extends DynamoDbSetupBase

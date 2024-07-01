@@ -1,6 +1,6 @@
 package com.kmbl.eventmanagementservice.dao.models;
 
-import com.kmbl.eventmanagementservice.model.CBSTranLogData;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

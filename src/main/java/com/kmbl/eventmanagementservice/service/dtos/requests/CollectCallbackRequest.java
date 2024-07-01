@@ -1,11 +1,11 @@
-package com.kmbl.eventmanagementservice.service.requests;
+package com.kmbl.eventmanagementservice.service.dtos.requests;
 
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
-import com.kmbl.eventmanagementservice.model.CollectCallback;
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.dtos.Currency;
 import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;
 import java.math.BigDecimal;

@@ -1,7 +1,6 @@
 package com.kmbl.eventmanagementservice.dao;
 
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLog;
-
 import java.util.Optional;
 
 public interface CBSTranLogDao {

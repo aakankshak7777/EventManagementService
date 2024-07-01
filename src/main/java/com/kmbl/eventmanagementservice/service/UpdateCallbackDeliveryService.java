@@ -2,7 +2,7 @@ package com.kmbl.eventmanagementservice.service;
 
 import com.kmbl.eventmanagementservice.dao.CollectCallbackDao;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

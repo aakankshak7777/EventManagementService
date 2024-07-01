@@ -3,7 +3,7 @@ package com.kmbl.eventmanagementservice.dao.models;
 import com.kmbl.eventmanagementservice.dao.dynamodb.converter.InstantConverter;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CollectCallback;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import java.time.Instant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

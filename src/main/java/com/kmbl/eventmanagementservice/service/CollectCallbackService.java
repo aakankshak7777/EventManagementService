@@ -6,17 +6,15 @@ import com.kmbl.eventmanagementservice.dao.CollectCallbackDao;
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.exceptions.CollectCallbackExistsException;
-import com.kmbl.eventmanagementservice.model.CollectCallback;
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
+import com.kmbl.eventmanagementservice.service.dtos.requests.CollectCallbackRequest;
 import com.kmbl.eventmanagementservice.service.event.CollectorCallbackEventService;
-import com.kmbl.eventmanagementservice.service.requests.CollectCallbackRequest;
-import com.kmbl.eventmanagementservice.utils.EpochProvider;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Value;
 
 @Slf4j
 @ThreadSafe

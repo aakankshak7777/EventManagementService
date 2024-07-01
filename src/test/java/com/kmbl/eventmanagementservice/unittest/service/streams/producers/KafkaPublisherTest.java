@@ -4,7 +4,6 @@ package com.kmbl.eventmanagementservice.unittest.service.streams.producers;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;
 
-
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.unittest.service.streams.KafkaTestBase;
@@ -172,4 +171,3 @@ public class KafkaPublisherTest extends KafkaTestBase {
         }
     }
 }
-

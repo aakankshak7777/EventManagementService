@@ -1,6 +1,6 @@
 package com.kmbl.eventmanagementservice.dao;
 
-import com.kmbl.eventmanagementservice.model.CollectCallback;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import java.util.Optional;
 
 public interface CollectCallbackDao {

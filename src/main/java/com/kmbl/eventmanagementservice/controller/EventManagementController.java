@@ -2,12 +2,12 @@ package com.kmbl.eventmanagementservice.controller;
 
 import com.kmbl.eventmanagementservice.enums.CollectCallbackStatus;
 import com.kmbl.eventmanagementservice.enums.EventName;
-import com.kmbl.eventmanagementservice.model.CBSTranLogData;
 import com.kmbl.eventmanagementservice.requests.ApiCreateCollectCallbackRequest;
 import com.kmbl.eventmanagementservice.responses.ApiCreateCollectCallbackResponse;
 import com.kmbl.eventmanagementservice.service.CBSTranLogService;
 import com.kmbl.eventmanagementservice.service.CollectCallbackService;
-import com.kmbl.eventmanagementservice.service.requests.CBSTranLogRequest;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData;
+import com.kmbl.eventmanagementservice.service.dtos.requests.CBSTranLogRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
@@ -40,7 +40,7 @@ public class EventManagementController {
             log.info("Collect Callback request Received: {}", request);
             //ToDo write code for validations.
             // validate(request);
-            var CollectCallbackRequest = com.kmbl.eventmanagementservice.service.requests.CollectCallbackRequest.from(request);
+            var CollectCallbackRequest = com.kmbl.eventmanagementservice.service.dtos.requests.CollectCallbackRequest.from(request);
             collectCallbackService.processCallbackEvent(CollectCallbackRequest);
             var response = ApiCreateCollectCallbackResponse.builder()
                     .collectCallbackStatus(CollectCallbackStatus.SUCCESS_CREATED_NOW)

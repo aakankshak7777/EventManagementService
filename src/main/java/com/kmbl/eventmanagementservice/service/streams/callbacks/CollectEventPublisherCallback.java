@@ -3,8 +3,8 @@ package com.kmbl.eventmanagementservice.service.streams.callbacks;
 import static net.logstash.logback.argument.StructuredArguments.kv;
 
 import com.kmbl.eventmanagementservice.enums.EventStatus;
-import com.kmbl.eventmanagementservice.model.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.UpdateCallbackDeliveryService;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallbackEvent;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;

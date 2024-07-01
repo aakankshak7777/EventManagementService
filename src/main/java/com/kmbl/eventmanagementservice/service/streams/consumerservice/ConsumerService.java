@@ -1,16 +1,13 @@
 package com.kmbl.eventmanagementservice.service.streams.consumerservice;
 
-import static com.kmbl.eventmanagementservice.model.CBSTranLogData.to;
+import static com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData.to;
 
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import com.kmbl.eventmanagementservice.enums.EventName;
-import com.kmbl.eventmanagementservice.model.CBSTranLogData;
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.CBSTranLogService;
-import com.kmbl.eventmanagementservice.service.event.CBSTranLogGGEventService;
-import com.kmbl.eventmanagementservice.service.requests.CBSTranLogRequest;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogData;
+import com.kmbl.eventmanagementservice.service.dtos.requests.CBSTranLogRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

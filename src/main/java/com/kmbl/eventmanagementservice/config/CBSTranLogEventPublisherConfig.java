@@ -1,17 +1,16 @@
 package com.kmbl.eventmanagementservice.config;
 
-import com.kmbl.eventmanagementservice.model.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.UpdateCBSTranLogDeliveryService;
+import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
 import com.kmbl.eventmanagementservice.service.streams.callbacks.CBSTranLogPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTranLogEventSerializer;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
+import java.io.File;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-
-import java.io.File;
 
 @Component
 public class CBSTranLogEventPublisherConfig {

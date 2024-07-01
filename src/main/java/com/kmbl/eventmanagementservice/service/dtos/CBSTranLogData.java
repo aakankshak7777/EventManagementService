@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.model;
+package com.kmbl.eventmanagementservice.service.dtos;
 
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import lombok.Builder;
