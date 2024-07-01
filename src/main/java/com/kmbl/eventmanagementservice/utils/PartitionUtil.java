@@ -3,7 +3,7 @@ package com.kmbl.eventmanagementservice.utils;
 import java.util.concurrent.ThreadLocalRandom;
 import javax.annotation.Nullable;
 
-public class PartitionUtils {
+public class PartitionUtil {
 
     /**
      * Generate a partition ID based on the given partition key. If the key is null, then a random

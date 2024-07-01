@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class ThreadUtils {
+public class ThreadUtil {
 
     public static ThreadFactory newThreadFactory(String prefix) {
         return new ThreadFactoryBuilder().setNameFormat(prefix + "-%d").build();

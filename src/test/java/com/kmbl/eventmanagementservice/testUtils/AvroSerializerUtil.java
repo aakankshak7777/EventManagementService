@@ -1,4 +1,4 @@
-package com.kmbl.eventmanagementservice.utils;
+package com.kmbl.eventmanagementservice.testUtils;
 
 import com.kmbl.eventmanagementservice.Schema.CBSTransactionLogs;
 import java.io.ByteArrayOutputStream;

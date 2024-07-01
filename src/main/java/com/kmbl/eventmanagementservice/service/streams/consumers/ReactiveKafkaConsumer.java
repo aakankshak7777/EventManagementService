@@ -1,6 +1,6 @@
 package com.kmbl.eventmanagementservice.service.streams.consumers;
 
-import static com.kmbl.eventmanagementservice.utils.PartitionUtils.inMemoryPartitionId;
+import static com.kmbl.eventmanagementservice.utils.PartitionUtil.inMemoryPartitionId;
 
 import com.kmbl.eventmanagementservice.utils.mdc.KafkaMdc;
 import com.kmbl.eventmanagementservice.utils.mdc.MdcPublisher;

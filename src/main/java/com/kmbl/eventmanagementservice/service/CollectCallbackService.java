@@ -1,6 +1,6 @@
 package com.kmbl.eventmanagementservice.service;
 
-import static com.kmbl.eventmanagementservice.utils.ThreadUtils.newThreadFactory;
+import static com.kmbl.eventmanagementservice.utils.ThreadUtil.newThreadFactory;
 
 import com.kmbl.eventmanagementservice.dao.CollectCallbackDao;
 import com.kmbl.eventmanagementservice.enums.EventName;

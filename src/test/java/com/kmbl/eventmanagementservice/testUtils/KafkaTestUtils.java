@@ -7,7 +7,6 @@ import com.kmbl.eventmanagementservice.service.streams.consumers.ConsumerConfigu
 import com.kmbl.eventmanagementservice.service.streams.consumers.DlqPublisher;
 import com.kmbl.eventmanagementservice.service.streams.consumers.MessageConsumer;
 import com.kmbl.eventmanagementservice.service.streams.consumers.ReactiveKafkaConsumer;
-import com.kmbl.eventmanagementservice.utils.AvroSerializerUtil;
 import io.micrometer.core.instrument.logging.LoggingMeterRegistry;
 import java.util.Properties;
 import lombok.extern.slf4j.Slf4j;

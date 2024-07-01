@@ -15,7 +15,4 @@ public class EpochProvider {
         return Instant.now();
     }
 
-    public long currentEpochOnOrAfter(long epoch) {
-        return Math.max(currentEpoch(), epoch);
-    }
 }

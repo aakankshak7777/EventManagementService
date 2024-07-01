@@ -1,11 +1,11 @@
 package com.kmbl.eventmanagementservice.service.streams.producers;
 
-import static com.kmbl.eventmanagementservice.utils.ThreadUtils.newThreadFactory;
+import static com.kmbl.eventmanagementservice.utils.ThreadUtil.newThreadFactory;
 
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
 import com.kmbl.eventmanagementservice.utils.EpochProvider;
-import com.kmbl.eventmanagementservice.utils.PartitionUtils;
-import com.kmbl.eventmanagementservice.utils.ThreadUtils;
+import com.kmbl.eventmanagementservice.utils.PartitionUtil;
+import com.kmbl.eventmanagementservice.utils.ThreadUtil;
 import com.kmbl.eventmanagementservice.utils.mdc.KafkaMdc;
 import com.kmbl.eventmanagementservice.utils.mdc.MdcPublisher;
 import java.io.Closeable;
@@ -106,7 +106,7 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
 
     public boolean offer(T message) {
         var partitionKey = message.partitionKey();
-        int partitionId = PartitionUtils.inMemoryPartitionId(partitionKey, inMemoryPartitions);
+        int partitionId = PartitionUtil.inMemoryPartitionId(partitionKey, inMemoryPartitions);
         return workers.get(partitionId).offer(message);
     }
 
@@ -125,10 +125,10 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
         workers.forEach(Worker::stop);
 
         log.info("Shutting down worker executor service for topic: {}", topic);
-        ThreadUtils.shutdownExecutor(workerExecutor);
+        ThreadUtil.shutdownExecutor(workerExecutor);
 
         log.info("Shutting down commit callback executor for topic: {}", topic);
-        ThreadUtils.shutdownExecutor(callbackExecutor);
+        ThreadUtil.shutdownExecutor(callbackExecutor);
 
         log.info("Shutting down production tracker for topic: {}", topic);
     }
