@@ -47,7 +47,7 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
 
     private final String topic;
     private final EpochProvider epochProvider;
-    private final int inMemoryPartitions;
+    private final int numberOfPartitions;
     private final List<Worker> workers;
     private final Function<T, String> keyFunc;
     private final ExecutorService workerExecutor;
@@ -62,7 +62,7 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
      *
      * @param keyFunc            The function used to generate the key of the message while publishing
      *                           to the Kafka topic
-     * @param inMemoryPartitions In-memory partitions and equivalent number of producers to use for
+     * @param numberOfPartitions In-memory partitions and equivalent number of producers to use for
      *                           pushing messages to Kafka.
      * @param epochProvider      Epoch provider to look up current time
      * @param commitCallback     Callback that is called once a commit is attempted for a Kafka
@@ -77,20 +77,20 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
      */
     public KafkaPublisher(
             Function<T, String> keyFunc,
-            int inMemoryPartitions,
+            int numberOfPartitions,
             EpochProvider epochProvider,
             @Nullable CommitCallback<T> commitCallback,
             int callbackThreads,
             KafkaProducerFactory<T> producerFactory) {
         this.topic = producerFactory.topic();
         this.epochProvider = epochProvider;
-        this.inMemoryPartitions = inMemoryPartitions;
+        this.numberOfPartitions = numberOfPartitions;
 
         this.keyFunc = keyFunc;
         this.commitCallback = commitCallback;
 
-        this.workerExecutor = Executors.newFixedThreadPool(this.inMemoryPartitions, newThreadFactory("rts-publisher"));
-        this.workers = IntStream.range(0, this.inMemoryPartitions)
+        this.workerExecutor = Executors.newFixedThreadPool(this.numberOfPartitions, newThreadFactory("rts-publisher"));
+        this.workers = IntStream.range(0, this.numberOfPartitions)
                 .mapToObj(pid -> new Worker(pid, producerFactory.newProducer(pid)))
                 .toList();
         this.workers.forEach(this.workerExecutor::submit);
@@ -106,7 +106,7 @@ public class KafkaPublisher<T extends PartitionedEvent> implements Closeable, Au
 
     public boolean offer(T message) {
         var partitionKey = message.partitionKey();
-        int partitionId = PartitionUtil.inMemoryPartitionId(partitionKey, inMemoryPartitions);
+        int partitionId = PartitionUtil.inMemoryPartitionId(partitionKey, numberOfPartitions);
         return workers.get(partitionId).offer(message);
     }
 

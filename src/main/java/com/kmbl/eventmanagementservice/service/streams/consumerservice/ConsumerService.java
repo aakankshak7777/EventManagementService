@@ -16,11 +16,9 @@ import org.springframework.stereotype.Service;
 public class ConsumerService {
 
     private final CBSTranLogService cbsTranLogService;
-
     public ConsumerService(CBSTranLogService cbsTranLogService) {
         this.cbsTranLogService = cbsTranLogService;
     }
-
     public void sendMessage(CBSTransactionLogs cbsTransactionLogs) {
         CBSTranLogData cbsTranLogData = to(cbsTransactionLogs);
         log.info("message send to kafka and saving it to db : ", cbsTranLogData);
