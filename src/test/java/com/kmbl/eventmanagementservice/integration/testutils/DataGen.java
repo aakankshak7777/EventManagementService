@@ -7,13 +7,12 @@ import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
 import com.kmbl.eventmanagementservice.model.requests.ApiCreateCollectCallbackRequest;
-import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
-import com.kmbl.eventmanagementservice.service.dtos.Currency;
-import com.kmbl.eventmanagementservice.service.dtos.TransactionAmount;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Random;
+
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import org.apache.commons.lang3.RandomUtils;
 
 public class DataGen {
@@ -33,33 +32,9 @@ public class DataGen {
     public static CollectCallback apiCreateCollectCallbackRequestResponseCollectCallback(ApiCreateCollectCallbackRequest req) {
         return CollectCallback.builder()
                 .transactionId(req.transactionid())
-                .aggregatorCode(req.aggregatorcode())
-                .merchantCode(req.merchantcode())
-                .status(req.status() != null ? req.status().toString() : null)
-                .statusCode(req.statusCode())
-                .description(req.description())
-                .remarks(req.remarks())
-                .transactionReferenceNumber(req.transactionreferencenumber())
-                .rrn(req.rrn())
-                .amount(new TransactionAmount(new BigDecimal(req.amount()), Currency.INR)) // Assuming TransactionAmount needs to be constructed
                 .type(req.type())
-                .payerVpa(req.payervpa())
-                .payeeVpa(req.payeevpa())
-                .refUrl(req.refurl())
-                .refId(req.refid())
-                .initMode(req.initmode())
-                .transactionTimestamp(processTransactionTimestamp(req.transactionTimestamp())) // Convert String to long
-                .checksum(req.checksum())
-                .accType(req.accType())
-                .cardType(req.cardType())
-                .bin(req.bin())
-                .payerMobileNumber(req.payerMobileNumber())
-                .payerAccountNumber(req.payerAccountNumber())
-                .payerAccountName(req.payerAccountName())
-                .payerAccountIFSC(req.payerAccountIFSC())
-                .createdBy(EventName.COLLECT_CALLBACK_API)
+                .createdBy(EventName.GG_TRAN_LOG)
                 .eventStatus(EventStatus.DELIVERED)
-                // You need to provide an instance of EventName here
                 .build();
     }
 

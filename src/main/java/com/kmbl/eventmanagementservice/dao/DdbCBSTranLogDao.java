@@ -50,8 +50,8 @@ public class DdbCBSTranLogDao implements CBSTranLogDao {
         try {
             var dbCBSTranLog = DbCBSTranLog.from(cbsTranLog);
             table.updateItem(dbCBSTranLog);
-        } catch (ConditionalCheckFailedException e) {
-            throw new CollectCallbackExistsException(cbsTranLog.transactionId(), e);
+        } catch (CBSTranLogExistsException e) {
+            throw new CBSTranLogExistsException(cbsTranLog.transactionId(), e);
         }
     }
 }

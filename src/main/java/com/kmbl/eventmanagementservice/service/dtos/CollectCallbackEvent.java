@@ -2,9 +2,9 @@ package com.kmbl.eventmanagementservice.service.dtos;
 
 import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
+import com.kmbl.eventmanagementservice.enums.PaymentStatus;
 import com.kmbl.eventmanagementservice.service.PartitionedEvent;
 import jakarta.validation.constraints.NotNull;
-import java.math.BigDecimal;
 import lombok.Builder;
 import lombok.With;
 
@@ -27,7 +27,7 @@ public record CollectCallbackEvent(
         String refUrl,
         String refId,
         String initMode,
-        long transactionTimestamp,
+        String transactionTimestamp,
         String checksum,
         String accType,
         String cardType,
@@ -40,19 +40,27 @@ public record CollectCallbackEvent(
 
     public CollectCallback toCollectCallback(EventStatus eventStatus)
     {
-        BigDecimal amount = new BigDecimal(amount());
-        TransactionAmount trm= new TransactionAmount(amount, Currency.INR);
         return CollectCallback.builder()
+                .transactionId(transactionId)
+                .type(type)
+                .metaData(getMetaData())
+                .eventStatus(eventStatus)
+                .createdBy(createdBy)
+                .build();
+    }
+
+    private CollectCallbackData getMetaData() {
+        return CollectCallbackData.builder()
                 .transactionId(transactionId)
                 .aggregatorCode(aggregatorCode)
                 .merchantCode(merchantCode)
-                .status(status)
+                .status(PaymentStatus.valueOf(status))
                 .statusCode(statusCode)
                 .description(description)
                 .remarks(remarks)
                 .transactionReferenceNumber(transactionReferenceNumber)
                 .rrn(rrn)
-                .amount(trm)
+                .amount(amount)
                 .type(type)
                 .payerVpa(payerVpa)
                 .payeeVpa(payeeVpa)
@@ -67,9 +75,7 @@ public record CollectCallbackEvent(
                 .payerMobileNumber(payerMobileNumber)
                 .payerAccountNumber(payerAccountNumber)
                 .payerAccountName(payerAccountName)
-                .payerAccountIFSC(payerAccountIFSC)
-                .createdBy(createdBy)
-                .eventStatus(eventStatus)
+                .payerAccountName(payerAccountIFSC)
                 .build();
     }
 

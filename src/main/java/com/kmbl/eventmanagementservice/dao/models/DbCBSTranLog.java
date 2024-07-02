@@ -58,6 +58,7 @@ public class DbCBSTranLog {
     public Instant getUpdatedAt() {
         return Instant.now();
     }
+
     public CBSTranLog to() {
         return CBSTranLog.builder()
                 .transactionId(transactionId)
