@@ -126,8 +126,4 @@ public record CBSTranLogRequest(
                 .cbsRouting(metaData.cbsRouting())
                 .build();
     }
-
-    private Object nullCheck() {
-        return null;
-    }
 }

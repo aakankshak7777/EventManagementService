@@ -7,12 +7,11 @@ import com.kmbl.eventmanagementservice.enums.EventName;
 import com.kmbl.eventmanagementservice.enums.EventStatus;
 import com.kmbl.eventmanagementservice.enums.PaymentStatus;
 import com.kmbl.eventmanagementservice.model.requests.ApiCreateCollectCallbackRequest;
+import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Random;
-
-import com.kmbl.eventmanagementservice.service.dtos.CollectCallback;
 import org.apache.commons.lang3.RandomUtils;
 
 public class DataGen {

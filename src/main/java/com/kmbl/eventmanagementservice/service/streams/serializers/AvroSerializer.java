@@ -2,7 +2,6 @@ package com.kmbl.eventmanagementservice.service.streams.serializers;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-
 import org.apache.avro.io.BinaryEncoder;
 import org.apache.avro.io.DatumWriter;
 import org.apache.avro.io.EncoderFactory;
