@@ -1,8 +1,6 @@
 package com.kmbl.eventmanagementservice.config;
 
-import com.kmbl.eventmanagementservice.service.UpdateCBSTranLogDeliveryService;
 import com.kmbl.eventmanagementservice.service.dtos.CBSTranLogEvent;
-import com.kmbl.eventmanagementservice.service.streams.callbacks.CBSTranLogPublisherCallback;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaProducerFactory;
 import com.kmbl.eventmanagementservice.service.streams.producers.KafkaPublisher;
 import com.kmbl.eventmanagementservice.service.streams.serializers.CBSTranLogEventSerializer;
@@ -32,13 +30,7 @@ public class CBSTranLogEventPublisherConfig {
     private String securityProtocol;
 
     @Bean
-    public CBSTranLogPublisherCallback cbsTranLogPublisherCallbackBean(UpdateCBSTranLogDeliveryService updateCBSTranLogDeliveryService) {
-        return new CBSTranLogPublisherCallback(updateCBSTranLogDeliveryService);
-    }
-
-    @Bean
-    public KafkaPublisher<CBSTranLogEvent> cbsTranLogEventKafkaPublisher(
-            CBSTranLogPublisherCallback callback, EpochProvider epochProvider) {
+    public KafkaPublisher<CBSTranLogEvent> cbsTranLogEventKafkaPublisher(EpochProvider epochProvider) {
         var producerFactory = new KafkaProducerFactory<CBSTranLogEvent>(
                 cbsTranLogEventKafkaTopicName,
                 cbsTranLogEventKafkaBootstrapServers,
@@ -49,7 +41,7 @@ public class CBSTranLogEventPublisherConfig {
                 t -> String.join(":",t.partitionKey(), t.partitionKey()),
                 kafkaPublishersCount,
                 epochProvider,
-                callback,
+                null,
                 callbackThreadsCount,
                 producerFactory);
     }
